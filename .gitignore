@@ -1,11 +1,11 @@
 # Next.js
-.next/
-out/
-build/
-node_modules/
+**/.next/
+**/out/
+**/build/
+**/node_modules/
 
 # Python
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 venv/
