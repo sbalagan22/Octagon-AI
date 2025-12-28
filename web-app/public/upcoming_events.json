@@ -1,0 +1,2096 @@
+[
+  {
+    "event_id": "600057024",
+    "event_name": "UFC 324: Gaethje vs. Pimblett",
+    "date": "Jan 24",
+    "location": "T-Mobile Arena, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057024/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Justin Gaethje",
+        "fighter_2": "Paddy Pimblett",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3022345/justin-gaethje",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4008549/paddy-pimblett",
+        "prediction": {
+          "winner": "Paddy Pimblett",
+          "confidence": "67.3%",
+          "odds": {
+            "Justin Gaethje": "32.7%",
+            "Paddy Pimblett": "67.3%"
+          },
+          "factors": {
+            "Justin Gaethje": {
+              "slpm": 6.59,
+              "sapm": 7.18,
+              "str_diff": -0.59,
+              "kd_rate": 0.67,
+              "td_rate": 0.1,
+              "ctrl_rate": 33.41,
+              "sub_rate": 0.0,
+              "wins": 26,
+              "losses": 5,
+              "win_rate": 83.9,
+              "height_cm": 180.3,
+              "reach_cm": 70.0,
+              "layoff_days": 295,
+              "recent_form": "W-L-W-W-L"
+            },
+            "Paddy Pimblett": {
+              "slpm": 5.19,
+              "sapm": 3.14,
+              "str_diff": 2.05,
+              "kd_rate": 0.48,
+              "td_rate": 0.96,
+              "ctrl_rate": 243.91,
+              "sub_rate": 1.68,
+              "wins": 23,
+              "losses": 3,
+              "win_rate": 88.5,
+              "height_cm": 154.9,
+              "reach_cm": 73.0,
+              "layoff_days": 260,
+              "recent_form": "W-W-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Kayla Harrison",
+        "fighter_2": "Amanda Nunes",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4332765/kayla-harrison",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2516131/amanda-nunes",
+        "prediction": {
+          "winner": "Kayla Harrison",
+          "confidence": "62.7%",
+          "odds": {
+            "Kayla Harrison": "62.7%",
+            "Amanda Nunes": "37.3%"
+          },
+          "factors": {
+            "Kayla Harrison": {
+              "slpm": 4.29,
+              "sapm": 1.1,
+              "str_diff": 3.19,
+              "kd_rate": 0.0,
+              "td_rate": 2.84,
+              "ctrl_rate": 534.7,
+              "sub_rate": 0.95,
+              "wins": 19,
+              "losses": 1,
+              "win_rate": 95.0,
+              "height_cm": 172.7,
+              "reach_cm": 66.0,
+              "layoff_days": 204,
+              "recent_form": "W-W-W"
+            },
+            "Amanda Nunes": {
+              "slpm": 4.54,
+              "sapm": 2.44,
+              "str_diff": 2.1,
+              "kd_rate": 0.59,
+              "td_rate": 2.79,
+              "ctrl_rate": 308.07,
+              "sub_rate": 0.73,
+              "wins": 23,
+              "losses": 5,
+              "win_rate": 82.1,
+              "height_cm": 172.7,
+              "reach_cm": 69.0,
+              "layoff_days": 932,
+              "recent_form": "W-W-L-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Sean Omalley",
+        "fighter_2": "Song Yadong",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4205093/sean-omalley",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/3151289/song-yadong",
+        "prediction": {
+          "winner": "Sean Omalley",
+          "confidence": "62.9%",
+          "odds": {
+            "Sean Omalley": "62.9%",
+            "Song Yadong": "37.1%"
+          },
+          "factors": {
+            "Sean Omalley": {
+              "slpm": 6.3,
+              "sapm": 3.42,
+              "str_diff": 2.88,
+              "kd_rate": 0.54,
+              "td_rate": 0.27,
+              "ctrl_rate": 10.97,
+              "sub_rate": 0.27,
+              "wins": 18,
+              "losses": 4,
+              "win_rate": 81.8,
+              "height_cm": 180.3,
+              "reach_cm": 72.0,
+              "layoff_days": 204,
+              "recent_form": "L-L-W-W-W"
+            },
+            "Song Yadong": {
+              "slpm": 4.58,
+              "sapm": 4.0,
+              "str_diff": 0.58,
+              "kd_rate": 0.54,
+              "td_rate": 0.61,
+              "ctrl_rate": 125.25,
+              "sub_rate": 0.15,
+              "wins": 22,
+              "losses": 8,
+              "win_rate": 73.3,
+              "height_cm": 172.7,
+              "reach_cm": 67.0,
+              "layoff_days": 309,
+              "recent_form": "W-L-W-W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Waldo Cortes Acosta",
+        "fighter_2": "Derrick Lewis",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4903365/waldo-cortes-acosta",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2560713/derrick-lewis",
+        "prediction": {
+          "winner": "Waldo Cortes Acosta",
+          "confidence": "62.6%",
+          "odds": {
+            "Waldo Cortes Acosta": "62.6%",
+            "Derrick Lewis": "37.4%"
+          },
+          "factors": {
+            "Waldo Cortes Acosta": {
+              "slpm": 5.37,
+              "sapm": 3.52,
+              "str_diff": 1.85,
+              "kd_rate": 0.61,
+              "td_rate": 0.37,
+              "ctrl_rate": 97.67,
+              "sub_rate": 0.12,
+              "wins": 14,
+              "losses": 2,
+              "win_rate": 87.5,
+              "height_cm": 193.0,
+              "reach_cm": 78.0,
+              "layoff_days": 36,
+              "recent_form": "W-W-L-W-W"
+            },
+            "Derrick Lewis": {
+              "slpm": 2.51,
+              "sapm": 2.49,
+              "str_diff": 0.02,
+              "kd_rate": 0.62,
+              "td_rate": 0.56,
+              "ctrl_rate": 104.37,
+              "sub_rate": 0.0,
+              "wins": 29,
+              "losses": 12,
+              "win_rate": 70.7,
+              "height_cm": 190.5,
+              "reach_cm": 79.0,
+              "layoff_days": 169,
+              "recent_form": "W-W-L-W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Arnold Allen",
+        "fighter_2": "Jean Silva",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3902098/arnold-allen",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5145766/jean-silva",
+        "prediction": {
+          "winner": "Jean Silva",
+          "confidence": "51.3%",
+          "odds": {
+            "Arnold Allen": "48.7%",
+            "Jean Silva": "51.3%"
+          },
+          "factors": {
+            "Arnold Allen": {
+              "slpm": 3.45,
+              "sapm": 2.88,
+              "str_diff": 0.57,
+              "kd_rate": 0.25,
+              "td_rate": 0.93,
+              "ctrl_rate": 110.22,
+              "sub_rate": 0.34,
+              "wins": 20,
+              "losses": 3,
+              "win_rate": 87.0,
+              "height_cm": 172.7,
+              "reach_cm": 70.0,
+              "layoff_days": 519,
+              "recent_form": "W-L-L-W-W"
+            },
+            "Jean Silva": {
+              "slpm": 4.45,
+              "sapm": 4.67,
+              "str_diff": -0.22,
+              "kd_rate": 1.67,
+              "td_rate": 0.33,
+              "ctrl_rate": 15.02,
+              "sub_rate": 1.0,
+              "wins": 16,
+              "losses": 3,
+              "win_rate": 84.2,
+              "height_cm": 170.2,
+              "reach_cm": 69.0,
+              "layoff_days": 106,
+              "recent_form": "L-W-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Natalia Silva",
+        "fighter_2": "Rose Namajunas",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4054605/natalia-silva",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/3032973/rose-namajunas",
+        "prediction": {
+          "winner": "Natalia Silva",
+          "confidence": "61.8%",
+          "odds": {
+            "Natalia Silva": "61.8%",
+            "Rose Namajunas": "38.2%"
+          },
+          "factors": {
+            "Natalia Silva": {
+              "slpm": 5.04,
+              "sapm": 2.46,
+              "str_diff": 2.58,
+              "kd_rate": 0.34,
+              "td_rate": 0.34,
+              "ctrl_rate": 46.97,
+              "sub_rate": 0.0,
+              "wins": 19,
+              "losses": 5,
+              "win_rate": 79.2,
+              "height_cm": 162.6,
+              "reach_cm": 65.0,
+              "layoff_days": 232,
+              "recent_form": "W-W-W-W-W"
+            },
+            "Rose Namajunas": {
+              "slpm": 3.6,
+              "sapm": 3.38,
+              "str_diff": 0.22,
+              "kd_rate": 0.32,
+              "td_rate": 1.49,
+              "ctrl_rate": 180.33,
+              "sub_rate": 0.37,
+              "wins": 15,
+              "losses": 7,
+              "win_rate": 68.2,
+              "height_cm": 165.1,
+              "reach_cm": 65.0,
+              "layoff_days": 197,
+              "recent_form": "W-L-W-W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Umar Nurmagomedov",
+        "fighter_2": "Deiveson Figueiredo",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4569549/umar-nurmagomedov",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4189320/deiveson-figueiredo",
+        "prediction": {
+          "winner": "Umar Nurmagomedov",
+          "confidence": "65.2%",
+          "odds": {
+            "Umar Nurmagomedov": "65.2%",
+            "Deiveson Figueiredo": "34.8%"
+          },
+          "factors": {
+            "Umar Nurmagomedov": {
+              "slpm": 4.08,
+              "sapm": 2.04,
+              "str_diff": 2.03,
+              "kd_rate": 0.13,
+              "td_rate": 4.3,
+              "ctrl_rate": 356.96,
+              "sub_rate": 0.27,
+              "wins": 18,
+              "losses": 1,
+              "win_rate": 94.7,
+              "height_cm": 172.7,
+              "reach_cm": 69.0,
+              "layoff_days": 64,
+              "recent_form": "W-L-W-W-W"
+            },
+            "Deiveson Figueiredo": {
+              "slpm": 2.75,
+              "sapm": 3.54,
+              "str_diff": -0.79,
+              "kd_rate": 0.71,
+              "td_rate": 1.71,
+              "ctrl_rate": 151.95,
+              "sub_rate": 1.29,
+              "wins": 25,
+              "losses": 6,
+              "win_rate": 80.6,
+              "height_cm": 165.1,
+              "reach_cm": 68.0,
+              "layoff_days": 78,
+              "recent_form": "W-L-L-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ateba Gautier",
+        "fighter_2": "Andrey Pulyaev",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5218421/ateba-gautier",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5211225/andrey-pulyaev",
+        "prediction": {
+          "winner": "Ateba Gautier",
+          "confidence": "62.1%",
+          "odds": {
+            "Ateba Gautier": "62.1%",
+            "Andrey Pulyaev": "37.9%"
+          },
+          "factors": {
+            "Ateba Gautier": {
+              "slpm": 8.3,
+              "sapm": 2.98,
+              "str_diff": 5.33,
+              "kd_rate": 7.05,
+              "td_rate": 2.35,
+              "ctrl_rate": 11.75,
+              "sub_rate": 0.0,
+              "wins": 9,
+              "losses": 1,
+              "win_rate": 90.0,
+              "height_cm": 193.0,
+              "reach_cm": 81.0,
+              "layoff_days": 85,
+              "recent_form": "W-W-W"
+            },
+            "Andrey Pulyaev": {
+              "slpm": 1.91,
+              "sapm": 3.86,
+              "str_diff": -1.95,
+              "kd_rate": 0.7,
+              "td_rate": 0.0,
+              "ctrl_rate": 77.38,
+              "sub_rate": 0.0,
+              "wins": 10,
+              "losses": 3,
+              "win_rate": 76.9,
+              "height_cm": 193.0,
+              "reach_cm": 78.0,
+              "layoff_days": 148,
+              "recent_form": "W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Michael Johnson",
+        "fighter_2": "Alexander Hernandez",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/2488476/michael-johnson",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4018757/alexander-hernandez",
+        "prediction": {
+          "winner": "Alexander Hernandez",
+          "confidence": "56.8%",
+          "odds": {
+            "Michael Johnson": "43.2%",
+            "Alexander Hernandez": "56.8%"
+          },
+          "factors": {
+            "Michael Johnson": {
+              "slpm": 4.28,
+              "sapm": 3.79,
+              "str_diff": 0.49,
+              "kd_rate": 0.54,
+              "td_rate": 0.58,
+              "ctrl_rate": 72.03,
+              "sub_rate": 0.04,
+              "wins": 25,
+              "losses": 19,
+              "win_rate": 56.8,
+              "height_cm": 154.9,
+              "reach_cm": 73.0,
+              "layoff_days": 162,
+              "recent_form": "W-W-W-L-W"
+            },
+            "Alexander Hernandez": {
+              "slpm": 4.31,
+              "sapm": 4.5,
+              "str_diff": -0.19,
+              "kd_rate": 0.52,
+              "td_rate": 1.14,
+              "ctrl_rate": 126.61,
+              "sub_rate": 0.09,
+              "wins": 18,
+              "losses": 8,
+              "win_rate": 69.2,
+              "height_cm": 175.3,
+              "reach_cm": 72.0,
+              "layoff_days": 106,
+              "recent_form": "W-W-W-W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Nikita Krylov",
+        "fighter_2": "Modestas Bukauskas",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3026263/nikita-krylov",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4279621/modestas-bukauskas",
+        "prediction": {
+          "winner": "Nikita Krylov",
+          "confidence": "55.1%",
+          "odds": {
+            "Nikita Krylov": "55.1%",
+            "Modestas Bukauskas": "44.9%"
+          },
+          "factors": {
+            "Nikita Krylov": {
+              "slpm": 4.31,
+              "sapm": 2.58,
+              "str_diff": 1.73,
+              "kd_rate": 0.57,
+              "td_rate": 2.17,
+              "ctrl_rate": 348.38,
+              "sub_rate": 1.37,
+              "wins": 30,
+              "losses": 11,
+              "win_rate": 73.2,
+              "height_cm": 190.5,
+              "reach_cm": 77.0,
+              "layoff_days": 155,
+              "recent_form": "L-L-W-W-W"
+            },
+            "Modestas Bukauskas": {
+              "slpm": 3.32,
+              "sapm": 3.93,
+              "str_diff": -0.61,
+              "kd_rate": 0.15,
+              "td_rate": 0.3,
+              "ctrl_rate": 99.54,
+              "sub_rate": 0.15,
+              "wins": 19,
+              "losses": 6,
+              "win_rate": 76.0,
+              "height_cm": 190.5,
+              "reach_cm": 76.0,
+              "layoff_days": 113,
+              "recent_form": "W-W-W-W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Alex Perez",
+        "fighter_2": "Charles Johnson",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3155425/alex-perez",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4375156/charles-johnson",
+        "prediction": {
+          "winner": "Charles Johnson",
+          "confidence": "50.9%",
+          "odds": {
+            "Alex Perez": "49.1%",
+            "Charles Johnson": "50.9%"
+          },
+          "factors": {
+            "Alex Perez": {
+              "slpm": 4.15,
+              "sapm": 3.22,
+              "str_diff": 0.93,
+              "kd_rate": 0.63,
+              "td_rate": 2.35,
+              "ctrl_rate": 259.52,
+              "sub_rate": 0.63,
+              "wins": 25,
+              "losses": 9,
+              "win_rate": 73.5,
+              "height_cm": 167.6,
+              "reach_cm": 65.0,
+              "layoff_days": 36,
+              "recent_form": "L-L-W-L-L"
+            },
+            "Charles Johnson": {
+              "slpm": 4.73,
+              "sapm": 3.78,
+              "str_diff": 0.95,
+              "kd_rate": 0.38,
+              "td_rate": 0.56,
+              "ctrl_rate": 65.84,
+              "sub_rate": 0.38,
+              "wins": 18,
+              "losses": 7,
+              "win_rate": 72.0,
+              "height_cm": 175.3,
+              "reach_cm": 70.0,
+              "layoff_days": 127,
+              "recent_form": "W-L-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Josh Hokit",
+        "fighter_2": "Denzel Freeman",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4049391/josh-hokit",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4848646/denzel-freeman",
+        "prediction": {
+          "winner": "Josh Hokit",
+          "confidence": "83.2%",
+          "odds": {
+            "Josh Hokit": "83.2%",
+            "Denzel Freeman": "16.8%"
+          },
+          "factors": {
+            "Josh Hokit": {
+              "slpm": 9.0,
+              "sapm": 3.0,
+              "str_diff": 6.0,
+              "kd_rate": 30.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 120.0,
+              "sub_rate": 0.0,
+              "wins": 6,
+              "losses": 0,
+              "win_rate": 100.0,
+              "height_cm": 185.4,
+              "reach_cm": 73.0,
+              "layoff_days": 50,
+              "recent_form": "W"
+            },
+            "Denzel Freeman": {
+              "slpm": 3.27,
+              "sapm": 2.07,
+              "str_diff": 1.2,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 1,
+              "losses": 0,
+              "win_rate": 100.0,
+              "height_cm": 175.0,
+              "reach_cm": 179.4,
+              "layoff_days": 36,
+              "recent_form": "W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ricky Turcios",
+        "fighter_2": "Cameron Smotherman",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3928693/ricky-turcios",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5144320/cameron-smotherman",
+        "prediction": {
+          "winner": "Ricky Turcios",
+          "confidence": "51.5%",
+          "odds": {
+            "Ricky Turcios": "51.5%",
+            "Cameron Smotherman": "48.5%"
+          },
+          "factors": {
+            "Ricky Turcios": {
+              "slpm": 4.16,
+              "sapm": 3.64,
+              "str_diff": 0.52,
+              "kd_rate": 0.22,
+              "td_rate": 1.11,
+              "ctrl_rate": 155.2,
+              "sub_rate": 0.45,
+              "wins": 13,
+              "losses": 5,
+              "win_rate": 72.2,
+              "height_cm": 175.3,
+              "reach_cm": 71.0,
+              "layoff_days": 344,
+              "recent_form": "L-L-W-L-W"
+            },
+            "Cameron Smotherman": {
+              "slpm": 4.07,
+              "sapm": 3.31,
+              "str_diff": 0.76,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.67,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 6,
+              "win_rate": 66.7,
+              "height_cm": 175.3,
+              "reach_cm": 69.0,
+              "layoff_days": 197,
+              "recent_form": "L-L-W"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057025",
+    "event_name": "UFC 325: Volkanovski vs. Lopes 2",
+    "date": "Jan 31",
+    "location": "Qudos Bank Arena, Sydney, NSW, Australia",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057025/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Alexander Volkanovski",
+        "fighter_2": "Diego Lopes",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3949584/alexander-volkanovski",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4881999/diego-lopes",
+        "prediction": {
+          "winner": "Alexander Volkanovski",
+          "confidence": "58.4%",
+          "odds": {
+            "Alexander Volkanovski": "58.4%",
+            "Diego Lopes": "41.6%"
+          },
+          "factors": {
+            "Alexander Volkanovski": {
+              "slpm": 6.18,
+              "sapm": 3.36,
+              "str_diff": 2.82,
+              "kd_rate": 0.32,
+              "td_rate": 1.67,
+              "ctrl_rate": 184.6,
+              "sub_rate": 0.16,
+              "wins": 27,
+              "losses": 4,
+              "win_rate": 87.1,
+              "height_cm": 167.6,
+              "reach_cm": 71.0,
+              "layoff_days": 260,
+              "recent_form": "W-L-L-W-L"
+            },
+            "Diego Lopes": {
+              "slpm": 4.36,
+              "sapm": 4.77,
+              "str_diff": -0.41,
+              "kd_rate": 0.89,
+              "td_rate": 0.89,
+              "ctrl_rate": 116.03,
+              "sub_rate": 1.42,
+              "wins": 27,
+              "losses": 7,
+              "win_rate": 79.4,
+              "height_cm": 180.3,
+              "reach_cm": 72.0,
+              "layoff_days": 106,
+              "recent_form": "W-L-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Dan Hooker",
+        "fighter_2": "Benoit Saint Denis",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3109135/dan-hooker",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4895362/benoit-saint-denis",
+        "prediction": {
+          "winner": "Benoit Saint Denis",
+          "confidence": "68.9%",
+          "odds": {
+            "Dan Hooker": "31.1%",
+            "Benoit Saint Denis": "68.9%"
+          },
+          "factors": {
+            "Dan Hooker": {
+              "slpm": 4.89,
+              "sapm": 4.73,
+              "str_diff": 0.16,
+              "kd_rate": 0.58,
+              "td_rate": 0.71,
+              "ctrl_rate": 162.74,
+              "sub_rate": 0.45,
+              "wins": 24,
+              "losses": 12,
+              "win_rate": 66.7,
+              "height_cm": 182.9,
+              "reach_cm": 75.0,
+              "layoff_days": 36,
+              "recent_form": "L-W-W-W-L"
+            },
+            "Benoit Saint Denis": {
+              "slpm": 5.07,
+              "sapm": 4.21,
+              "str_diff": 0.85,
+              "kd_rate": 0.98,
+              "td_rate": 4.33,
+              "ctrl_rate": 409.63,
+              "sub_rate": 1.58,
+              "wins": 16,
+              "losses": 3,
+              "win_rate": 84.2,
+              "height_cm": 180.3,
+              "reach_cm": 73.0,
+              "layoff_days": 43,
+              "recent_form": "W-W-W-L-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Rafael Fiziev",
+        "fighter_2": "Mauricio Ruffy",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4339488/rafael-fiziev",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5122238/mauricio-ruffy",
+        "prediction": {
+          "winner": "Rafael Fiziev",
+          "confidence": "52.6%",
+          "odds": {
+            "Rafael Fiziev": "52.6%",
+            "Mauricio Ruffy": "47.4%"
+          },
+          "factors": {
+            "Rafael Fiziev": {
+              "slpm": 4.77,
+              "sapm": 4.77,
+              "str_diff": 0.0,
+              "kd_rate": 0.22,
+              "td_rate": 0.89,
+              "ctrl_rate": 67.34,
+              "sub_rate": 0.0,
+              "wins": 13,
+              "losses": 4,
+              "win_rate": 76.5,
+              "height_cm": 172.7,
+              "reach_cm": 71.0,
+              "layoff_days": 190,
+              "recent_form": "W-L-L-L-W"
+            },
+            "Mauricio Ruffy": {
+              "slpm": 3.39,
+              "sapm": 4.2,
+              "str_diff": -0.81,
+              "kd_rate": 1.51,
+              "td_rate": 0.0,
+              "ctrl_rate": 28.74,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 2,
+              "win_rate": 85.7,
+              "height_cm": 180.3,
+              "reach_cm": 75.0,
+              "layoff_days": 113,
+              "recent_form": "L-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Tai Tuivasa",
+        "fighter_2": "Tallison Teixeira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3722422/tai-tuivasa",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5212856/tallison-teixeira",
+        "prediction": {
+          "winner": "Tallison Teixeira",
+          "confidence": "66.1%",
+          "odds": {
+            "Tai Tuivasa": "33.9%",
+            "Tallison Teixeira": "66.1%"
+          },
+          "factors": {
+            "Tai Tuivasa": {
+              "slpm": 3.77,
+              "sapm": 5.18,
+              "str_diff": -1.41,
+              "kd_rate": 1.04,
+              "td_rate": 0.0,
+              "ctrl_rate": 104.65,
+              "sub_rate": 0.0,
+              "wins": 15,
+              "losses": 8,
+              "win_rate": 65.2,
+              "height_cm": 188.0,
+              "reach_cm": 75.0,
+              "layoff_days": 498,
+              "recent_form": "L-L-L-L-L"
+            },
+            "Tallison Teixeira": {
+              "slpm": 9.43,
+              "sapm": 7.71,
+              "str_diff": 1.71,
+              "kd_rate": 12.86,
+              "td_rate": 0.0,
+              "ctrl_rate": 141.43,
+              "sub_rate": 0.0,
+              "wins": 8,
+              "losses": 1,
+              "win_rate": 88.9,
+              "height_cm": 200.7,
+              "reach_cm": 83.0,
+              "layoff_days": 169,
+              "recent_form": "L-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jimmy Crute",
+        "fighter_2": "Dustin Jacoby",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4354420/jimmy-crute",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2594871/dustin-jacoby",
+        "prediction": {
+          "winner": "Jimmy Crute",
+          "confidence": "51.9%",
+          "odds": {
+            "Jimmy Crute": "51.9%",
+            "Dustin Jacoby": "48.1%"
+          },
+          "factors": {
+            "Jimmy Crute": {
+              "slpm": 3.55,
+              "sapm": 3.33,
+              "str_diff": 0.22,
+              "kd_rate": 0.77,
+              "td_rate": 4.64,
+              "ctrl_rate": 361.01,
+              "sub_rate": 2.13,
+              "wins": 14,
+              "losses": 6,
+              "win_rate": 70.0,
+              "height_cm": 188.0,
+              "reach_cm": 74.0,
+              "layoff_days": 92,
+              "recent_form": "W-W-L-L-L"
+            },
+            "Dustin Jacoby": {
+              "slpm": 5.4,
+              "sapm": 4.29,
+              "str_diff": 1.11,
+              "kd_rate": 0.57,
+              "td_rate": 0.28,
+              "ctrl_rate": 69.82,
+              "sub_rate": 0.0,
+              "wins": 21,
+              "losses": 9,
+              "win_rate": 70.0,
+              "height_cm": 190.5,
+              "reach_cm": 76.0,
+              "layoff_days": 211,
+              "recent_form": "W-W-L-L-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Quillan Salkilld",
+        "fighter_2": "Rongzhu",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5157667/quillan-salkilld",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4773371/rongzhu",
+        "prediction": {
+          "winner": "Quillan Salkilld",
+          "confidence": "70.7%",
+          "odds": {
+            "Quillan Salkilld": "70.7%",
+            "Rongzhu": "29.3%"
+          },
+          "factors": {
+            "Quillan Salkilld": {
+              "slpm": 5.56,
+              "sapm": 2.86,
+              "str_diff": 2.69,
+              "kd_rate": 1.68,
+              "td_rate": 6.74,
+              "ctrl_rate": 383.91,
+              "sub_rate": 0.0,
+              "wins": 10,
+              "losses": 1,
+              "win_rate": 90.9,
+              "height_cm": 182.9,
+              "reach_cm": 75.0,
+              "layoff_days": 64,
+              "recent_form": "W-W-W"
+            },
+            "Rongzhu": {
+              "slpm": 5.6,
+              "sapm": 5.78,
+              "str_diff": -0.17,
+              "kd_rate": 0.37,
+              "td_rate": 1.86,
+              "ctrl_rate": 145.56,
+              "sub_rate": 0.0,
+              "wins": 27,
+              "losses": 6,
+              "win_rate": 81.8,
+              "height_cm": 175.3,
+              "reach_cm": 71.0,
+              "layoff_days": 127,
+              "recent_form": "W-W-L-L-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Junior Tafa",
+        "fighter_2": "Billy Elekana",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5122234/junior-tafa",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5078114/billy-elekana",
+        "prediction": {
+          "winner": "Billy Elekana",
+          "confidence": "55.5%",
+          "odds": {
+            "Junior Tafa": "44.5%",
+            "Billy Elekana": "55.5%"
+          },
+          "factors": {
+            "Junior Tafa": {
+              "slpm": 3.19,
+              "sapm": 2.49,
+              "str_diff": 0.7,
+              "kd_rate": 0.34,
+              "td_rate": 0.0,
+              "ctrl_rate": 11.19,
+              "sub_rate": 0.0,
+              "wins": 6,
+              "losses": 4,
+              "win_rate": 60.0,
+              "height_cm": 190.5,
+              "reach_cm": 75.0,
+              "layoff_days": 169,
+              "recent_form": "L-W-L-L-W"
+            },
+            "Billy Elekana": {
+              "slpm": 2.66,
+              "sapm": 3.28,
+              "str_diff": -0.63,
+              "kd_rate": 0.55,
+              "td_rate": 0.55,
+              "ctrl_rate": 133.39,
+              "sub_rate": 0.55,
+              "wins": 8,
+              "losses": 2,
+              "win_rate": 80.0,
+              "height_cm": 190.5,
+              "reach_cm": 77.0,
+              "layoff_days": 57,
+              "recent_form": "W-W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Cam Rowston",
+        "fighter_2": "Cody Brundage",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4694832/cam-rowston",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4684474/cody-brundage",
+        "prediction": {
+          "winner": "Cam Rowston",
+          "confidence": "52.4%",
+          "odds": {
+            "Cam Rowston": "52.4%",
+            "Cody Brundage": "47.6%"
+          },
+          "factors": {
+            "Cam Rowston": {
+              "slpm": 4.47,
+              "sapm": 2.61,
+              "str_diff": 1.86,
+              "kd_rate": 5.59,
+              "td_rate": 0.0,
+              "ctrl_rate": 201.24,
+              "sub_rate": 0.0,
+              "wins": 13,
+              "losses": 3,
+              "win_rate": 81.2,
+              "height_cm": 190.5,
+              "reach_cm": 78.0,
+              "layoff_days": 92,
+              "recent_form": "W"
+            },
+            "Cody Brundage": {
+              "slpm": 2.06,
+              "sapm": 2.63,
+              "str_diff": -0.57,
+              "kd_rate": 0.48,
+              "td_rate": 1.94,
+              "ctrl_rate": 163.37,
+              "sub_rate": 0.65,
+              "wins": 11,
+              "losses": 8,
+              "win_rate": 57.9,
+              "height_cm": 182.9,
+              "reach_cm": 72.0,
+              "layoff_days": 141,
+              "recent_form": "L-L-W-L-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jacob Malkoun",
+        "fighter_2": "Torrez Finney",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4687434/jacob-malkoun",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4050996/torrez-finney",
+        "prediction": {
+          "winner": "Torrez Finney",
+          "confidence": "57.6%",
+          "odds": {
+            "Jacob Malkoun": "42.4%",
+            "Torrez Finney": "57.6%"
+          },
+          "factors": {
+            "Jacob Malkoun": {
+              "slpm": 3.86,
+              "sapm": 2.48,
+              "str_diff": 1.38,
+              "kd_rate": 0.0,
+              "td_rate": 6.62,
+              "ctrl_rate": 511.75,
+              "sub_rate": 0.43,
+              "wins": 8,
+              "losses": 3,
+              "win_rate": 72.7,
+              "height_cm": 175.3,
+              "reach_cm": 73.0,
+              "layoff_days": 638,
+              "recent_form": "W-L-W-L-W"
+            },
+            "Torrez Finney": {
+              "slpm": 0.27,
+              "sapm": 1.53,
+              "str_diff": -1.27,
+              "kd_rate": 0.0,
+              "td_rate": 8.0,
+              "ctrl_rate": 796.0,
+              "sub_rate": 0.0,
+              "wins": 11,
+              "losses": 0,
+              "win_rate": 100.0,
+              "height_cm": 172.7,
+              "reach_cm": 75.0,
+              "layoff_days": 267,
+              "recent_form": "W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jonathan Micallef",
+        "fighter_2": "Oban Elliott",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5236142/jonathan-micallef",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4900808/oban-elliott",
+        "prediction": {
+          "winner": "Jonathan Micallef",
+          "confidence": "50.0%",
+          "odds": {
+            "Jonathan Micallef": "50.0%",
+            "Oban Elliott": "50.0%"
+          },
+          "factors": {
+            "Jonathan Micallef": {
+              "slpm": 5.67,
+              "sapm": 4.47,
+              "str_diff": 1.2,
+              "kd_rate": 1.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 9.0,
+              "sub_rate": 0.0,
+              "wins": 8,
+              "losses": 1,
+              "win_rate": 88.9,
+              "height_cm": 182.9,
+              "reach_cm": 77.0,
+              "layoff_days": 323,
+              "recent_form": "W"
+            },
+            "Oban Elliott": {
+              "slpm": 3.4,
+              "sapm": 2.08,
+              "str_diff": 1.31,
+              "kd_rate": 0.27,
+              "td_rate": 1.08,
+              "ctrl_rate": 254.1,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 3,
+              "win_rate": 80.0,
+              "height_cm": 182.9,
+              "reach_cm": 72.0,
+              "layoff_days": 190,
+              "recent_form": "L-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Kaan Ofli",
+        "fighter_2": "Yizha",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5204223/kaan-ofli",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4894925/yizha",
+        "prediction": {
+          "winner": "Yizha",
+          "confidence": "53.9%",
+          "odds": {
+            "Kaan Ofli": "46.1%",
+            "Yizha": "53.9%"
+          },
+          "factors": {
+            "Kaan Ofli": {
+              "slpm": 1.79,
+              "sapm": 2.61,
+              "str_diff": -0.82,
+              "kd_rate": 0.0,
+              "td_rate": 0.61,
+              "ctrl_rate": 259.24,
+              "sub_rate": 0.61,
+              "wins": 13,
+              "losses": 4,
+              "win_rate": 76.5,
+              "height_cm": 170.2,
+              "reach_cm": 66.0,
+              "layoff_days": 78,
+              "recent_form": "W-L-L"
+            },
+            "Yizha": {
+              "slpm": 2.55,
+              "sapm": 3.3,
+              "str_diff": -0.75,
+              "kd_rate": 0.98,
+              "td_rate": 2.45,
+              "ctrl_rate": 249.37,
+              "sub_rate": 0.0,
+              "wins": 26,
+              "losses": 5,
+              "win_rate": 83.9,
+              "height_cm": 170.2,
+              "reach_cm": 71.0,
+              "layoff_days": 127,
+              "recent_form": "W-L-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Sangwook Kim",
+        "fighter_2": "Dom Mar Fan",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5138448/sangwook-kim",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5157806/dom-mar-fan",
+        "prediction": {
+          "winner": "Dom Mar Fan",
+          "confidence": "52.4%",
+          "odds": {
+            "Sangwook Kim": "47.6%",
+            "Dom Mar Fan": "52.4%"
+          },
+          "factors": {
+            "Sangwook Kim": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 13,
+              "losses": 3,
+              "win_rate": 81.2,
+              "height_cm": 182.9,
+              "reach_cm": 71.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            },
+            "Dom Mar Fan": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 8,
+              "losses": 2,
+              "win_rate": 80.0,
+              "height_cm": 180.3,
+              "reach_cm": 75.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Keiichiro Nakamura",
+        "fighter_2": "Sebastian Szalay",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5327937/keiichiro-nakamura",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5277351/sebastian-szalay",
+        "prediction": {
+          "winner": "Sebastian Szalay",
+          "confidence": "51.5%",
+          "odds": {
+            "Keiichiro Nakamura": "48.5%",
+            "Sebastian Szalay": "51.5%"
+          },
+          "factors": {
+            "Keiichiro Nakamura": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 7,
+              "losses": 1,
+              "win_rate": 87.5,
+              "height_cm": 154.9,
+              "reach_cm": 70.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            },
+            "Sebastian Szalay": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 10,
+              "losses": 1,
+              "win_rate": 90.9,
+              "height_cm": 167.6,
+              "reach_cm": 66.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Sulangrangbo",
+        "fighter_2": "Lawrence Lui",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5278267/sulangrangbo",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5220183/lawrence-lui",
+        "prediction": {
+          "winner": "Lawrence Lui",
+          "confidence": "54.0%",
+          "odds": {
+            "Sulangrangbo": "46.0%",
+            "Lawrence Lui": "54.0%"
+          },
+          "factors": {
+            "Sulangrangbo": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 10,
+              "losses": 3,
+              "win_rate": 76.9,
+              "height_cm": 175.3,
+              "reach_cm": 66.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            },
+            "Lawrence Lui": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 7,
+              "losses": 1,
+              "win_rate": 87.5,
+              "height_cm": 170.2,
+              "reach_cm": 72.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Aaron Tau",
+        "fighter_2": "Namsrai Batbayar",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5215272/aaron-tau",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5145018/namsrai-batbayar",
+        "prediction": {
+          "winner": "Namsrai Batbayar",
+          "confidence": "52.0%",
+          "odds": {
+            "Aaron Tau": "48.0%",
+            "Namsrai Batbayar": "52.0%"
+          },
+          "factors": {
+            "Aaron Tau": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 11,
+              "losses": 1,
+              "win_rate": 91.7,
+              "height_cm": 162.6,
+              "reach_cm": 66.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            },
+            "Namsrai Batbayar": {
+              "slpm": 0.0,
+              "sapm": 0.0,
+              "str_diff": 0.0,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 9,
+              "losses": 1,
+              "win_rate": 90.0,
+              "height_cm": 162.6,
+              "reach_cm": 68.0,
+              "layoff_days": 365,
+              "recent_form": "N/A"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057328",
+    "event_name": "UFC Fight Night: Bautista vs. Oliveira",
+    "date": "Feb 7",
+    "location": "UFC APEX, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057328/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Mario Bautista",
+        "fighter_2": "Vinicius Oliveira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4410868/mario-bautista",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4884877/vinicius-oliveira",
+        "prediction": {
+          "winner": "Vinicius Oliveira",
+          "confidence": "56.9%",
+          "odds": {
+            "Mario Bautista": "43.1%",
+            "Vinicius Oliveira": "56.9%"
+          },
+          "factors": {
+            "Mario Bautista": {
+              "slpm": 5.58,
+              "sapm": 4.19,
+              "str_diff": 1.4,
+              "kd_rate": 0.23,
+              "td_rate": 1.48,
+              "ctrl_rate": 183.35,
+              "sub_rate": 0.8,
+              "wins": 16,
+              "losses": 3,
+              "win_rate": 84.2,
+              "height_cm": 175.3,
+              "reach_cm": 69.0,
+              "layoff_days": 64,
+              "recent_form": "L-W-W-W-W"
+            },
+            "Vinicius Oliveira": {
+              "slpm": 5.06,
+              "sapm": 2.92,
+              "str_diff": 2.14,
+              "kd_rate": 0.5,
+              "td_rate": 1.76,
+              "ctrl_rate": 172.16,
+              "sub_rate": 0.25,
+              "wins": 23,
+              "losses": 3,
+              "win_rate": 88.5,
+              "height_cm": 175.3,
+              "reach_cm": 70.0,
+              "layoff_days": 162,
+              "recent_form": "W-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Amir Albazi",
+        "fighter_2": "Kyoji Horiguchi",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4684848/amir-albazi",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2613374/kyoji-horiguchi",
+        "prediction": {
+          "winner": "Kyoji Horiguchi",
+          "confidence": "67.3%",
+          "odds": {
+            "Amir Albazi": "32.7%",
+            "Kyoji Horiguchi": "67.3%"
+          },
+          "factors": {
+            "Amir Albazi": {
+              "slpm": 2.72,
+              "sapm": 3.71,
+              "str_diff": -0.99,
+              "kd_rate": 0.35,
+              "td_rate": 1.39,
+              "ctrl_rate": 216.46,
+              "sub_rate": 0.52,
+              "wins": 17,
+              "losses": 2,
+              "win_rate": 89.5,
+              "height_cm": 165.1,
+              "reach_cm": 68.0,
+              "layoff_days": 421,
+              "recent_form": "L-W-W-W-W"
+            },
+            "Kyoji Horiguchi": {
+              "slpm": 3.64,
+              "sapm": 2.26,
+              "str_diff": 1.38,
+              "kd_rate": 0.72,
+              "td_rate": 1.8,
+              "ctrl_rate": 202.67,
+              "sub_rate": 0.12,
+              "wins": 19,
+              "losses": 2,
+              "win_rate": 90.5,
+              "height_cm": 165.1,
+              "reach_cm": 66.0,
+              "layoff_days": 36,
+              "recent_form": "W-W-W-W-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ryan Spann",
+        "fighter_2": "Rizvan Kuniev",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3887606/ryan-spann",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4001837/rizvan-kuniev",
+        "prediction": {
+          "winner": "Ryan Spann",
+          "confidence": "52.1%",
+          "odds": {
+            "Ryan Spann": "52.1%",
+            "Rizvan Kuniev": "47.9%"
+          },
+          "factors": {
+            "Ryan Spann": {
+              "slpm": 3.16,
+              "sapm": 4.06,
+              "str_diff": -0.91,
+              "kd_rate": 0.82,
+              "td_rate": 1.31,
+              "ctrl_rate": 199.49,
+              "sub_rate": 1.64,
+              "wins": 23,
+              "losses": 11,
+              "win_rate": 67.6,
+              "height_cm": 195.6,
+              "reach_cm": 79.0,
+              "layoff_days": 162,
+              "recent_form": "W-L-W-L-L"
+            },
+            "Rizvan Kuniev": {
+              "slpm": 3.0,
+              "sapm": 3.73,
+              "str_diff": -0.73,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 26.0,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 3,
+              "win_rate": 80.0,
+              "height_cm": 193.0,
+              "reach_cm": 76.0,
+              "layoff_days": 190,
+              "recent_form": "L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Michal Oleksiejczuk",
+        "fighter_2": "Marc Andre Barriault",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4012999/michal-oleksiejczuk",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4415883/marc-andre-barriault",
+        "prediction": {
+          "winner": "Michal Oleksiejczuk",
+          "confidence": "56.0%",
+          "odds": {
+            "Michal Oleksiejczuk": "56.0%",
+            "Marc Andre Barriault": "44.0%"
+          },
+          "factors": {
+            "Michal Oleksiejczuk": {
+              "slpm": 5.34,
+              "sapm": 4.41,
+              "str_diff": 0.93,
+              "kd_rate": 1.31,
+              "td_rate": 1.02,
+              "ctrl_rate": 95.87,
+              "sub_rate": 0.0,
+              "wins": 21,
+              "losses": 9,
+              "win_rate": 70.0,
+              "height_cm": 182.9,
+              "reach_cm": 74.0,
+              "layoff_days": 134,
+              "recent_form": "W-W-L-L-L"
+            },
+            "Marc Andre Barriault": {
+              "slpm": 5.7,
+              "sapm": 5.63,
+              "str_diff": 0.07,
+              "kd_rate": 0.37,
+              "td_rate": 0.37,
+              "ctrl_rate": 101.43,
+              "sub_rate": 0.09,
+              "wins": 17,
+              "losses": 10,
+              "win_rate": 63.0,
+              "height_cm": 185.4,
+              "reach_cm": 74.0,
+              "layoff_days": 155,
+              "recent_form": "L-W-L-L-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jean Matsumoto",
+        "fighter_2": "Farid Basharat",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5149439/jean-matsumoto",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5016786/farid-basharat",
+        "prediction": {
+          "winner": "Farid Basharat",
+          "confidence": "59.3%",
+          "odds": {
+            "Jean Matsumoto": "40.7%",
+            "Farid Basharat": "59.3%"
+          },
+          "factors": {
+            "Jean Matsumoto": {
+              "slpm": 5.09,
+              "sapm": 5.11,
+              "str_diff": -0.02,
+              "kd_rate": 0.0,
+              "td_rate": 2.73,
+              "ctrl_rate": 177.05,
+              "sub_rate": 0.82,
+              "wins": 17,
+              "losses": 1,
+              "win_rate": 94.4,
+              "height_cm": 167.6,
+              "reach_cm": 68.0,
+              "layoff_days": 141,
+              "recent_form": "W-L-W-W"
+            },
+            "Farid Basharat": {
+              "slpm": 3.19,
+              "sapm": 2.63,
+              "str_diff": 0.56,
+              "kd_rate": 0.0,
+              "td_rate": 3.74,
+              "ctrl_rate": 332.68,
+              "sub_rate": 0.47,
+              "wins": 14,
+              "losses": 0,
+              "win_rate": 100.0,
+              "height_cm": 172.7,
+              "reach_cm": 71.0,
+              "layoff_days": 85,
+              "recent_form": "W-W-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Uran Satybaldiev",
+        "fighter_2": "Julius Walker",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5206516/uran-satybaldiev",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5264398/julius-walker",
+        "prediction": {
+          "winner": "Julius Walker",
+          "confidence": "60.8%",
+          "odds": {
+            "Uran Satybaldiev": "39.2%",
+            "Julius Walker": "60.8%"
+          },
+          "factors": {
+            "Uran Satybaldiev": {
+              "slpm": 2.14,
+              "sapm": 3.66,
+              "str_diff": -1.52,
+              "kd_rate": 0.85,
+              "td_rate": 0.0,
+              "ctrl_rate": 76.06,
+              "sub_rate": 1.69,
+              "wins": 9,
+              "losses": 1,
+              "win_rate": 90.0,
+              "height_cm": 193.0,
+              "reach_cm": 79.0,
+              "layoff_days": 127,
+              "recent_form": "W-L"
+            },
+            "Julius Walker": {
+              "slpm": 4.33,
+              "sapm": 3.53,
+              "str_diff": 0.8,
+              "kd_rate": 0.5,
+              "td_rate": 3.5,
+              "ctrl_rate": 518.5,
+              "sub_rate": 0.0,
+              "wins": 7,
+              "losses": 1,
+              "win_rate": 87.5,
+              "height_cm": 193.0,
+              "reach_cm": 78.0,
+              "layoff_days": 141,
+              "recent_form": "W-L"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057329",
+    "event_name": "UFC Fight Night: Strickland vs. Hernandez",
+    "date": "Feb 21",
+    "location": "Toyota Center (Houston), Houston, TX",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057329/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Sean Strickland",
+        "fighter_2": "Anthony Hernandez",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3093653/sean-strickland",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4290956/anthony-hernandez",
+        "prediction": {
+          "winner": "Anthony Hernandez",
+          "confidence": "68.2%",
+          "odds": {
+            "Sean Strickland": "31.8%",
+            "Anthony Hernandez": "68.2%"
+          },
+          "factors": {
+            "Sean Strickland": {
+              "slpm": 5.95,
+              "sapm": 4.57,
+              "str_diff": 1.38,
+              "kd_rate": 0.24,
+              "td_rate": 0.73,
+              "ctrl_rate": 74.46,
+              "sub_rate": 0.16,
+              "wins": 29,
+              "losses": 7,
+              "win_rate": 80.6,
+              "height_cm": 185.4,
+              "reach_cm": 76.0,
+              "layoff_days": 323,
+              "recent_form": "L-W-L-W-W"
+            },
+            "Anthony Hernandez": {
+              "slpm": 4.53,
+              "sapm": 2.53,
+              "str_diff": 2.0,
+              "kd_rate": 0.0,
+              "td_rate": 6.5,
+              "ctrl_rate": 513.99,
+              "sub_rate": 1.8,
+              "wins": 15,
+              "losses": 2,
+              "win_rate": 88.2,
+              "height_cm": 182.9,
+              "reach_cm": 75.0,
+              "layoff_days": 141,
+              "recent_form": "W-W-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ode Osbourne",
+        "fighter_2": "Alibi Idiris",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4424224/ode-osbourne",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5264470/alibi-idiris",
+        "prediction": {
+          "winner": "Ode Osbourne",
+          "confidence": "52.2%",
+          "odds": {
+            "Ode Osbourne": "52.2%",
+            "Alibi Idiris": "47.8%"
+          },
+          "factors": {
+            "Ode Osbourne": {
+              "slpm": 3.0,
+              "sapm": 3.44,
+              "str_diff": -0.44,
+              "kd_rate": 0.66,
+              "td_rate": 0.98,
+              "ctrl_rate": 61.63,
+              "sub_rate": 0.33,
+              "wins": 13,
+              "losses": 9,
+              "win_rate": 59.1,
+              "height_cm": 170.2,
+              "reach_cm": 73.0,
+              "layoff_days": 141,
+              "recent_form": "L-W-L-L-L"
+            },
+            "Alibi Idiris": {
+              "slpm": 3.47,
+              "sapm": 3.6,
+              "str_diff": -0.12,
+              "kd_rate": 0.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 119.01,
+              "sub_rate": 0.0,
+              "wins": 11,
+              "losses": 1,
+              "win_rate": 91.7,
+              "height_cm": 167.6,
+              "reach_cm": 68.0,
+              "layoff_days": 134,
+              "recent_form": "L"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057330",
+    "event_name": "UFC Fight Night: Moreno vs. Almabayev",
+    "date": "Feb 28",
+    "location": "Arena CDMX, Mexico City, Mexico",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057330/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Brandon Moreno",
+        "fighter_2": "Asu Almabayev",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3027545/brandon-moreno",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4294926/asu-almabayev",
+        "prediction": {
+          "winner": "Asu Almabayev",
+          "confidence": "60.2%",
+          "odds": {
+            "Brandon Moreno": "39.8%",
+            "Asu Almabayev": "60.2%"
+          },
+          "factors": {
+            "Brandon Moreno": {
+              "slpm": 3.89,
+              "sapm": 3.62,
+              "str_diff": 0.27,
+              "kd_rate": 0.19,
+              "td_rate": 1.47,
+              "ctrl_rate": 154.86,
+              "sub_rate": 0.43,
+              "wins": 23,
+              "losses": 8,
+              "win_rate": 74.2,
+              "height_cm": 170.2,
+              "reach_cm": 70.0,
+              "layoff_days": 22,
+              "recent_form": "L-W-W-L-L"
+            },
+            "Asu Almabayev": {
+              "slpm": 2.31,
+              "sapm": 1.99,
+              "str_diff": 0.32,
+              "kd_rate": 0.17,
+              "td_rate": 4.46,
+              "ctrl_rate": 418.7,
+              "sub_rate": 1.49,
+              "wins": 23,
+              "losses": 3,
+              "win_rate": 88.5,
+              "height_cm": 162.6,
+              "reach_cm": 65.0,
+              "layoff_days": 36,
+              "recent_form": "W-W-L-W-W"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057326",
+    "event_name": "UFC 326: Holloway vs. Oliveira 2",
+    "date": "Mar 7",
+    "location": "T-Mobile Arena, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057326/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Max Holloway",
+        "fighter_2": "Charles Oliveira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/2614933/max-holloway",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2504169/charles-oliveira",
+        "prediction": {
+          "winner": "Charles Oliveira",
+          "confidence": "55.9%",
+          "odds": {
+            "Max Holloway": "44.1%",
+            "Charles Oliveira": "55.9%"
+          },
+          "factors": {
+            "Max Holloway": {
+              "slpm": 7.2,
+              "sapm": 4.74,
+              "str_diff": 2.46,
+              "kd_rate": 0.35,
+              "td_rate": 0.24,
+              "ctrl_rate": 48.81,
+              "sub_rate": 0.3,
+              "wins": 27,
+              "losses": 8,
+              "win_rate": 77.1,
+              "height_cm": 180.3,
+              "reach_cm": 69.0,
+              "layoff_days": 162,
+              "recent_form": "W-L-W-W-W"
+            },
+            "Charles Oliveira": {
+              "slpm": 3.35,
+              "sapm": 3.24,
+              "str_diff": 0.11,
+              "kd_rate": 0.44,
+              "td_rate": 2.22,
+              "ctrl_rate": 270.74,
+              "sub_rate": 2.61,
+              "wins": 36,
+              "losses": 12,
+              "win_rate": 75.0,
+              "height_cm": 154.9,
+              "reach_cm": 74.0,
+              "layoff_days": 78,
+              "recent_form": "W-L-W-L-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Caio Borralho",
+        "fighter_2": "Reinier De Ridder",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4835137/caio-borralho",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4423880/reinier-de-ridder",
+        "prediction": {
+          "winner": "Reinier De Ridder",
+          "confidence": "51.0%",
+          "odds": {
+            "Caio Borralho": "49.0%",
+            "Reinier De Ridder": "51.0%"
+          },
+          "factors": {
+            "Caio Borralho": {
+              "slpm": 3.24,
+              "sapm": 2.51,
+              "str_diff": 0.73,
+              "kd_rate": 0.36,
+              "td_rate": 1.09,
+              "ctrl_rate": 250.09,
+              "sub_rate": 0.48,
+              "wins": 17,
+              "losses": 2,
+              "win_rate": 89.5,
+              "height_cm": 185.4,
+              "reach_cm": 75.0,
+              "layoff_days": 113,
+              "recent_form": "L-W-W-W-W"
+            },
+            "Reinier De Ridder": {
+              "slpm": 2.2,
+              "sapm": 2.04,
+              "str_diff": 0.16,
+              "kd_rate": 0.45,
+              "td_rate": 2.68,
+              "ctrl_rate": 338.28,
+              "sub_rate": 0.67,
+              "wins": 21,
+              "losses": 3,
+              "win_rate": 87.5,
+              "height_cm": 193.0,
+              "reach_cm": 78.0,
+              "layoff_days": 71,
+              "recent_form": "L-W-W-W-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Renato Moicano",
+        "fighter_2": "Brian Ortega",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3028863/renato-moicano",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/3045737/brian-ortega",
+        "prediction": {
+          "winner": "Renato Moicano",
+          "confidence": "64.8%",
+          "odds": {
+            "Renato Moicano": "64.8%",
+            "Brian Ortega": "35.2%"
+          },
+          "factors": {
+            "Renato Moicano": {
+              "slpm": 4.17,
+              "sapm": 3.57,
+              "str_diff": 0.61,
+              "kd_rate": 0.17,
+              "td_rate": 1.67,
+              "ctrl_rate": 189.79,
+              "sub_rate": 0.5,
+              "wins": 20,
+              "losses": 7,
+              "win_rate": 74.1,
+              "height_cm": 180.3,
+              "reach_cm": 72.0,
+              "layoff_days": 183,
+              "recent_form": "L-L-W-W-W"
+            },
+            "Brian Ortega": {
+              "slpm": 3.84,
+              "sapm": 6.38,
+              "str_diff": -2.54,
+              "kd_rate": 0.39,
+              "td_rate": 0.93,
+              "ctrl_rate": 77.43,
+              "sub_rate": 0.93,
+              "wins": 16,
+              "losses": 6,
+              "win_rate": 72.7,
+              "height_cm": 172.7,
+              "reach_cm": 69.0,
+              "layoff_days": 127,
+              "recent_form": "L-L-W-L-L"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Paulo Costa",
+        "fighter_2": "Brunno Ferreira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4080826/paulo-costa",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5077131/brunno-ferreira",
+        "prediction": {
+          "winner": "Brunno Ferreira",
+          "confidence": "53.6%",
+          "odds": {
+            "Paulo Costa": "46.4%",
+            "Brunno Ferreira": "53.6%"
+          },
+          "factors": {
+            "Paulo Costa": {
+              "slpm": 6.26,
+              "sapm": 6.2,
+              "str_diff": 0.06,
+              "kd_rate": 0.53,
+              "td_rate": 0.32,
+              "ctrl_rate": 45.3,
+              "sub_rate": 0.0,
+              "wins": 15,
+              "losses": 4,
+              "win_rate": 78.9,
+              "height_cm": 185.4,
+              "reach_cm": 72.0,
+              "layoff_days": 162,
+              "recent_form": "W-L-L-W-L"
+            },
+            "Brunno Ferreira": {
+              "slpm": 3.68,
+              "sapm": 3.93,
+              "str_diff": -0.25,
+              "kd_rate": 0.8,
+              "td_rate": 1.33,
+              "ctrl_rate": 70.31,
+              "sub_rate": 0.8,
+              "wins": 14,
+              "losses": 2,
+              "win_rate": 87.5,
+              "height_cm": 154.9,
+              "reach_cm": 72.0,
+              "layoff_days": 22,
+              "recent_form": "W-W-W-L-W"
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Cody Garbrandt",
+        "fighter_2": "Xiao Long",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3163637/cody-garbrandt",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4894864/xiao-long",
+        "prediction": {
+          "winner": "Xiao Long",
+          "confidence": "53.3%",
+          "odds": {
+            "Cody Garbrandt": "46.7%",
+            "Xiao Long": "53.3%"
+          },
+          "factors": {
+            "Cody Garbrandt": {
+              "slpm": 2.88,
+              "sapm": 3.64,
+              "str_diff": -0.76,
+              "kd_rate": 1.03,
+              "td_rate": 0.93,
+              "ctrl_rate": 52.02,
+              "sub_rate": 0.0,
+              "wins": 14,
+              "losses": 7,
+              "win_rate": 66.7,
+              "height_cm": 172.7,
+              "reach_cm": 65.0,
+              "layoff_days": 197,
+              "recent_form": "L-L-W-W-L"
+            },
+            "Xiao Long": {
+              "slpm": 5.38,
+              "sapm": 4.97,
+              "str_diff": 0.41,
+              "kd_rate": 0.36,
+              "td_rate": 0.72,
+              "ctrl_rate": 153.74,
+              "sub_rate": 0.0,
+              "wins": 27,
+              "losses": 10,
+              "win_rate": 73.0,
+              "height_cm": 172.7,
+              "reach_cm": 70.0,
+              "layoff_days": 127,
+              "recent_form": "L-W-L"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057364",
+    "event_name": "UFC Fight Night: 3/14",
+    "date": "Mar 14",
+    "location": "UFC APEX, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057364/league/ufc",
+    "fights": []
+  },
+  {
+    "event_id": "600057365",
+    "event_name": "UFC Fight Night: 3/21",
+    "date": "Mar 21",
+    "location": "O2 Arena (ENG), London, England",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057365/league/ufc",
+    "fights": []
+  },
+  {
+    "event_id": "600057366",
+    "event_name": "UFC Fight Night: 3/28",
+    "date": "Mar 28",
+    "location": "Climate Pledge Arena, Seattle, WA",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057366/league/ufc",
+    "fights": []
+  }
+]

@@ -1,0 +1,25 @@
+
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+    title: "Octagon AI // Predict the Fight",
+    description: "Advanced AI-Powered UFC Predictions",
+    icons: {
+        icon: "/mmaverse.png",
+    },
+};
+
+export default function RootLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
+    return (
+        <html lang="en" className="dark">
+            <body className="antialiased min-h-screen bg-black text-white selection:bg-red-900 selection:text-white">
+                {children}
+            </body>
+        </html>
+    );
+}
