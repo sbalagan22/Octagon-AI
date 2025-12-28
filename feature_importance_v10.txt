@@ -1,0 +1,87 @@
+v10 COMPREHENSIVE PRE-FIGHT ANALYSIS
+============================================================
+
+NEW FEATURES ADDED:
+----------------------------------------
+• Defense: SApM, Strike Differential
+• Activity: Layoff, Fights in 12 months
+• Cardio: Finish Rate, Late Round %
+• Style: Distance/Ground fighter encoding
+• Reach: Modified to Reach×Distance, Reach×Volume
+
+GLOBAL MODEL: 60.6% accuracy
+
+GLOBAL FEATURE IMPORTANCE:
+----------------------------------------
+ 1. Reach × Distance Style      :  16.6%
+ 2. Strike Differential         :   9.0%
+ 3. Reach × Volume              :   7.4%
+ 4. Win Rate                    :   7.1%
+ 5. Takedown Rate               :   6.0%
+ 6. Ring Rust (Layoff)          :   5.3%
+ 7. Defense (Low SApM)          :   5.1%
+ 8. Control Time                :   5.0%
+ 9. Distance Fighter            :   4.8%
+10. Strike Volume (SLpM)        :   4.8%
+11. Ground Fighter              :   4.5%
+12. Submission Rate             :   4.2%
+13. KO Power                    :   3.6%
+14. Cardio (Late Rounds)        :   3.4%
+15. Experience                  :   3.1%
+16. Current Streak              :   3.0%
+17. Finishing Ability           :   2.8%
+18. Height                      :   2.7%
+19. Recent Activity             :   1.5%
+
+============================================================
+WEIGHT CLASS BREAKDOWN:
+============================================================
+
+HEAVYWEIGHT (2976 fights, 60.6%)
+  1. Reach × Distance Style   :  15.9%
+  2. Strike Differential      :   8.6%
+  3. Reach × Volume           :   8.2%
+  4. Win Rate                 :   6.4%
+  5. Defense (Low SApM)       :   6.0%
+
+MIDDLEWEIGHT (2246 fights, 61.1%)
+  1. Reach × Distance Style   :  14.7%
+  2. Distance Fighter         :   7.5%
+  3. Win Rate                 :   6.8%
+  4. Strike Differential      :   6.7%
+  5. Defense (Low SApM)       :   6.5%
+
+WELTERWEIGHT (2742 fights, 62.5%)
+  1. Reach × Distance Style   :  17.1%
+  2. Reach × Volume           :   8.5%
+  3. Takedown Rate            :   6.5%
+  4. Control Time             :   6.5%
+  5. Win Rate                 :   5.8%
+
+LIGHTWEIGHT (2854 fights, 61.8%)
+  1. Reach × Distance Style   :  13.4%
+  2. Takedown Rate            :   8.3%
+  3. Ring Rust (Layoff)       :   7.0%
+  4. Strike Volume (SLpM)     :   6.6%
+  5. Control Time             :   6.6%
+
+FEATHERWEIGHT (1722 fights, 58.3%)
+  1. Strike Differential      :   9.6%
+  2. Reach × Distance Style   :   8.7%
+  3. Win Rate                 :   7.1%
+  4. Control Time             :   6.0%
+  5. Defense (Low SApM)       :   5.9%
+
+BANTAMWEIGHT (1986 fights, 56.5%)
+  1. Strike Differential      :  12.2%
+  2. Takedown Rate            :   7.1%
+  3. Reach × Distance Style   :   7.0%
+  4. Win Rate                 :   6.6%
+  5. Control Time             :   6.1%
+
+FLYWEIGHT (2572 fights, 59.8%)
+  1. Strike Differential      :   9.5%
+  2. Reach × Distance Style   :   9.3%
+  3. Defense (Low SApM)       :   7.5%
+  4. Strike Volume (SLpM)     :   6.7%
+  5. Ring Rust (Layoff)       :   6.3%

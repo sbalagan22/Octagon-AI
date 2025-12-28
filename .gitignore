@@ -1,0 +1,29 @@
+# Next.js
+.next/
+out/
+build/
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.env.local
+
+# Data (Optional: keep if you want others to see the data, ignore if you want them to provide their own)
+# For this project, we want to include the base data and current predictions
+# so the web app works immediately.
+
+# OS
+.DS_Store
+*.swp
+
+# Model weights (Large files)
+# models/  <-- We keep these as they are <100MB total
+
+# Temporary files
+test_*.py
+tmp/
