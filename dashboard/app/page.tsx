@@ -10,6 +10,7 @@ import { Event } from "@/types";
 export default function Home() {
     const [events, setEvents] = useState<Event[]>([]);
     const [featuredEvent, setFeaturedEvent] = useState<Event | null>(null);
+    const [oddsFormat, setOddsFormat] = useState<'percent' | 'american'>('percent');
 
     useEffect(() => {
         fetch("/upcoming_events.json")
@@ -37,25 +38,43 @@ export default function Home() {
     return (
         <main className="flex flex-col lg:flex-row min-h-screen bg-black">
             {/* LEFT: Featured Event (Takes up 2/3 on desktop) */}
-            <div className="flex-1 lg:flex-[2] overflow-y-auto border-r border-zinc-900 scrollbar-thin scrollbar-thumb-zinc-800">
+            <div className="flex-1 lg:flex-2 overflow-y-auto border-r border-zinc-900 scrollbar-thin scrollbar-thumb-zinc-800">
 
                 {/* HERO SECTION */}
                 <div className="relative min-h-[220px] sm:min-h-[300px] w-full flex items-end p-4 sm:p-6 overflow-hidden bg-zinc-900 border-b border-zinc-800">
                     {/* Background Gradient/Image Placeholder */}
                     <div className="absolute inset-0 bg-[url('https://placehold.co/1920x1080/1a1a1a/333333?text=UFC+Event+BG')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-black via-black/80 to-transparent"></div>
 
                     {/* Content */}
                     <div className="relative z-10 w-full max-w-5xl mx-auto">
-                        <div className="flex items-center gap-3 mb-8">
-                            <div className="relative w-10 h-10 sm:w-12 sm:h-12 overflow-hidden rounded-xl border border-white/10 shadow-2xl">
-                                <Image src="/mmaverse.png" alt="Octagon AI Logo" fill className="object-cover scale-110" />
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-8">
+                            <div className="flex items-center gap-4">
+                                <div className="relative w-14 h-14 sm:w-16 sm:h-16 overflow-hidden rounded-xl border border-white/10 shadow-2xl">
+                                    <Image src="/logo.png" alt="Octagon AI Logo" fill className="object-cover scale-110" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <h1 className="text-2xl sm:text-4xl font-black italic tracking-tighter text-white leading-none">
+                                        OCTAGON <span className="text-red-600">AI</span>
+                                    </h1>
+                                    <span className="text-xs uppercase tracking-[0.3em] font-bold text-zinc-500 mt-1">Predictive Intelligence</span>
+                                </div>
                             </div>
-                            <div className="flex flex-col">
-                                <h1 className="text-xl sm:text-2xl font-black italic tracking-tighter text-white leading-none">
-                                    OCTAGON <span className="text-red-600">AI</span>
-                                </h1>
-                                <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-zinc-500">Predictive Intelligence</span>
+
+                            {/* Odds Toggle */}
+                            <div className="flex items-center p-1 bg-zinc-900/80 rounded-lg border border-zinc-800 self-start sm:self-center">
+                                <button
+                                    onClick={() => setOddsFormat('percent')}
+                                    className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded ${oddsFormat === 'percent' ? 'bg-red-600 text-white shadow-lg' : 'text-zinc-500 hover:text-white'}`}
+                                >
+                                    Probability
+                                </button>
+                                <button
+                                    onClick={() => setOddsFormat('american')}
+                                    className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded ${oddsFormat === 'american' ? 'bg-red-600 text-white shadow-lg' : 'text-zinc-500 hover:text-white'}`}
+                                >
+                                    American
+                                </button>
                             </div>
                         </div>
 
@@ -82,11 +101,33 @@ export default function Home() {
 
                 {/* FIGHT CARD LIST */}
                 <div className="p-4 sm:p-8 w-full max-w-5xl mx-auto">
-                    <div className="grid gap-3">
-                        {featuredEvent.fights.map((fight, idx) => (
-                            <FightCard key={idx} fight={fight} />
-                        ))}
+                    {/* Main Card */}
+                    <div className="mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <span className="w-1 h-4 bg-red-600 rounded-full"></span>
+                            <h3 className="text-zinc-400 font-black uppercase tracking-widest text-xs">Main Card</h3>
+                        </div>
+                        <div className="grid gap-3">
+                            {featuredEvent.fights.filter(f => f.is_main_card !== false).map((fight, idx) => (
+                                <FightCard key={idx} fight={fight} oddsFormat={oddsFormat} />
+                            ))}
+                        </div>
                     </div>
+
+                    {/* Prelims - Only show if there are prelim fights */}
+                    {featuredEvent.fights.some(f => f.is_main_card === false) && (
+                        <div className="mb-6 pt-6 border-t border-zinc-900">
+                            <div className="flex items-center gap-2 mb-4">
+                                <span className="w-1 h-4 bg-zinc-600 rounded-full"></span>
+                                <h3 className="text-zinc-500 font-black uppercase tracking-widest text-xs">Preliminary Card</h3>
+                            </div>
+                            <div className="grid gap-3">
+                                {featuredEvent.fights.filter(f => f.is_main_card === false).map((fight, idx) => (
+                                    <FightCard key={idx} fight={fight} oddsFormat={oddsFormat} />
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
 
@@ -102,23 +143,31 @@ export default function Home() {
                 <div className="flex lg:flex-col overflow-x-auto lg:overflow-y-auto flex-1 p-3 gap-3 scrollbar-none lg:scrollbar-thin scrollbar-thumb-zinc-800 scroll-smooth snap-x">
                     {upcomingEvents.map((event) => {
                         const isActive = featuredEvent.event_id === event.event_id;
+                        const isNumberedEvent = /UFC\s+\d+/.test(event.event_name);
+
+                        // Border Color Logic (Left Tab)
+                        // Numbered: Gold (#BF953F), Fight Night: Red
+                        const borderColorClass = isNumberedEvent ? "border-[#BF953F]" : "border-red-600";
+                        const textColorClass = isNumberedEvent ? "text-[#BF953F]" : "text-red-600";
+                        const ringColorClass = isNumberedEvent ? "ring-[#BF953F]" : "ring-red-600";
+
                         return (
                             <div
                                 id={`event-${event.event_id}`}
                                 key={event.event_id}
-                                className={`group p-3 rounded transition-all cursor-pointer relative overflow-hidden shrink-0 w-[240px] lg:w-full snap-start ${isActive
-                                    ? 'bg-zinc-900 border border-red-600 shadow-[0_0_10px_rgba(220,38,38,0.2)]'
-                                    : 'bg-zinc-900/40 hover:bg-zinc-900 border border-zinc-800 hover:border-zinc-700'
+                                className={`group p-3 rounded-r transition-all cursor-pointer relative overflow-hidden shrink-0 w-[240px] lg:w-full snap-start 
+                                    border-l-4 ${borderColorClass}
+                                    ${isActive
+                                        ? `bg-zinc-900 ring-2 ${ringColorClass} shadow-lg scale-[1.02] z-10`
+                                        : 'bg-zinc-900/50 hover:bg-zinc-900 hover:pl-4 border-y border-r border-zinc-800 hover:border-zinc-700'
                                     }`}
                                 onClick={() => {
                                     setFeaturedEvent(event);
                                     window.scrollTo({ top: 0, behavior: 'smooth' });
                                 }}
                             >
-                                {isActive && <div className="absolute left-0 top-0 bottom-0 w-1 bg-red-600"></div>}
-
                                 <div className="flex justify-between items-start mb-1">
-                                    <div className={`text-[10px] font-bold uppercase ${isActive ? 'text-red-500' : 'text-zinc-500 group-hover:text-red-500'}`}>
+                                    <div className={`text-[10px] font-bold uppercase ${isActive ? textColorClass : 'text-zinc-500 group-hover:text-zinc-300'}`}>
                                         {event.date}
                                     </div>
                                 </div>

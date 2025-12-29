@@ -10,9 +10,26 @@ import { PolarAngleAxis, PolarGrid, Radar, RadarChart, ResponsiveContainer, Lege
 interface FighterModalProps {
     fight: Fight;
     children: React.ReactNode;
+    oddsFormat: 'percent' | 'american';
 }
 
-export default function FighterModal({ fight, children }: FighterModalProps) {
+export default function FighterModal({ fight, children, oddsFormat }: FighterModalProps) {
+    const formatOdds = (probStr: string) => {
+        if (!probStr || oddsFormat === 'percent') return probStr;
+
+        const p = parseFloat(probStr.replace('%', '')) / 100;
+        if (p >= 0.999) return "-10000+";
+        if (p <= 0.001) return "+10000+";
+
+        if (p > 0.5) {
+            const american = - (p / (1 - p)) * 100;
+            return Math.round(american).toString();
+        } else {
+            const american = ((1 - p) / p) * 100;
+            return "+" + Math.round(american).toString();
+        }
+    };
+
     const getFighterImage = (url: string, name: string) => {
         const idMatch = url.match(/\/id\/(\d+)\//);
         if (idMatch) {
@@ -111,10 +128,9 @@ export default function FighterModal({ fight, children }: FighterModalProps) {
                         <h3 className="text-lg font-black uppercase text-center mb-1">{fight.fighter_1}</h3>
                         <span className="text-red-500 font-bold text-xs tracking-widest mb-3">RED CORNER</span>
 
-                        {/* Win Probability */}
                         <div className="text-center mb-3">
                             <span className="text-2xl font-black text-red-500">
-                                {fight.prediction?.odds?.[fight.fighter_1] || '50%'}
+                                {formatOdds(fight.prediction?.odds?.[fight.fighter_1] || '50%')}
                             </span>
                             <div className="text-xs text-zinc-500 uppercase">Win Probability</div>
                         </div>
@@ -163,7 +179,7 @@ export default function FighterModal({ fight, children }: FighterModalProps) {
                         )}
 
                         {/* Prediction Result */}
-                        <div className="mt-3 text-center">
+                        <div className="mt-3 text-center border-t border-zinc-900 pt-3 w-full">
                             <div className="text-xs text-zinc-500 uppercase tracking-widest mb-1">Prediction</div>
                             <div className="text-lg font-bold">
                                 {fight.prediction?.winner ? (
@@ -176,6 +192,65 @@ export default function FighterModal({ fight, children }: FighterModalProps) {
                                 {fight.prediction?.confidence}
                             </div>
                         </div>
+
+                        {/* MOV Breakdown (Modal) */}
+                        {fight.prediction?.mov && (
+                            <div className="mt-4 w-full bg-zinc-900/40 rounded-lg p-3 border border-zinc-800/50">
+                                <div className="text-[10px] uppercase tracking-widest font-bold text-zinc-500 text-center mb-3">Path to Victory</div>
+                                <div className="grid grid-cols-2 gap-6">
+                                    {(() => {
+                                        const mov = fight.prediction!.mov;
+                                        const f1Mov = mov[fight.fighter_1];
+                                        const f2Mov = mov[fight.fighter_2];
+
+                                        const values = [
+                                            { val: parseFloat(f1Mov.ko) },
+                                            { val: parseFloat(f1Mov.sub) },
+                                            { val: parseFloat(f1Mov.dec) },
+                                            { val: parseFloat(f2Mov.ko) },
+                                            { val: parseFloat(f2Mov.sub) },
+                                            { val: parseFloat(f2Mov.dec) }
+                                        ];
+
+                                        const maxVal = Math.max(...values.map(v => v.val));
+                                        const isMax = (valStr: string) => parseFloat(valStr) === maxVal && maxVal > 0;
+
+                                        return (
+                                            <>
+                                                <div className="space-y-1.5">
+                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
+                                                        <span className="text-zinc-600">KO/TKO</span>
+                                                        <span className={isMax(f1Mov.ko) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f1Mov.ko)}</span>
+                                                    </div>
+                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
+                                                        <span className="text-zinc-600">SUB</span>
+                                                        <span className={isMax(f1Mov.sub) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f1Mov.sub)}</span>
+                                                    </div>
+                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
+                                                        <span className="text-zinc-600">DEC</span>
+                                                        <span className={isMax(f1Mov.dec) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f1Mov.dec)}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="space-y-1.5 border-l border-zinc-800 pl-4">
+                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
+                                                        <span className={isMax(f2Mov.ko) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f2Mov.ko)}</span>
+                                                        <span className="text-zinc-600">KO/TKO</span>
+                                                    </div>
+                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
+                                                        <span className={isMax(f2Mov.sub) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f2Mov.sub)}</span>
+                                                        <span className="text-zinc-600">SUB</span>
+                                                    </div>
+                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
+                                                        <span className={isMax(f2Mov.dec) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f2Mov.dec)}</span>
+                                                        <span className="text-zinc-600">DEC</span>
+                                                    </div>
+                                                </div>
+                                            </>
+                                        );
+                                    })()}
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* Fighter 2 (Blue) */}
@@ -186,10 +261,9 @@ export default function FighterModal({ fight, children }: FighterModalProps) {
                         <h3 className="text-lg font-black uppercase text-center mb-1">{fight.fighter_2}</h3>
                         <span className="text-blue-500 font-bold text-xs tracking-widest mb-3">BLUE CORNER</span>
 
-                        {/* Win Probability */}
                         <div className="text-center mb-3">
                             <span className="text-2xl font-black text-blue-500">
-                                {fight.prediction?.odds?.[fight.fighter_2] || '50%'}
+                                {formatOdds(fight.prediction?.odds?.[fight.fighter_2] || '50%')}
                             </span>
                             <div className="text-xs text-zinc-500 uppercase">Win Probability</div>
                         </div>
@@ -206,6 +280,6 @@ export default function FighterModal({ fight, children }: FighterModalProps) {
                     </div>
                 </div>
             </DialogContent>
-        </Dialog>
+        </Dialog >
     );
 }

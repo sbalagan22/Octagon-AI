@@ -1,0 +1,45 @@
+name: Weekly UFC Data Update
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Every Monday at Midnight
+  workflow_dispatch:      # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r src/requirements.txt
+
+      - name: Run Scraper
+        run: |
+          cd src
+          python scrape_events.py
+
+      - name: Run Prediction Engine
+        run: |
+          cd src
+          python predict_events.py
+
+      - name: Run Odds Fetcher
+        run: |
+          cd src
+          python fetch_odds.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add newdata/*.csv dashboard/public/upcoming_events.json
+          git commit -m "Automated Weekly Update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push

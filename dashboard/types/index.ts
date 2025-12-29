@@ -17,7 +17,14 @@ export interface Prediction {
             win_rate: number;
             height_cm: number;
             reach_cm: number;
-            recent_form?: string;  // e.g. "W-W-L"
+            recent_form?: string;
+        };
+    };
+    mov?: {
+        [key: string]: {
+            ko: string;
+            sub: string;
+            dec: string;
         };
     };
 }
@@ -39,6 +46,11 @@ export interface Fight {
     prediction?: Prediction;
     chart_data?: ChartData;
     prediction_status?: string;
+    is_title_fight?: boolean;
+    is_main_card?: boolean;
+    market_odds?: {
+        [key: string]: number | string;
+    };
 }
 
 export interface Event {

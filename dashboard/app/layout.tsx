@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "Octagon AI // Predict the Fight",
     description: "Advanced AI-Powered UFC Predictions",
     icons: {
-        icon: "/mmaverse.png",
+        icon: "/logo.png",
     },
 };
 

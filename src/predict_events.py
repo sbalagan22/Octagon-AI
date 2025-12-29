@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import numpy as np
 import joblib
+import unicodedata
 from datetime import datetime
 
 """
@@ -17,6 +18,9 @@ Uses comprehensive pre-fight features:
 def normalize_name(name):
     if not name:
         return ""
+    # Remove accents/diacritics
+    nfkd_form = unicodedata.normalize('NFKD', name)
+    name = "".join([c for c in nfkd_form if not unicodedata.combining(c)])
     return name.lower().replace("'", "").replace("-", " ").strip()
 
 def parse_height(val):
@@ -40,11 +44,16 @@ def parse_fight_time(t_str, r):
     except:
         return 900
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def load_data():
     print("Loading historical data...")
-    fights = pd.read_csv('../newdata/Fights.csv')
-    events = pd.read_csv('../newdata/Events.csv')
-    fighters = pd.read_csv('../newdata/Fighters.csv')
+    data_dir = os.path.join(BASE_DIR, '..', 'newdata')
+    fights = pd.read_csv(os.path.join(data_dir, 'Fights.csv'))
+    events = pd.read_csv(os.path.join(data_dir, 'Events.csv'))
+    fighters = pd.read_csv(os.path.join(data_dir, 'Fighters.csv'))
     
     fights = fights.merge(events[['Event_Id', 'Date']], on='Event_Id', how='left')
     fights['Date'] = pd.to_datetime(fights['Date'])
@@ -265,19 +274,27 @@ def get_fighter_stats(name, history, fighters_df, current_date=None):
     }
 
 def predict():
-    print("Loading v10 Global Model...")
+    print("Loading v10 Global Models...")
     try:
-        model = joblib.load('../models/ufc_v10_global.pkl')
+        model_path = os.path.join(BASE_DIR, '..', 'models', 'ufc_v10_global.pkl')
+        mov_model_path = os.path.join(BASE_DIR, '..', 'models', 'ufc_v10_mov.pkl')
+        
+        model = joblib.load(model_path)
+        mov_model = joblib.load(mov_model_path)
     except Exception as e:
         print(f"Model load failed: {e}")
         return
     
     print("Loading upcoming events...")
+    # import os already at top, no need to re-import
+    # base_dir already defined as BASE_DIR
+    input_path = os.path.join(BASE_DIR, '..', 'upcoming_events.json')
+    
     try:
-        with open('../upcoming_events.json', 'r') as f:
+        with open(input_path, 'r') as f:
             events = json.load(f)
     except:
-        print("../upcoming_events.json not found.")
+        print(f"{input_path} not found.")
         return
     
     fights_df, fighters_df = load_data()
@@ -332,11 +349,25 @@ def predict():
                 reach_diff * s1['slpm'] / 10 if s1['slpm'] > 0 else 0  # reach_x_volume
             ]
             
-            # Predict
+            # Predict win/loss
             prob = model.predict_proba([row])[0]
             prob_f1 = prob[1] if len(prob) > 1 else prob[0]
             prob_f2 = 1 - prob_f1
             
+            # Handle Unknown/TBD bias (if both have no data, force 50/50)
+            if s1['experience'] == 0 and s2['experience'] == 0:
+                # Note: using experience as proxy for "Unknown"
+                if "TBD" in f1_name.upper() or "UNKNOWN" in f1_name.upper() or "TBD" in f2_name.upper():
+                    prob_f1 = 0.5
+                    prob_f2 = 0.5
+            
+            # Predict MOV (6 classes)
+            mov_probs = mov_model.predict_proba([row])[0]
+            
+            # Force 50/50 symmetry for MOV as well if 50/50 win prob
+            if prob_f1 == 0.5 and prob_f2 == 0.5:
+                 mov_probs = np.array([0.166, 0.166, 0.166, 0.166, 0.166, 0.166])
+
             winner = f1_name if prob_f1 > prob_f2 else f2_name
             confidence = max(prob_f1, prob_f2)
             
@@ -346,6 +377,18 @@ def predict():
                 'odds': {
                     f1_name: f"{prob_f1*100:.1f}%",
                     f2_name: f"{prob_f2*100:.1f}%"
+                },
+                'mov': {
+                    f1_name: {
+                        'ko': f"{mov_probs[0]*100:.1f}%",
+                        'sub': f"{mov_probs[1]*100:.1f}%",
+                        'dec': f"{mov_probs[2]*100:.1f}%"
+                    },
+                    f2_name: {
+                        'ko': f"{mov_probs[3]*100:.1f}%",
+                        'sub': f"{mov_probs[4]*100:.1f}%",
+                        'dec': f"{mov_probs[5]*100:.1f}%"
+                    }
                 },
                 'factors': {
                     f1_name: {
@@ -383,13 +426,17 @@ def predict():
                 }
             }
     
-    # Save
-    output_path = '../upcoming_events_with_predictions.json'
-    webapp_path = '../web-app/public/upcoming_events.json'
-    
+    # Save updated events
+    output_path = os.path.join(BASE_DIR, '..', 'upcoming_events_with_predictions.json')
     with open(output_path, 'w') as f:
         json.dump(events, f, indent=2)
     print(f"Saved predictions to {output_path}")
+    
+    # Also save to dashboard public folder for the app
+    webapp_path = os.path.join(BASE_DIR, '..', 'dashboard', 'public', 'upcoming_events.json')
+    with open(webapp_path, 'w') as f:
+        json.dump(events, f, indent=2)
+    print(f"Auto-copied to {webapp_path}")
     
     import shutil
     try:
