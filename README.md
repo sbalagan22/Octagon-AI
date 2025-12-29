@@ -1,81 +1,104 @@
-# 🥊 Octagon AI: Predictive Intelligence for the UFC
+# 🥊 Octagon AI // UFC Prediction Engine v10
 
-Octagon AI is a high-performance predictive modeling engine designed to analyze and forecast UFC fight outcomes with surgical precision. By leveraging a **Random Forest Classifier** trained on decades of historical fight data, the system identifies subtle patterns in fighter dynamics that traditional odds often overlook.
+![Octagon AI Logo](dashboard/public/logo.png)
 
----
-
-## 🧠 The Engine: Model v10 Architecture
-
-The current iteration (v10) represents a significant leap in predictive accuracy by moving beyond raw stats into **contextual combat metrics**.
-
-### 1. Balanced Training (Bias Elimination)
-Historical data often shows a "Fighter 1" bias (favorites listed first). Octagon AI eliminates this by **positional flipping**: every fight in the training set is duplicated with F1 and F2 swapped. This forces the model to learn purely from mathematical differentials rather than positional order.
-
-### 2. Weight-Class Specific Intelligence
-Combat dynamics change drastically across weight classes. A "knockout" in the Heavyweight division has different statistical weight than one in the Flyweight division.
-- **Global Model**: Captures universal fight truths across all 7,000+ fights.
-- **Specialized Models**: Separate Random Forest models optimized for each weight class, allowing the engine to prioritize "Takedown Rate" in lower weights and "Reach Advantage" in higher weights.
+Octagon AI is a state-of-the-art predictive intelligence engine for MMA, specifically tuned for the UFC. Using a multi-stage machine learning pipeline, it analyzes over 30 years of historical fight data to generate win probabilities and "Method of Victory" (MOV) forecasts for upcoming bouts.
 
 ---
 
-## 🧪 Intricate Feature Engineering
+## 🧠 The Prediction Model (v10)
 
-The secret to Octagon AI's accuracy lies in how it processes raw data into **Pre-Fight Differentials**.
+The core engine utilizes a **Random Forest Classifier** ensemble, optimized for non-linear relationships in fighter stylistic matchups.
 
-### 🥊 The "Reach Modifier" Strategy
-Raw reach is a lie. Octagon AI uses **interaction terms** to calculate "Effective Reach":
-- **Reach × Distance Style**: Reach is amplified if the fighter is a "Distance Striker."
-- **Reach × Volume**: A reach advantage is significantly more dangerous when paired with high strike volume (SLpM).
+### Model Architecture
+- **Algorithm**: Balanced Random Forest Ensemble
+- **Hyperparameters**: 300 Estimators, Max Depth 12, Min Samples Leaf 5.
+- **Data Balancing**: Class-weight balancing at training time to handle the historical skew toward decision-based outcomes.
+- **Symmetry Control**: Positional bias is eliminated by training on "flipped" data (Fighter 1 vs Fighter 2 and Fighter 2 vs Fighter 1).
 
-### 🛡️ Defensive Superiority
-The model prioritizes **SApM (Strikes Absorbed per Minute)** and **Strike Differential**. It doesn't just care who hits more; it calculates the "Clean Multiplier"—how much damage a fighter can inflict while remaining unhittable.
-
-### 🔋 Cardio & Durability Proxies
-Since "gas tanks" aren't a raw stat, the model derives them from:
-- **Late Round %**: The percentage of career fights that reached rounds 3, 4, or 5.
-- **Finishing Ability**: The ratio of wins by KO/Sub vs. total wins.
-- **Average Fight Time**: Used to normalize rates and detect "decision machines."
-
-### 🏛️ Career & Momentum Dynamics
-- **Ring Rust (Layoff)**: Calculated as days since the last fight to penalize inactivity.
-- **Recent Activity**: Number of fights in the last 12/24 months.
-- **The "Experience Gap"**: Calculating the difference in total professional cage time.
+### Feature Engineering (The "v10" Improvements)
+Version 10 introduced sophisticated features that significantly improved accuracy over baseline models:
+1.  **Defense & Efficiency**: Strike Differential (SLpM - SApM) and Absorption rates.
+2.  **Activity & Layoff**: "Ring Rust" (days since last fight) and activity frequency in the last 12/24 months.
+3.  **Cardio Proxies**: Finish rates and "Late Round Percentage" (propensity to go into the championship rounds).
+4.  **Style Encoding**: Vectorized encoding of Distance vs. Clinch vs. Ground fighting styles.
+5.  **Reach Modifiers**: Reach is no longer treated as a raw number but as a modifier (Reach × Distance Style), amplifying the advantage for long-range strikers.
 
 ---
 
-## 💻 The Web Application
+## 📊 Historical Data & Training
+The model is trained on a comprehensive dataset curated from nearly the entire history of the UFC.
 
-A premium, mobile-optimized dashboard built with **Next.js** and **Tailwind CSS**.
-
-- **Interactive Radar Charts**: Real-time statistical comparison of fighters across Striking, Takedowns, Control, KO Power, and Submissions.
-- **Responsive Schedule**: A proprietary "Smart Swipe" horizontal schedule for mobile users and a deep-dive vertical sidebar for desktop users.
-- **Live Factor Breakdown**: Each prediction displays the exact SLpM, SapM, and Reach differentials that influenced the AI's decision.
-- **Deep Data Deduplication**: The frontend engine cross-references `Fighters.csv` (career records) with `Fights.csv` (UFC stats) to ensure legends like Justin Gaethje show their full 26-5 career record rather than just their recent UFC tenure.
+- **Total Fights Analyzed**: 8,461
+- **Date Range**: March 11, 1994 to Present (Updated Weekly)
+- **Data Points**: Includes individual strike metrics, takedown success, control time, and physical measurements.
 
 ---
 
-## 🛠️ Performance & Tech Stack
+## � Performance Metrics
 
-- **Model**: Scikit-learn RandomForestClassifier (v10.4)
-- **Frontend**: Next.js 14, Lucide Icons, Recharts (Radar Data-Viz)
-- **Data Science**: Python, Pandas, NumPy, Joblib
-- **Storage**: JSON-driven prediction architecture for ultra-fast load times.
+### Global Performance
+- **Accuracy**: **60.6%** (validated via 5-fold cross-validation)
+- **Consistency**: High reliability across mixed stylistic matchups (Striker vs. Grappler).
+
+### Weight Class Specializations
+Fight dynamics vary significantly by weight. Octagon AI utilizes specialized models for different divisions:
+
+| Weight Class | Accuracy | Key Success Factor |
+| :--- | :--- | :--- |
+| **Heavyweight** | 60.6% | Reach × Distance Style |
+| **Middleweight** | 61.1% | Distance Fighting Efficiency |
+| **Welterweight** | 62.5% | Takedown & Control Rate |
+| **Lightweight** | 61.8% | Takedown Efficiency |
+| **Featherweight** | 58.3% | Strike Differential |
+| **Bantamweight** | 56.5% | Strike Differential |
+| **Flyweight** | 59.8% | Defense (Low SApM) |
 
 ---
 
-### 🚀 Getting Started
+## 💻 Web Application Architecture
 
-1. **Train the Model**:
-   ```bash
-   cd src && python3 train_model_v10.py
-   ```
-2. **Generate Predictions**:
-   ```bash
-   python3 predict_events.py
-   ```
-3. **Launch the Dashboard**:
-   ```bash
-   cd web-app && npm run dev
-   ```
+The project is split into a data-science backend and a modern web dashboard.
 
-*Octagon AI is an analytical tool and does not guarantee fight outcomes. Fight at your own risk.*
+### Tech Stack
+- **Frontend**: Next.js 14, React, Tailwind CSS, Lucide Icons, Recharts (for MOV breakdown).
+- **Backend Service**: Python 3.12 (Scikit-Learn, Pandas, BeautifulSoup4).
+- **Automation**: GitHub Actions (CI/CD pipeline).
+
+### Core Scripts
+- `src/scrape_events.py`: Scrapes upcoming UFC event data and historical stats.
+- `src/predict_events.py`: The powerhouse script that loads the `.pkl` models and generates predictions.
+- `src/fetch_odds.py`: Real-time betting odds integration from external APIs.
+- `src/train_model_v10.py`: The training pipeline for the global and weight-class models.
+
+### Automation Workflow
+The website is **fully autonomous**. Every **Monday at Midnight**, a GitHub Action triggers:
+1.  Updates the historical database with last weekend's results.
+2.  Scrapes the new upcoming fight card.
+3.  Runs the AI models to generate fresh predictions.
+4.  Fetches real-time market odds.
+5.  Commits and pushes the new data directly to the web app.
+
+---
+
+## 🚀 Local Setup
+
+1.  **Clone the Repo**
+2.  **Install Python Dependencies**:
+    ```bash
+    pip install -r src/requirements.txt
+    ```
+3.  **Run the Dashboard**:
+    ```bash
+    cd dashboard
+    npm install
+    npm run dev
+    ```
+4.  **Run Manual Update**:
+    ```bash
+    cd src
+    python predict_events.py
+    ```
+
+---
+*Created with focus on predictive excellence.*
