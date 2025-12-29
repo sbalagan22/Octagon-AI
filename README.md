@@ -1,4 +1,4 @@
-# 🥊 Octagon AI // UFC Prediction Engine v10
+# 🥊 Octagon AI
 
 ![Octagon AI Logo](dashboard/public/logo.png)
 
@@ -6,7 +6,7 @@ Octagon AI is a state-of-the-art predictive intelligence engine for MMA, specifi
 
 ---
 
-## 🧠 The Prediction Model (v10)
+## 🧠 The Prediction Model
 
 The core engine utilizes a **Random Forest Classifier** ensemble, optimized for non-linear relationships in fighter stylistic matchups.
 
@@ -16,8 +16,7 @@ The core engine utilizes a **Random Forest Classifier** ensemble, optimized for 
 - **Data Balancing**: Class-weight balancing at training time to handle the historical skew toward decision-based outcomes.
 - **Symmetry Control**: Positional bias is eliminated by training on "flipped" data (Fighter 1 vs Fighter 2 and Fighter 2 vs Fighter 1).
 
-### Feature Engineering (The "v10" Improvements)
-Version 10 introduced sophisticated features that significantly improved accuracy over baseline models:
+### Feature Engineering
 1.  **Defense & Efficiency**: Strike Differential (SLpM - SApM) and Absorption rates.
 2.  **Activity & Layoff**: "Ring Rust" (days since last fight) and activity frequency in the last 12/24 months.
 3.  **Cardio Proxies**: Finish rates and "Late Round Percentage" (propensity to go into the championship rounds).
