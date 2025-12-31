@@ -38,10 +38,6 @@ export default function FighterRadar({ data, fighter1Name, fighter2Name }: Fight
                     <Radar
                         name={fighter2Name}
                         dataKey="B"
-                        stroke="#1a1a1a" // Dark grey/Black for contrast? Or Blue?
-                        // "Blue Corner" -> usually Blue. 
-                        // Theme is Red/Black, but standard Red/Blue corners are clearer.
-                        // Let's us Blue #3b82f6
                         stroke="#3b82f6"
                         strokeWidth={3}
                         fill="#3b82f6"
