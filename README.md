@@ -1,103 +1,90 @@
-# 🥊 Octagon AI
+# 🥊 Octagon AI: The "Modern Era" UFC Prediction Engine (v16)
 
 ![Octagon AI Logo](dashboard/public/logo.png)
 
-Octagon AI is a state-of-the-art predictive intelligence engine for MMA, specifically tuned for the UFC. Using a multi-stage machine learning pipeline, it analyzes over 30 years of historical fight data to generate win probabilities and "Method of Victory" (MOV) forecasts for upcoming bouts.
+Octagon AI is a research-grade predictive intelligence framework designed specifically for Mixed Martial Arts (MMA). By synthesizing over 20 years of point-in-time historical data, Octagon AI identifies statistical edges in the UFC's "Modern Era" (2005–Present) through a multi-stage machine learning pipeline.
 
 ---
 
-## 🧠 The Prediction Model
+## 🔬 Scientific Methodology & Model Architecture (v16)
 
-The core engine utilizes a **Random Forest Classifier** ensemble, optimized for non-linear relationships in fighter stylistic matchups.
+The v16 engine represents a fundamental departure from standard ELO-based models, utilizing a **gradient-boosted decision tree ensemble** specifically calibrated to neutralize "Legacy Bias" (where veterans' past glory overpowers current technical decay).
 
-### Model Architecture
-- **Algorithm**: Balanced Random Forest Ensemble
-- **Hyperparameters**: 300 Estimators, Max Depth 12, Min Samples Leaf 5.
-- **Data Balancing**: Class-weight balancing at training time to handle the historical skew toward decision-based outcomes.
-- **Symmetry Control**: Positional bias is eliminated by training on "flipped" data (Fighter 1 vs Fighter 2 and Fighter 2 vs Fighter 1).
+### 1. Core Algorithm: CatBoost (Ordered Boosting)
+- **Engine**: CatBoost Classifier (v1.2+)
+- **Boosting Type**: `Ordered` (Specifically chosen to handle the temporal nature of fight data and prevent lookahead leakage).
+- **Loss Function**: `Logloss` (Optimized for minimizing entropy in probability estimation).
+- **Regularization**: `L2 Leaf Regularization (10.0)` — High regularization is enforced to prevent the model from over-relying on high-magnitude indices like Glicko ratings, forcing it to value tactical form (Accuracy, Control Time).
 
-### Feature Engineering
-1.  **Defense & Efficiency**: Strike Differential (SLpM - SApM) and Absorption rates.
-2.  **Activity & Layoff**: "Ring Rust" (days since last fight) and activity frequency in the last 12/24 months.
-3.  **Cardio Proxies**: Finish rates and "Late Round Percentage" (propensity to go into the championship rounds).
-4.  **Style Encoding**: Vectorized encoding of Distance vs. Clinch vs. Ground fighting styles.
-5.  **Reach Modifiers**: Reach is no longer treated as a raw number but as a modifier (Reach × Distance Style), amplifying the advantage for long-range strikers.
+### 2. Bayesian Skill Estimation: Glicko-2 with Rating Regression
+Octagon AI implements a custom Glicko-2 system that tracks **Rating (r)**, **Rating Deviation (RD)**, and **Volatility (σ)**.
+- **The "Legacy Fix" (Rating Regression)**: Unlike standard ELO, v16 implements a biological decay function. After 6 months of inactivity, a fighter's rating is regressed toward the 1500 mean by **1% per month**, while their RD (uncertainty) expands by **15 points/period**.
+- **Capped Differentials**: Glicko differences are capped at **±250 pts** to ensure that elite "Gatekeepers" who face top competition aren't unfairly penalized when matched against rising momentum-heavy prospects.
 
----
+### 3. Feature Intelligence: The "Tactical-Differential" Set
+The model analyzes **Point-in-Time Exponential Moving Averages (EMA, α=0.3)** to capture a fighter's "Current Form" rather than their lifetime career average.
 
-## 📊 Historical Data & Training
-The model is trained on a comprehensive dataset curated from nearly the entire history of the UFC.
+#### 🎯 Tactical Features:
+- **Positional Distribution**: Distance % vs. Clinch % vs. Ground %.
+- **Target Variety**: Head % vs. Body % vs. Leg %.
+- **Differential Pressure**: `slpm_diff` (Strike Landed per Min) and `sapm_diff` (Strike Absorbed).
+- **Submission Threat & Control**: `sub_rate` (EMA) and `ctrl_pct` (Ground Control dominance).
 
-- **Total Fights Analyzed**: 8,461
-- **Date Range**: March 11, 1994 to Present (Updated Weekly)
-- **Data Points**: Includes individual strike metrics, takedown success, control time, and physical measurements.
-
----
-
-## � Performance Metrics
-
-### Global Performance
-- **Accuracy**: **60.6%** (validated via 5-fold cross-validation)
-- **Consistency**: High reliability across mixed stylistic matchups (Striker vs. Grappler).
-
-### Weight Class Specializations
-Fight dynamics vary significantly by weight. Octagon AI utilizes specialized models for different divisions:
-
-| Weight Class | Accuracy | Key Success Factor |
-| :--- | :--- | :--- |
-| **Heavyweight** | 60.6% | Reach × Distance Style |
-| **Middleweight** | 61.1% | Distance Fighting Efficiency |
-| **Welterweight** | 62.5% | Takedown & Control Rate |
-| **Lightweight** | 61.8% | Takedown Efficiency |
-| **Featherweight** | 58.3% | Strike Differential |
-| **Bantamweight** | 56.5% | Strike Differential |
-| **Flyweight** | 59.8% | Defense (Low SApM) |
+#### 🧬 Biological & External Factors:
+- **Athletic Age**: Years since UFC debut (a superior proxy for "Fight Years" compared to chronological age).
+- **Environmental Context**: `is_altitude` (Locations > 4,000ft) and `is_apex` (Small 25ft cage vs Large 30ft cage).
+- **Ring Rust**: Total days since last competition, normalized as a nonlinear decay indicator.
 
 ---
 
-## 💻 Web Application Architecture
+## 📈 Probability Calibration
 
-The project is split into a data-science backend and a modern web dashboard.
+Standard ML outputs are often poorly calibrated for betting markets. Octagon AI utilizes **Platt Scaling** via `CalibratedClassifierCV` (Sigmoid method) to transform raw model scores into true frequentist probabilities.
 
-### Tech Stack
-- **Frontend**: Next.js 14, React, Tailwind CSS, Lucide Icons, Recharts (for MOV breakdown).
-- **Backend Service**: Python 3.12 (Scikit-Learn, Pandas, BeautifulSoup4).
-- **Automation**: GitHub Actions (CI/CD pipeline).
-
-### Core Scripts
-- `src/scrape_events.py`: Scrapes upcoming UFC event data and historical stats.
-- `src/predict_events.py`: The powerhouse script that loads the `.pkl` models and generates predictions.
-- `src/fetch_odds.py`: Real-time betting odds integration from external APIs.
-- `src/train_model_v10.py`: The training pipeline for the global and weight-class models.
-
-### Automation Workflow
-The website is **fully autonomous**. Every **Monday at Midnight**, a GitHub Action triggers:
-1.  Updates the historical database with last weekend's results.
-2.  Scrapes the new upcoming fight card.
-3.  Runs the AI models to generate fresh predictions.
-4.  Fetches real-time market odds.
-5.  Commits and pushes the new data directly to the web app.
+| Metric | v15 (Baseline) | v16 (Modern Era) | Improvement |
+| :--- | :--- | :--- | :--- |
+| **LogLoss** | 0.6477 | **0.6442** | +0.5% |
+| **Brier Score** | 0.2281 | **0.2267** | +0.6% |
+| **Market Correlation**| Moderate | **High** | Neutralized Legacy Bias |
 
 ---
 
-## 🚀 Local Setup
+## 💻 Tech Stack & Pipeline
 
-1.  **Clone the Repo**
-2.  **Install Python Dependencies**:
+### Backend Intelligence
+- **Data Engine**: Pandas / NumPy / Joblib
+- **Modeling**: CatBoost / Scikit-Learn (Calibration / Metrics)
+- **Scraper**: BeautifulSoup4 / Requests (Asynchronous polling of ESPN / UFC Stats)
+
+### Frontend Dashboard
+- **Framework**: Next.js 14 (Tailwind CSS)
+- **Visualization**: Recharts / Radar Charts (D3-powered tactical overlays)
+
+### Weekly Automation Workflow
+The engine is 100% autonomous through its `weekly_update.yml` workflow:
+1. **Monday 00:00**: Scrapes previous event results and builds new Glicko-2 histories.
+2. **Monday 00:05**: Retrains the v16 CatBoost model on the updated 16,000+ fight dataset.
+3. **Monday 00:10**: Generates predictions for the next upcoming events.
+4. **Monday 00:15**: Fetches market odds and deploys the new `upcoming_predictions.json` to the production site.
+
+---
+
+## 🚀 Research & Development
+
+To setup the "Modern Era" engine locally:
+
+1. **Environment**:
     ```bash
-    pip install -r src/requirements.txt
+    pip install pandas numpy scikit-learn catboost joblib beautifulsoup4
     ```
-3.  **Run the Dashboard**:
+2. **Regenerate Glicko History**:
     ```bash
-    cd dashboard
-    npm install
-    npm run dev
+    python3 src/generate_glicko.py
     ```
-4.  **Run Manual Update**:
+3. **Execute Prediction Pipeline**:
     ```bash
-    cd src
-    python predict_events.py
+    python3 src/predict_model.py
     ```
 
 ---
-*Created with focus on predictive excellence.*
+**Octagon AI** — *Predictive excellence through tactical data science.*

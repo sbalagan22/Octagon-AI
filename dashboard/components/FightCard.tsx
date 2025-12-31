@@ -54,7 +54,7 @@ export default function FightCard({ fight, oddsFormat }: FightCardProps) {
     // Dynamic styles based on Title Fight status
     const isTitle = fight.is_title_fight;
     const containerClasses = isTitle
-        ? "bg-zinc-900/80 border-2 border-[#BF953F] shadow-[0_0_15px_rgba(191,149,63,0.3)]"
+        ? "bg-zinc-900/80 border border-zinc-800 border-b-4 border-b-[#BF953F] shadow-[0_4px_20px_rgba(191,149,63,0.1)]"
         : "bg-zinc-900/50 hover:bg-zinc-900 border border-zinc-800 hover:border-red-900/50";
 
     const winnerBorderColor = "border-green-400"; // Soft Green

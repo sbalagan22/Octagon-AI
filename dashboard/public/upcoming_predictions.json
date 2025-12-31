@@ -1,0 +1,3039 @@
+[
+  {
+    "event_id": "600057024",
+    "event_name": "UFC 324: Gaethje vs. Pimblett",
+    "date": "Jan 24",
+    "location": "T-Mobile Arena, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057024/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Justin Gaethje",
+        "fighter_2": "Paddy Pimblett",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3022345/justin-gaethje",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4008549/paddy-pimblett",
+        "f1_stats": {
+          "Height": "5' 11\"",
+          "Weight": "156 lbs",
+          "DOB": "11/14/1988",
+          "Stance": "Orthodox",
+          "Record": "26-5-0"
+        },
+        "f2_stats": {
+          "Height": "5' 10\"",
+          "Weight": "156 lbs",
+          "DOB": "1/3/1995",
+          "Stance": "Orthodox",
+          "Record": "23-3-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": true,
+        "market_odds": {
+          "Justin Gaethje": 180,
+          "Paddy Pimblett": -218
+        },
+        "prediction": {
+          "winner": "Justin Gaethje",
+          "confidence": "52.2%",
+          "odds": {
+            "Justin Gaethje": "52.2%",
+            "Paddy Pimblett": "47.8%"
+          },
+          "factors": {
+            "Justin Gaethje": {
+              "slpm": 5.6428886709016695,
+              "td_rate": 0.10289999999999999,
+              "ctrl_rate": 4.771499045675142,
+              "kd_rate": 1.2594772804132306,
+              "sub_rate": 0.0,
+              "wins": 26,
+              "losses": 5,
+              "recent_form": "W-L-W-W-L",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Paddy Pimblett": {
+              "slpm": 5.248980467133813,
+              "td_rate": 0.8273498375105575,
+              "ctrl_rate": 23.035840109960514,
+              "kd_rate": 0.5465626415094338,
+              "sub_rate": 2.6259031997063675,
+              "wins": 23,
+              "losses": 3,
+              "recent_form": "W-W-W-W-W",
+              "height": 175.0,
+              "reach": 185.42000000000002
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Kayla Harrison",
+        "fighter_2": "Amanda Nunes",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4332765/kayla-harrison",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2516131/amanda-nunes",
+        "f1_stats": {
+          "Height": "5' 8\"",
+          "Weight": "135 lbs",
+          "DOB": "7/2/1990",
+          "Reach": "66",
+          "Stance": "Southpaw",
+          "Record": "19-1-0"
+        },
+        "f2_stats": {
+          "Height": "5' 8\"",
+          "Weight": "135 lbs",
+          "DOB": "5/30/1988",
+          "Stance": "Orthodox",
+          "Record": "23-5-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": true,
+        "market_odds": {
+          "Kayla Harrison": -192,
+          "Amanda Nunes": 160
+        },
+        "prediction": {
+          "winner": "Kayla Harrison",
+          "confidence": "76.7%",
+          "odds": {
+            "Kayla Harrison": "76.7%",
+            "Amanda Nunes": "23.3%"
+          },
+          "factors": {
+            "Kayla Harrison": {
+              "slpm": 5.361592509239568,
+              "td_rate": 3.4946391922862508,
+              "ctrl_rate": 64.49775937893585,
+              "kd_rate": 0.0,
+              "sub_rate": 1.5373195961431252,
+              "wins": 19,
+              "losses": 1,
+              "recent_form": "W-W-W",
+              "height": 175.0,
+              "reach": 167.64000000000001
+            },
+            "Amanda Nunes": {
+              "slpm": 5.727984883162253,
+              "td_rate": 2.6944571113236115,
+              "ctrl_rate": 35.27565439149117,
+              "kd_rate": 1.4079552588264668,
+              "sub_rate": 1.7862417218306765,
+              "wins": 23,
+              "losses": 5,
+              "recent_form": "W-W-L-W-W",
+              "height": 175.0,
+              "reach": 175.26
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Sean O'Malley",
+        "fighter_2": "Song Yadong",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4205093/sean-omalley",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/3151289/song-yadong",
+        "f1_stats": {
+          "Height": "5' 11\"",
+          "Weight": "135 lbs",
+          "DOB": "10/24/1994",
+          "Stance": "Switch",
+          "Record": "18-3-0"
+        },
+        "f2_stats": {
+          "Height": "5' 8\"",
+          "Weight": "136 lbs",
+          "DOB": "12/2/1997",
+          "Stance": "Orthodox",
+          "Record": "22-8-1"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Sean O'Malley": -235,
+          "Song Yadong": 200
+        },
+        "prediction": {
+          "winner": "Sean O'Malley",
+          "confidence": "60.6%",
+          "odds": {
+            "Sean O'Malley": "60.6%",
+            "Song Yadong": "39.4%"
+          },
+          "factors": {
+            "Sean O'Malley": {
+              "slpm": 4.702432231775705,
+              "td_rate": 0.041523861602999965,
+              "ctrl_rate": 0.7404533580047686,
+              "kd_rate": 0.6101759681538284,
+              "sub_rate": 0.01779594068699998,
+              "wins": 18,
+              "losses": 3,
+              "recent_form": "L-L-W-W-W",
+              "height": 175.0,
+              "reach": 182.88
+            },
+            "Song Yadong": {
+              "slpm": 4.974342896594476,
+              "td_rate": 0.5071170565960407,
+              "ctrl_rate": 10.31941929745507,
+              "kd_rate": 0.6576765828732797,
+              "sub_rate": 0.028211064180288372,
+              "wins": 22,
+              "losses": 8,
+              "recent_form": "W-L-W-W-L",
+              "height": 175.0,
+              "reach": 170.18
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Waldo Cortes-Acosta",
+        "fighter_2": "Derrick Lewis",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4903365/waldo-cortes-acosta",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2560713/derrick-lewis",
+        "f1_stats": {
+          "Height": "6' 4\"",
+          "Weight": "265 lbs",
+          "DOB": "10/3/1991",
+          "Stance": "Orthodox",
+          "Record": "16-2-0"
+        },
+        "f2_stats": {
+          "Height": "6' 3\"",
+          "Weight": "261 lbs",
+          "DOB": "2/7/1985",
+          "Stance": "Orthodox",
+          "Record": "29-12-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Waldo Cortes-Acosta": -280,
+          "Derrick Lewis": 240
+        },
+        "prediction": {
+          "winner": "Waldo Cortes-Acosta",
+          "confidence": "71.9%",
+          "odds": {
+            "Waldo Cortes-Acosta": "71.9%",
+            "Derrick Lewis": "28.1%"
+          },
+          "factors": {
+            "Waldo Cortes-Acosta": {
+              "slpm": 5.272049339110882,
+              "td_rate": 0.15126299999999993,
+              "ctrl_rate": 15.55375285390517,
+              "kd_rate": 7.609259788539139,
+              "sub_rate": 0.05042099999999999,
+              "wins": 16,
+              "losses": 2,
+              "recent_form": "W-W-L-W-W",
+              "height": 175.0,
+              "reach": 198.12
+            },
+            "Derrick Lewis": {
+              "slpm": 9.302549376768345,
+              "td_rate": 0.4796739610749889,
+              "ctrl_rate": 27.9782744390879,
+              "kd_rate": 10.970865369369818,
+              "sub_rate": 0.0,
+              "wins": 29,
+              "losses": 12,
+              "recent_form": "W-W-L-W-L",
+              "height": 175.0,
+              "reach": 200.66
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Arnold Allen",
+        "fighter_2": "Jean Silva",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3902098/arnold-allen",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5145766/jean-silva",
+        "f1_stats": {
+          "Height": "5' 8\"",
+          "Weight": "145 lbs",
+          "DOB": "1/22/1994",
+          "Stance": "Southpaw",
+          "Record": "20-3-0"
+        },
+        "f2_stats": {
+          "Height": "5' 7\"",
+          "Weight": "145 lbs",
+          "DOB": "12/27/1996",
+          "Stance": "Orthodox",
+          "Record": "16-3-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Arnold Allen": 191,
+          "Jean Silva": -226
+        },
+        "prediction": {
+          "winner": "Arnold Allen",
+          "confidence": "59.7%",
+          "odds": {
+            "Arnold Allen": "59.7%",
+            "Jean Silva": "40.3%"
+          },
+          "factors": {
+            "Arnold Allen": {
+              "slpm": 4.953014209002216,
+              "td_rate": 0.19246953750702703,
+              "ctrl_rate": 4.411029660392363,
+              "kd_rate": 0.07364738322899995,
+              "sub_rate": 0.2505621229388063,
+              "wins": 20,
+              "losses": 3,
+              "recent_form": "W-L-L-W-W",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Jean Silva": {
+              "slpm": 4.439081316101709,
+              "td_rate": 0.6002499999999997,
+              "ctrl_rate": 1.952203321468203,
+              "kd_rate": 1.8137450642698516,
+              "sub_rate": 1.0657894736842104,
+              "wins": 16,
+              "losses": 3,
+              "recent_form": "L-W-W-W-W",
+              "height": 175.0,
+              "reach": 175.0
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Natalia Silva",
+        "fighter_2": "Rose Namajunas",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4054605/natalia-silva",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/3032973/rose-namajunas",
+        "f1_stats": {
+          "Height": "5' 4\"",
+          "Weight": "126 lbs",
+          "DOB": "2/3/1997",
+          "Reach": "65",
+          "Stance": "Southpaw",
+          "Record": "19-5-1"
+        },
+        "f2_stats": {
+          "Height": "5' 5\"",
+          "Weight": "126 lbs",
+          "DOB": "6/29/1992",
+          "Stance": "Orthodox",
+          "Record": "15-7-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Natalia Silva": -435,
+          "Rose Namajunas": 365
+        },
+        "prediction": {
+          "winner": "Natalia Silva",
+          "confidence": "71.9%",
+          "odds": {
+            "Natalia Silva": "71.9%",
+            "Rose Namajunas": "28.1%"
+          },
+          "factors": {
+            "Natalia Silva": {
+              "slpm": 5.227310240989155,
+              "td_rate": 0.2352979999999999,
+              "ctrl_rate": 4.142752526170888,
+              "kd_rate": 0.43025034100387605,
+              "sub_rate": 0.0,
+              "wins": 19,
+              "losses": 5,
+              "recent_form": "W-W-W-W-W",
+              "height": 175.0,
+              "reach": 165.1
+            },
+            "Rose Namajunas": {
+              "slpm": 3.117788589436139,
+              "td_rate": 1.3403652601142872,
+              "ctrl_rate": 22.04060444598101,
+              "kd_rate": 0.7332425858796602,
+              "sub_rate": 0.03998149282392374,
+              "wins": 15,
+              "losses": 7,
+              "recent_form": "W-L-W-W-L",
+              "height": 175.0,
+              "reach": 165.1
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Umar Nurmagomedov",
+        "fighter_2": "Deiveson Figueiredo",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4569549/umar-nurmagomedov",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4189320/deiveson-figueiredo",
+        "f1_stats": {
+          "Height": "5' 8\"",
+          "Weight": "136 lbs",
+          "DOB": "1/3/1996",
+          "Reach": "69",
+          "Stance": "Orthodox",
+          "Record": "19-1-0"
+        },
+        "f2_stats": {
+          "Height": "5' 5\"",
+          "Weight": "136 lbs",
+          "DOB": "12/18/1987",
+          "Stance": "Orthodox",
+          "Record": "25-5-1"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Umar Nurmagomedov": -1400,
+          "Deiveson Figueiredo": 800
+        },
+        "prediction": {
+          "winner": "Umar Nurmagomedov",
+          "confidence": "65.0%",
+          "odds": {
+            "Umar Nurmagomedov": "65.0%",
+            "Deiveson Figueiredo": "35.0%"
+          },
+          "factors": {
+            "Umar Nurmagomedov": {
+              "slpm": 3.7942201465540237,
+              "td_rate": 5.5357162396620705,
+              "ctrl_rate": 41.853065804209265,
+              "kd_rate": 0.23152499999999993,
+              "sub_rate": 0.30570954024010666,
+              "wins": 19,
+              "losses": 1,
+              "recent_form": "W-L-W-W-W",
+              "height": 175.0,
+              "reach": 175.26
+            },
+            "Deiveson Figueiredo": {
+              "slpm": 1.8088789607161107,
+              "td_rate": 2.116476522765664,
+              "ctrl_rate": 14.716769341330593,
+              "kd_rate": 0.2019892978422635,
+              "sub_rate": 0.48429652819350083,
+              "wins": 25,
+              "losses": 5,
+              "recent_form": "W-L-L-W-W",
+              "height": 175.0,
+              "reach": 172.72
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ateba Gautier",
+        "fighter_2": "Andrey Pulyaev",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5218421/ateba-gautier",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5211225/andrey-pulyaev",
+        "f1_stats": {
+          "Height": "6' 4\"",
+          "Weight": "186 lbs",
+          "DOB": "4/10/2002",
+          "Stance": "Switch",
+          "Record": "9-1-0"
+        },
+        "f2_stats": {
+          "Height": "6' 4\"",
+          "Weight": "185 lbs",
+          "DOB": "9/10/1997",
+          "Reach": "78",
+          "Stance": "Southpaw",
+          "Record": "10-3-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Ateba Gautier": -900,
+          "Andrey Pulyaev": 600
+        },
+        "prediction": {
+          "winner": "Ateba Gautier",
+          "confidence": "70.3%",
+          "odds": {
+            "Ateba Gautier": "70.3%",
+            "Andrey Pulyaev": "29.7%"
+          },
+          "factors": {
+            "Ateba Gautier": {
+              "slpm": 8.372325798617595,
+              "td_rate": 2.673267326732673,
+              "ctrl_rate": 1.488118811881188,
+              "kd_rate": 7.453456005977955,
+              "sub_rate": 0.0,
+              "wins": 9,
+              "losses": 1,
+              "recent_form": "W-W-W",
+              "height": 175.0,
+              "reach": 205.74
+            },
+            "Andrey Pulyaev": {
+              "slpm": 1.8988235294117648,
+              "td_rate": 0.0,
+              "ctrl_rate": 8.63123046319977,
+              "kd_rate": 0.690537084398977,
+              "sub_rate": 0.0,
+              "wins": 10,
+              "losses": 3,
+              "recent_form": "W-L",
+              "height": 175.0,
+              "reach": 198.12
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Michael Johnson",
+        "fighter_2": "Alexander Hernandez",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/2488476/michael-johnson",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4018757/alexander-hernandez",
+        "f1_stats": {
+          "Height": "5' 10\"",
+          "Weight": "155 lbs",
+          "DOB": "6/4/1986",
+          "Stance": "Southpaw",
+          "Record": "25-19-0"
+        },
+        "f2_stats": {
+          "Height": "5' 9\"",
+          "Weight": "155 lbs",
+          "DOB": "10/1/1992",
+          "Stance": "Orthodox",
+          "Record": "18-8-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Michael Johnson",
+          "confidence": "53.7%",
+          "odds": {
+            "Michael Johnson": "53.7%",
+            "Alexander Hernandez": "46.3%"
+          },
+          "factors": {
+            "Michael Johnson": {
+              "slpm": 4.367608812629635,
+              "td_rate": 0.6618879874997702,
+              "ctrl_rate": 9.245371558909731,
+              "kd_rate": 0.8708584053404884,
+              "sub_rate": 0.001706846348448214,
+              "wins": 25,
+              "losses": 19,
+              "recent_form": "W-W-W-L-W",
+              "height": 175.0,
+              "reach": 185.42000000000002
+            },
+            "Alexander Hernandez": {
+              "slpm": 4.130686075465068,
+              "td_rate": 0.691560198266835,
+              "ctrl_rate": 10.475464659802347,
+              "kd_rate": 1.4773388888533503,
+              "sub_rate": 0.039009931578947346,
+              "wins": 18,
+              "losses": 8,
+              "recent_form": "W-W-W-W-L",
+              "height": 175.0,
+              "reach": 182.88
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Nikita Krylov",
+        "fighter_2": "Modestas Bukauskas",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3026263/nikita-krylov",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4279621/modestas-bukauskas",
+        "f1_stats": {
+          "Height": "6' 3\"",
+          "Weight": "205 lbs",
+          "DOB": "3/7/1992",
+          "Stance": "Orthodox",
+          "Record": "30-11-0"
+        },
+        "f2_stats": {
+          "Height": "6' 3\"",
+          "Weight": "205 lbs",
+          "DOB": "2/10/1994",
+          "Stance": "Switch",
+          "Record": "19-6-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Nikita Krylov": 165,
+          "Modestas Bukauskas": -190
+        },
+        "prediction": {
+          "winner": "Modestas Bukauskas",
+          "confidence": "61.9%",
+          "odds": {
+            "Nikita Krylov": "38.1%",
+            "Modestas Bukauskas": "61.9%"
+          },
+          "factors": {
+            "Nikita Krylov": {
+              "slpm": 4.48879465273802,
+              "td_rate": 2.3294965160491774,
+              "ctrl_rate": 26.99335028019435,
+              "kd_rate": 1.978972824779067,
+              "sub_rate": 1.4347586649551005,
+              "wins": 30,
+              "losses": 11,
+              "recent_form": "L-L-W-W-W",
+              "height": 175.0,
+              "reach": 195.58
+            },
+            "Modestas Bukauskas": {
+              "slpm": 3.9865896165953716,
+              "td_rate": 0.23386363636363636,
+              "ctrl_rate": 18.20929253163636,
+              "kd_rate": 1.0022727272727272,
+              "sub_rate": 0.11693181818181818,
+              "wins": 19,
+              "losses": 6,
+              "recent_form": "W-W-W-W-L",
+              "height": 175.0,
+              "reach": 193.04
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Alex Perez",
+        "fighter_2": "Charles Johnson",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3155425/alex-perez",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4375156/charles-johnson",
+        "f1_stats": {
+          "Height": "5' 6\"",
+          "Weight": "126 lbs",
+          "DOB": "3/21/1992",
+          "Reach": "65.5",
+          "Stance": "Orthodox",
+          "Record": "25-10-0"
+        },
+        "f2_stats": {
+          "Height": "5' 9\"",
+          "Weight": "126 lbs",
+          "DOB": "1/10/1991",
+          "Stance": "Switch",
+          "Record": "18-7-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Alex Perez": 160,
+          "Charles Johnson": -185
+        },
+        "prediction": {
+          "winner": "Charles Johnson",
+          "confidence": "65.3%",
+          "odds": {
+            "Alex Perez": "34.7%",
+            "Charles Johnson": "65.3%"
+          },
+          "factors": {
+            "Alex Perez": {
+              "slpm": 4.264398818344944,
+              "td_rate": 2.0086496300290935,
+              "ctrl_rate": 15.451114192881167,
+              "kd_rate": 0.5954413124336252,
+              "sub_rate": 0.2356003820014065,
+              "wins": 25,
+              "losses": 10,
+              "recent_form": "L-L-W-L-L",
+              "height": 175.0,
+              "reach": 165.1
+            },
+            "Charles Johnson": {
+              "slpm": 4.901798978058102,
+              "td_rate": 0.8817016203913042,
+              "ctrl_rate": 8.26903994736682,
+              "kd_rate": 0.8379661851332397,
+              "sub_rate": 0.17596928999999992,
+              "wins": 18,
+              "losses": 7,
+              "recent_form": "W-L-W-W-W",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Josh Hokit",
+        "fighter_2": "Denzel Freeman",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4049391/josh-hokit",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4848646/denzel-freeman",
+        "f1_stats": {
+          "Height": "6' 1\"",
+          "Weight": "236 lbs",
+          "DOB": "11/12/1997",
+          "Stance": "Orthodox",
+          "Record": "7-0-0"
+        },
+        "f2_stats": {
+          "Height": "6' 1\"",
+          "Weight": "260 lbs",
+          "DOB": "11/10/1991",
+          "Stance": "Southpaw",
+          "Record": "7-1-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Josh Hokit": -230,
+          "Denzel Freeman": 195
+        },
+        "prediction": {
+          "winner": "Josh Hokit",
+          "confidence": "56.8%",
+          "odds": {
+            "Josh Hokit": "56.8%",
+            "Denzel Freeman": "43.2%"
+          },
+          "factors": {
+            "Josh Hokit": {
+              "slpm": 9.642857142857142,
+              "td_rate": 0.0,
+              "ctrl_rate": 14.285714285714285,
+              "kd_rate": 32.14285714285714,
+              "sub_rate": 0.0,
+              "wins": 7,
+              "losses": 0,
+              "recent_form": "W",
+              "height": 175.0,
+              "reach": 185.42000000000002
+            },
+            "Denzel Freeman": {
+              "slpm": 3.2666666666666666,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.0,
+              "kd_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 7,
+              "losses": 1,
+              "recent_form": "W",
+              "height": 175.0,
+              "reach": 175.0
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ricky Turcios",
+        "fighter_2": "Cameron Smotherman",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3928693/ricky-turcios",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5144320/cameron-smotherman",
+        "f1_stats": {
+          "Height": "5' 9\"",
+          "Weight": "136 lbs",
+          "DOB": "6/5/1993",
+          "Reach": "71",
+          "Stance": "Orthodox",
+          "Record": "13-5-0"
+        },
+        "f2_stats": {
+          "Height": "5' 9\"",
+          "Weight": "136 lbs",
+          "DOB": "9/17/1997",
+          "Stance": "Orthodox",
+          "Record": "12-6-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Ricky Turcios": 162,
+          "Cameron Smotherman": -187
+        },
+        "prediction": {
+          "winner": "Ricky Turcios",
+          "confidence": "54.7%",
+          "odds": {
+            "Ricky Turcios": "54.7%",
+            "Cameron Smotherman": "45.3%"
+          },
+          "factors": {
+            "Ricky Turcios": {
+              "slpm": 4.211834177978884,
+              "td_rate": 1.0741999999999998,
+              "ctrl_rate": 16.549943790849667,
+              "kd_rate": 0.24009999999999992,
+              "sub_rate": 0.5746018099547511,
+              "wins": 13,
+              "losses": 5,
+              "recent_form": "L-L-W-L-W",
+              "height": 175.0,
+              "reach": 180.34
+            },
+            "Cameron Smotherman": {
+              "slpm": 4.528,
+              "td_rate": 0.0,
+              "ctrl_rate": 0.06666666666666667,
+              "kd_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 6,
+              "recent_form": "L-L-W",
+              "height": 175.0,
+              "reach": 175.26
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057025",
+    "event_name": "UFC 325: Volkanovski vs. Lopes 2",
+    "date": "Jan 31",
+    "location": "Qudos Bank Arena, Sydney, NSW, Australia",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057025/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Alexander Volkanovski",
+        "fighter_2": "Diego Lopes",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3949584/alexander-volkanovski",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4881999/diego-lopes",
+        "f1_stats": {
+          "Height": "5' 6\"",
+          "Weight": "145 lbs",
+          "DOB": "9/29/1988",
+          "Stance": "Orthodox",
+          "Record": "27-4-0"
+        },
+        "f2_stats": {
+          "Height": "5' 11\"",
+          "Weight": "146 lbs",
+          "DOB": "12/30/1994",
+          "Reach": "72.5",
+          "Stance": "Orthodox",
+          "Record": "27-7-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": true,
+        "prediction": {
+          "winner": "Alexander Volkanovski",
+          "confidence": "52.9%",
+          "odds": {
+            "Alexander Volkanovski": "52.9%",
+            "Diego Lopes": "47.1%"
+          },
+          "factors": {
+            "Alexander Volkanovski": {
+              "slpm": 5.189516270876728,
+              "td_rate": 1.1542679330239112,
+              "ctrl_rate": 13.964319746882524,
+              "kd_rate": 0.09619783175932294,
+              "sub_rate": 0.012457158480899986,
+              "wins": 27,
+              "losses": 4,
+              "recent_form": "W-L-L-W-L",
+              "height": 175.0,
+              "reach": 180.34
+            },
+            "Diego Lopes": {
+              "slpm": 6.072117043722387,
+              "td_rate": 1.6274510204081631,
+              "ctrl_rate": 16.979789426846544,
+              "kd_rate": 2.5461801903233194,
+              "sub_rate": 1.4047221999999997,
+              "wins": 27,
+              "losses": 7,
+              "recent_form": "W-L-W-W-W",
+              "height": 175.0,
+              "reach": 182.88
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Dan Hooker",
+        "fighter_2": "Beno\u00eet Saint Denis",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3109135/dan-hooker",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4895362/benoit-saint-denis",
+        "f1_stats": {
+          "Height": "6' 0\"",
+          "Weight": "155 lbs",
+          "DOB": "2/13/1990",
+          "Stance": "Switch",
+          "Record": "24-13-0"
+        },
+        "f2_stats": {
+          "Height": "5' 11\"",
+          "Weight": "156 lbs",
+          "DOB": "12/18/1995",
+          "Stance": "Southpaw",
+          "Record": "16-3-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Dan Hooker": 205,
+          "Beno\u00eet Saint Denis": -250
+        },
+        "prediction": {
+          "winner": "Beno\u00eet Saint Denis",
+          "confidence": "52.0%",
+          "odds": {
+            "Dan Hooker": "48.0%",
+            "Beno\u00eet Saint Denis": "52.0%"
+          },
+          "factors": {
+            "Dan Hooker": {
+              "slpm": 3.903372856325632,
+              "td_rate": 0.15898955935196177,
+              "ctrl_rate": 10.754539519810283,
+              "kd_rate": 0.4077595634037037,
+              "sub_rate": 1.392105564630366,
+              "wins": 24,
+              "losses": 13,
+              "recent_form": "L-W-W-W-L",
+              "height": 175.0,
+              "reach": 190.5
+            },
+            "Beno\u00eet Saint Denis": {
+              "slpm": 6.518631404595322,
+              "td_rate": 3.1092637497533584,
+              "ctrl_rate": 34.75239557769368,
+              "kd_rate": 17.52143786399708,
+              "sub_rate": 1.3320233164395545,
+              "wins": 16,
+              "losses": 3,
+              "recent_form": "W-W-W-L-L",
+              "height": 175.0,
+              "reach": 185.42000000000002
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Rafael Fiziev",
+        "fighter_2": "Mauricio Ruffy",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4339488/rafael-fiziev",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5122238/mauricio-ruffy",
+        "f1_stats": {
+          "Height": "5' 8\"",
+          "Weight": "155 lbs",
+          "DOB": "3/5/1993",
+          "Stance": "Switch",
+          "Record": "13-4-0"
+        },
+        "f2_stats": {
+          "Height": "5' 11\"",
+          "Weight": "156 lbs",
+          "DOB": "6/17/1996",
+          "Reach": "75",
+          "Stance": "Orthodox",
+          "Record": "12-2-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Rafael Fiziev": -133,
+          "Mauricio Ruffy": 113
+        },
+        "prediction": {
+          "winner": "Rafael Fiziev",
+          "confidence": "67.6%",
+          "odds": {
+            "Rafael Fiziev": "67.6%",
+            "Mauricio Ruffy": "32.4%"
+          },
+          "factors": {
+            "Rafael Fiziev": {
+              "slpm": 4.264325362946697,
+              "td_rate": 1.6494004851,
+              "ctrl_rate": 6.010805215188411,
+              "kd_rate": 0.14398193793103445,
+              "sub_rate": 0.0,
+              "wins": 13,
+              "losses": 4,
+              "recent_form": "W-L-L-L-W",
+              "height": 175.0,
+              "reach": 180.34
+            },
+            "Mauricio Ruffy": {
+              "slpm": 3.0669941090592703,
+              "td_rate": 0.0,
+              "ctrl_rate": 3.3867782910114954,
+              "kd_rate": 2.729869827441782,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 2,
+              "recent_form": "L-W-W-W",
+              "height": 175.0,
+              "reach": 190.5
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Tai Tuivasa",
+        "fighter_2": "Tallison Teixeira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3722422/tai-tuivasa",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5212856/tallison-teixeira",
+        "f1_stats": {
+          "Height": "6' 2\"",
+          "Weight": "265 lbs",
+          "DOB": "3/16/1993",
+          "Stance": "Southpaw",
+          "Record": "15-8-0"
+        },
+        "f2_stats": {
+          "Height": "6' 7\"",
+          "Weight": "259 lbs",
+          "DOB": "12/7/1999",
+          "Stance": "Orthodox",
+          "Record": "8-1-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Tai Tuivasa": 250,
+          "Tallison Teixeira": -300
+        },
+        "prediction": {
+          "winner": "Tallison Teixeira",
+          "confidence": "70.6%",
+          "odds": {
+            "Tai Tuivasa": "29.4%",
+            "Tallison Teixeira": "70.6%"
+          },
+          "factors": {
+            "Tai Tuivasa": {
+              "slpm": 3.4344706653977726,
+              "td_rate": 0.0,
+              "ctrl_rate": 4.309196284881619,
+              "kd_rate": 0.9904164918453524,
+              "sub_rate": 0.0,
+              "wins": 15,
+              "losses": 8,
+              "recent_form": "L-L-L-L-L",
+              "height": 175.0,
+              "reach": 190.5
+            },
+            "Tallison Teixeira": {
+              "slpm": 11.142857142857142,
+              "td_rate": 0.0,
+              "ctrl_rate": 21.999999999999996,
+              "kd_rate": 17.999999999999996,
+              "sub_rate": 0.0,
+              "wins": 8,
+              "losses": 1,
+              "recent_form": "L-W",
+              "height": 175.0,
+              "reach": 210.82
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jimmy Crute",
+        "fighter_2": "Dustin Jacoby",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4354420/jimmy-crute",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2594871/dustin-jacoby",
+        "f1_stats": {
+          "Height": "6' 2\"",
+          "Weight": "205 lbs",
+          "DOB": "3/4/1996",
+          "Reach": "74",
+          "Stance": "Orthodox",
+          "Record": "14-4-2"
+        },
+        "f2_stats": {
+          "Height": "6' 3\"",
+          "Weight": "205 lbs",
+          "DOB": "4/4/1988",
+          "Stance": "Orthodox",
+          "Record": "21-9-1"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Jimmy Crute",
+          "confidence": "65.7%",
+          "odds": {
+            "Jimmy Crute": "65.7%",
+            "Dustin Jacoby": "34.3%"
+          },
+          "factors": {
+            "Jimmy Crute": {
+              "slpm": 3.7414418968502368,
+              "td_rate": 6.312956106911398,
+              "ctrl_rate": 43.03210266293605,
+              "kd_rate": 0.5596607685697587,
+              "sub_rate": 3.0676649468706714,
+              "wins": 14,
+              "losses": 4,
+              "recent_form": "W-W-D-L-D",
+              "height": 175.0,
+              "reach": 187.96
+            },
+            "Dustin Jacoby": {
+              "slpm": 6.093771625957874,
+              "td_rate": 0.07364738322899995,
+              "ctrl_rate": 12.180457839908415,
+              "kd_rate": 3.6228122016546127,
+              "sub_rate": 0.0,
+              "wins": 21,
+              "losses": 9,
+              "recent_form": "W-W-L-L-W",
+              "height": 175.0,
+              "reach": 193.04
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Quillan Salkilld",
+        "fighter_2": "Rongzhu",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5157667/quillan-salkilld",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4773371/rongzhu",
+        "f1_stats": {
+          "Height": "6' 0\"",
+          "Weight": "155 lbs",
+          "DOB": "12/28/1999",
+          "Reach": "75",
+          "Stance": "Orthodox",
+          "Record": "10-1-0"
+        },
+        "f2_stats": {
+          "Height": "5' 9\"",
+          "Weight": "155 lbs",
+          "DOB": "3/7/2000",
+          "Reach": "71",
+          "Stance": "Orthodox",
+          "Record": "27-6-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Quillan Salkilld",
+          "confidence": "73.0%",
+          "odds": {
+            "Quillan Salkilld": "73.0%",
+            "Rongzhu": "27.0%"
+          },
+          "factors": {
+            "Quillan Salkilld": {
+              "slpm": 12.070210526315789,
+              "td_rate": 1.68,
+              "ctrl_rate": 13.195614035087718,
+              "kd_rate": 25.01052631578947,
+              "sub_rate": 0.0,
+              "wins": 10,
+              "losses": 1,
+              "recent_form": "W-W-W",
+              "height": 175.0,
+              "reach": 190.5
+            },
+            "Rongzhu": {
+              "slpm": 5.868835503249097,
+              "td_rate": 1.0810379999999997,
+              "ctrl_rate": 8.762564441235455,
+              "kd_rate": 0.28408799999999995,
+              "sub_rate": 0.0,
+              "wins": 27,
+              "losses": 6,
+              "recent_form": "W-W-L-L-W",
+              "height": 175.0,
+              "reach": 180.34
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Junior Tafa",
+        "fighter_2": "Billy Elekana",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5122234/junior-tafa",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5078114/billy-elekana",
+        "f1_stats": {
+          "Height": "6' 3\"",
+          "Weight": "206 lbs",
+          "DOB": "9/21/1996",
+          "Stance": "Orthodox",
+          "Record": "6-4-0"
+        },
+        "f2_stats": {
+          "Height": "6' 3\"",
+          "Weight": "205 lbs",
+          "DOB": "5/28/1995",
+          "Stance": "Southpaw",
+          "Record": "9-2-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Junior Tafa": 155,
+          "Billy Elekana": -180
+        },
+        "prediction": {
+          "winner": "Junior Tafa",
+          "confidence": "52.9%",
+          "odds": {
+            "Junior Tafa": "52.9%",
+            "Billy Elekana": "47.1%"
+          },
+          "factors": {
+            "Junior Tafa": {
+              "slpm": 3.8098308824967058,
+              "td_rate": 0.0,
+              "ctrl_rate": 1.8731800427220018,
+              "kd_rate": 0.7717499999999998,
+              "sub_rate": 0.0,
+              "wins": 6,
+              "losses": 4,
+              "recent_form": "L-W-L-L-W",
+              "height": 175.0,
+              "reach": 190.5
+            },
+            "Billy Elekana": {
+              "slpm": 3.0728185487192157,
+              "td_rate": 0.8596491228070173,
+              "ctrl_rate": 23.971391703044777,
+              "kd_rate": 1.267605633802817,
+              "sub_rate": 1.267605633802817,
+              "wins": 9,
+              "losses": 2,
+              "recent_form": "W-W-L",
+              "height": 175.0,
+              "reach": 195.58
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Cam Rowston",
+        "fighter_2": "Cody Brundage",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4694832/cam-rowston",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4684474/cody-brundage",
+        "f1_stats": {
+          "Height": "6' 3\"",
+          "Weight": "184 lbs",
+          "DOB": "1/19/1995",
+          "Stance": "Orthodox",
+          "Record": "13-3-0"
+        },
+        "f2_stats": {
+          "Height": "6' 0\"",
+          "Weight": "202 lbs",
+          "DOB": "5/16/1994",
+          "Reach": "72",
+          "Stance": "Orthodox",
+          "Record": "11-7-1"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Cam Rowston": -275,
+          "Cody Brundage": 235
+        },
+        "prediction": {
+          "winner": "Cam Rowston",
+          "confidence": "70.1%",
+          "odds": {
+            "Cam Rowston": "70.1%",
+            "Cody Brundage": "29.9%"
+          },
+          "factors": {
+            "Cam Rowston": {
+              "slpm": 4.472049689440994,
+              "td_rate": 0.0,
+              "ctrl_rate": 22.36024844720497,
+              "kd_rate": 5.590062111801243,
+              "sub_rate": 0.0,
+              "wins": 13,
+              "losses": 3,
+              "recent_form": "W",
+              "height": 175.0,
+              "reach": 198.12
+            },
+            "Cody Brundage": {
+              "slpm": 3.181227594353909,
+              "td_rate": 2.0634103912457906,
+              "ctrl_rate": 22.2780175666636,
+              "kd_rate": 0.5688905565636603,
+              "sub_rate": 0.14688692285198066,
+              "wins": 11,
+              "losses": 7,
+              "recent_form": "L-D-W-L-W",
+              "height": 175.0,
+              "reach": 182.88
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jacob Malkoun",
+        "fighter_2": "Torrez Finney",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4687434/jacob-malkoun",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4050996/torrez-finney",
+        "f1_stats": {
+          "Height": "5' 9\"",
+          "Weight": "185 lbs",
+          "DOB": "8/26/1995",
+          "Stance": "Orthodox",
+          "Record": "8-3-0"
+        },
+        "f2_stats": {
+          "Height": "5' 8\"",
+          "Weight": "186 lbs",
+          "DOB": "10/24/1998",
+          "Stance": "Orthodox",
+          "Record": "11-0-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Jacob Malkoun": -220,
+          "Torrez Finney": 185
+        },
+        "prediction": {
+          "winner": "Torrez Finney",
+          "confidence": "67.0%",
+          "odds": {
+            "Jacob Malkoun": "33.0%",
+            "Torrez Finney": "67.0%"
+          },
+          "factors": {
+            "Jacob Malkoun": {
+              "slpm": 3.960174114419573,
+              "td_rate": 3.620024470588235,
+              "ctrl_rate": 41.621478191393365,
+              "kd_rate": 0.0,
+              "sub_rate": 0.10084199999999997,
+              "wins": 8,
+              "losses": 3,
+              "recent_form": "W-L-W-L-W",
+              "height": 175.0,
+              "reach": 185.42000000000002
+            },
+            "Torrez Finney": {
+              "slpm": 0.26666666666666666,
+              "td_rate": 8.0,
+              "ctrl_rate": 88.44444444444444,
+              "kd_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 11,
+              "losses": 0,
+              "recent_form": "W",
+              "height": 175.0,
+              "reach": 190.5
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jonathan Micallef",
+        "fighter_2": "Oban Elliott",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5236142/jonathan-micallef",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4900808/oban-elliott",
+        "f1_stats": {
+          "Height": "6' 0\"",
+          "Weight": "170 lbs",
+          "DOB": "3/5/1999",
+          "Stance": "Southpaw",
+          "Record": "8-1-0"
+        },
+        "f2_stats": {
+          "Height": "6' 0\"",
+          "Weight": "170 lbs",
+          "DOB": "12/19/1997",
+          "Stance": "Orthodox",
+          "Record": "12-3-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "market_odds": {
+          "Jonathan Micallef": -120,
+          "Oban Elliott": 100
+        },
+        "prediction": {
+          "winner": "Jonathan Micallef",
+          "confidence": "53.4%",
+          "odds": {
+            "Jonathan Micallef": "53.4%",
+            "Oban Elliott": "46.6%"
+          },
+          "factors": {
+            "Jonathan Micallef": {
+              "slpm": 5.666666666666667,
+              "td_rate": 0.0,
+              "ctrl_rate": 1.0,
+              "kd_rate": 1.0,
+              "sub_rate": 0.0,
+              "wins": 8,
+              "losses": 1,
+              "recent_form": "W",
+              "height": 175.0,
+              "reach": 195.58
+            },
+            "Oban Elliott": {
+              "slpm": 3.5115541666666665,
+              "td_rate": 1.1759999999999995,
+              "ctrl_rate": 28.9691736111111,
+              "kd_rate": 0.2953125,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 3,
+              "recent_form": "L-W-W-W",
+              "height": 175.0,
+              "reach": 182.88
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Kaan Ofli",
+        "fighter_2": "Yizha",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5204223/kaan-ofli",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4894925/yizha",
+        "f1_stats": {
+          "Height": "5' 7\"",
+          "Weight": "145 lbs",
+          "DOB": "6/19/1993",
+          "Stance": "Orthodox",
+          "Record": "13-4-1"
+        },
+        "f2_stats": {
+          "Height": "5' 7\"",
+          "Weight": "145 lbs",
+          "DOB": "1/8/1997",
+          "Reach": "71",
+          "Stance": "Orthodox",
+          "Record": "26-5-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Kaan Ofli",
+          "confidence": "52.1%",
+          "odds": {
+            "Kaan Ofli": "52.1%",
+            "Yizha": "47.9%"
+          },
+          "factors": {
+            "Kaan Ofli": {
+              "slpm": 1.4375164835164835,
+              "td_rate": 1.4835164835164836,
+              "ctrl_rate": 35.822161172161174,
+              "kd_rate": 0.0,
+              "sub_rate": 1.4835164835164836,
+              "wins": 13,
+              "losses": 4,
+              "recent_form": "W-L-L",
+              "height": 175.0,
+              "reach": 167.64000000000001
+            },
+            "Yizha": {
+              "slpm": 7.682324324324323,
+              "td_rate": 2.4499999999999997,
+              "ctrl_rate": 32.125975975975976,
+              "kd_rate": 14.594594594594593,
+              "sub_rate": 0.0,
+              "wins": 26,
+              "losses": 5,
+              "recent_form": "W-L-L",
+              "height": 175.0,
+              "reach": 180.34
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Sangwook Kim",
+        "fighter_2": "Dom Mar Fan",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5138448/sangwook-kim",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5157806/dom-mar-fan",
+        "f1_stats": {
+          "Height": "6' 0\"",
+          "Weight": "155 lbs",
+          "DOB": "10/17/1993",
+          "Stance": "Orthodox",
+          "Record": "13-3-0"
+        },
+        "f2_stats": {
+          "Height": "5' 11\"",
+          "Weight": "155 lbs",
+          "DOB": "3/19/2000",
+          "Stance": "Orthodox",
+          "Record": "8-2-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": true,
+        "prediction": {
+          "winner": "Sangwook Kim",
+          "confidence": "54.8%",
+          "odds": {
+            "Sangwook Kim": "54.8%",
+            "Dom Mar Fan": "45.2%"
+          },
+          "factors": {
+            "Sangwook Kim": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 13,
+              "losses": 3,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 180.34
+            },
+            "Dom Mar Fan": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 8,
+              "losses": 2,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 190.5
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Keiichiro Nakamura",
+        "fighter_2": "Sebastian Szalay",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5327937/keiichiro-nakamura",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5277351/sebastian-szalay",
+        "f1_stats": {
+          "Height": "5' 10\"",
+          "Weight": "145 lbs",
+          "DOB": "12/2/1988",
+          "Reach": "70",
+          "Stance": "Southpaw",
+          "Record": "7-1-0"
+        },
+        "f2_stats": {
+          "Height": "5' 6\"",
+          "Weight": "145 lbs",
+          "DOB": "2/3/1994",
+          "Stance": "Orthodox",
+          "Record": "10-1-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": true,
+        "prediction": {
+          "winner": "Keiichiro Nakamura",
+          "confidence": "66.7%",
+          "odds": {
+            "Keiichiro Nakamura": "66.7%",
+            "Sebastian Szalay": "33.3%"
+          },
+          "factors": {
+            "Keiichiro Nakamura": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 7,
+              "losses": 1,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Sebastian Szalay": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 10,
+              "losses": 1,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 167.64000000000001
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Sulangrangbo",
+        "fighter_2": "Lawrence Lui",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5278267/sulangrangbo",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5220183/lawrence-lui",
+        "f1_stats": {
+          "Height": "5' 9\"",
+          "Weight": "135 lbs",
+          "DOB": "7/17/2005",
+          "Reach": "66",
+          "Stance": "Southpaw",
+          "Record": "10-3-0"
+        },
+        "f2_stats": {
+          "Height": "5' 7\"",
+          "Weight": "135 lbs",
+          "DOB": "8/4/1996",
+          "Stance": "Orthodox",
+          "Record": "7-1-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": true,
+        "prediction": {
+          "winner": "Sulangrangbo",
+          "confidence": "50.3%",
+          "odds": {
+            "Sulangrangbo": "50.3%",
+            "Lawrence Lui": "49.7%"
+          },
+          "factors": {
+            "Sulangrangbo": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 10,
+              "losses": 3,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 167.64000000000001
+            },
+            "Lawrence Lui": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 7,
+              "losses": 1,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 182.88
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Aaron Tau",
+        "fighter_2": "Namsrai Batbayar",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5215272/aaron-tau",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5145018/namsrai-batbayar",
+        "f1_stats": {
+          "Height": "5' 4\"",
+          "Weight": "135 lbs",
+          "DOB": "8/21/1993",
+          "Stance": "Switch",
+          "Record": "11-1-0"
+        },
+        "f2_stats": {
+          "Height": "5' 4\"",
+          "Weight": "125 lbs",
+          "DOB": "12/29/2000",
+          "Stance": "Orthodox",
+          "Record": "9-1-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": true,
+        "prediction": {
+          "winner": "Aaron Tau",
+          "confidence": "60.2%",
+          "odds": {
+            "Aaron Tau": "60.2%",
+            "Namsrai Batbayar": "39.8%"
+          },
+          "factors": {
+            "Aaron Tau": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 11,
+              "losses": 1,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 167.64000000000001
+            },
+            "Namsrai Batbayar": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 9,
+              "losses": 1,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 172.72
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057328",
+    "event_name": "UFC Fight Night: Bautista vs. Oliveira",
+    "date": "Feb 7",
+    "location": "UFC APEX, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057328/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Mario Bautista",
+        "fighter_2": "Vinicius Oliveira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4410868/mario-bautista",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4884877/vinicius-oliveira",
+        "f1_stats": {
+          "Height": "5' 9\"",
+          "Weight": "135 lbs",
+          "DOB": "7/1/1993",
+          "Reach": "69",
+          "Stance": "Switch",
+          "Record": "16-3-0"
+        },
+        "f2_stats": {
+          "Height": "5' 9\"",
+          "Weight": "136 lbs",
+          "DOB": "11/30/1995",
+          "Stance": "Switch",
+          "Record": "23-3-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Mario Bautista",
+          "confidence": "53.3%",
+          "odds": {
+            "Mario Bautista": "53.3%",
+            "Vinicius Oliveira": "46.7%"
+          },
+          "factors": {
+            "Mario Bautista": {
+              "slpm": 5.109385957428403,
+              "td_rate": 1.370406368695346,
+              "ctrl_rate": 17.855332269562915,
+              "kd_rate": 0.3190195304812967,
+              "sub_rate": 1.0766143636363634,
+              "wins": 16,
+              "losses": 3,
+              "recent_form": "L-W-W-W-W",
+              "height": 175.0,
+              "reach": 175.26
+            },
+            "Vinicius Oliveira": {
+              "slpm": 5.027907832009079,
+              "td_rate": 1.7777945516458569,
+              "ctrl_rate": 18.784503972758223,
+              "kd_rate": 0.6503972758229284,
+              "sub_rate": 0.21,
+              "wins": 23,
+              "losses": 3,
+              "recent_form": "W-W-W-W",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Amir Albazi",
+        "fighter_2": "Kyoji Horiguchi",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4684848/amir-albazi",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2613374/kyoji-horiguchi",
+        "f1_stats": {
+          "Height": "5' 5\"",
+          "Weight": "125 lbs",
+          "DOB": "10/27/1993",
+          "Stance": "Orthodox",
+          "Record": "17-2-0"
+        },
+        "f2_stats": {
+          "Height": "5' 5\"",
+          "Weight": "125 lbs",
+          "DOB": "10/12/1990",
+          "Reach": "66",
+          "Stance": "Orthodox",
+          "Record": "35-5-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Kyoji Horiguchi",
+          "confidence": "51.9%",
+          "odds": {
+            "Amir Albazi": "48.1%",
+            "Kyoji Horiguchi": "51.9%"
+          },
+          "factors": {
+            "Amir Albazi": {
+              "slpm": 2.5884565139553963,
+              "td_rate": 1.8429301508140088,
+              "ctrl_rate": 28.466084684411946,
+              "kd_rate": 0.36098226466575706,
+              "sub_rate": 1.0003863177512033,
+              "wins": 17,
+              "losses": 2,
+              "recent_form": "L-W-W-W-W",
+              "height": 175.0,
+              "reach": 172.72
+            },
+            "Kyoji Horiguchi": {
+              "slpm": 4.033488356161795,
+              "td_rate": 1.9627889027462373,
+              "ctrl_rate": 31.86167833371554,
+              "kd_rate": 1.1481220985985943,
+              "sub_rate": 0.36585365853658536,
+              "wins": 35,
+              "losses": 5,
+              "recent_form": "W-W-W-W-L",
+              "height": 175.0,
+              "reach": 167.64000000000001
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ryan Spann",
+        "fighter_2": "Rizvan Kuniev",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3887606/ryan-spann",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4001837/rizvan-kuniev",
+        "f1_stats": {
+          "Height": "6' 5\"",
+          "Weight": "252 lbs",
+          "DOB": "8/24/1991",
+          "Stance": "Orthodox",
+          "Record": "23-11-0"
+        },
+        "f2_stats": {
+          "Height": "6' 4\"",
+          "Weight": "264 lbs",
+          "DOB": "3/10/1992",
+          "Reach": "76",
+          "Stance": "Orthodox",
+          "Record": "12-3-1"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Ryan Spann",
+          "confidence": "74.7%",
+          "odds": {
+            "Ryan Spann": "74.7%",
+            "Rizvan Kuniev": "25.3%"
+          },
+          "factors": {
+            "Ryan Spann": {
+              "slpm": 3.2746282771343496,
+              "td_rate": 2.13768343731324,
+              "ctrl_rate": 32.14461274278586,
+              "kd_rate": 0.6647019621012268,
+              "sub_rate": 5.219816973482393,
+              "wins": 23,
+              "losses": 11,
+              "recent_form": "W-L-W-L-L",
+              "height": 175.0,
+              "reach": 200.66
+            },
+            "Rizvan Kuniev": {
+              "slpm": 3.0,
+              "td_rate": 0.0,
+              "ctrl_rate": 2.888888888888889,
+              "kd_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 12,
+              "losses": 3,
+              "recent_form": "L",
+              "height": 175.0,
+              "reach": 193.04
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Michal Oleksiejczuk",
+        "fighter_2": "Marc-Andre Barriault",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4012999/michal-oleksiejczuk",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4415883/marc-andre-barriault",
+        "f1_stats": {
+          "Height": "6' 0\"",
+          "Weight": "186 lbs",
+          "DOB": "2/22/1995",
+          "Stance": "Southpaw",
+          "Record": "21-9-0"
+        },
+        "f2_stats": {
+          "Height": "6' 1\"",
+          "Weight": "185 lbs",
+          "DOB": "2/18/1990",
+          "Stance": "Orthodox",
+          "Record": "17-10-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Michal Oleksiejczuk",
+          "confidence": "64.9%",
+          "odds": {
+            "Michal Oleksiejczuk": "64.9%",
+            "Marc-Andre Barriault": "35.1%"
+          },
+          "factors": {
+            "Michal Oleksiejczuk": {
+              "slpm": 7.3507645264195,
+              "td_rate": 0.6303674102249999,
+              "ctrl_rate": 15.76338973513696,
+              "kd_rate": 3.068570657310098,
+              "sub_rate": 0.0,
+              "wins": 21,
+              "losses": 9,
+              "recent_form": "W-W-L-L-L",
+              "height": 175.0,
+              "reach": 187.96
+            },
+            "Marc-Andre Barriault": {
+              "slpm": 4.76609362788474,
+              "td_rate": 0.60290667031221,
+              "ctrl_rate": 14.630846370974947,
+              "kd_rate": 2.2287932553870418,
+              "sub_rate": 0.09977540192307688,
+              "wins": 17,
+              "losses": 10,
+              "recent_form": "L-W-L-L-L",
+              "height": 175.0,
+              "reach": 187.96
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Jean Matsumoto",
+        "fighter_2": "Farid Basharat",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5149439/jean-matsumoto",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5016786/farid-basharat",
+        "f1_stats": {
+          "Height": "5' 6\"",
+          "Weight": "136 lbs",
+          "DOB": "9/9/1999",
+          "Reach": "68",
+          "Stance": "Orthodox",
+          "Record": "17-1-0"
+        },
+        "f2_stats": {
+          "Height": "5' 8\"",
+          "Weight": "136 lbs",
+          "DOB": "8/2/1997",
+          "Stance": "Orthodox",
+          "Record": "14-0-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Farid Basharat",
+          "confidence": "58.3%",
+          "odds": {
+            "Jean Matsumoto": "41.7%",
+            "Farid Basharat": "58.3%"
+          },
+          "factors": {
+            "Jean Matsumoto": {
+              "slpm": 4.50298797996661,
+              "td_rate": 2.647717863105175,
+              "ctrl_rate": 18.02463772954925,
+              "kd_rate": 0.0,
+              "sub_rate": 1.1153589315525876,
+              "wins": 17,
+              "losses": 1,
+              "recent_form": "W-L-W-W",
+              "height": 175.0,
+              "reach": 172.72
+            },
+            "Farid Basharat": {
+              "slpm": 3.0968337254901956,
+              "td_rate": 3.62165294117647,
+              "ctrl_rate": 36.80980130718954,
+              "kd_rate": 0.0,
+              "sub_rate": 0.5101764705882351,
+              "wins": 14,
+              "losses": 0,
+              "recent_form": "W-W-W-W-W",
+              "height": 175.0,
+              "reach": 180.34
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Uran Satybaldiev",
+        "fighter_2": "Julius Walker",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/5206516/uran-satybaldiev",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5264398/julius-walker",
+        "f1_stats": {
+          "Height": "6' 4\"",
+          "Weight": "204 lbs",
+          "DOB": "8/10/1994",
+          "Stance": "Orthodox",
+          "Record": "9-1-0"
+        },
+        "f2_stats": {
+          "Height": "6' 4\"",
+          "Weight": "206 lbs",
+          "DOB": "7/16/1999",
+          "Stance": "Orthodox",
+          "Record": "7-1-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Julius Walker",
+          "confidence": "51.8%",
+          "odds": {
+            "Uran Satybaldiev": "48.2%",
+            "Julius Walker": "51.8%"
+          },
+          "factors": {
+            "Uran Satybaldiev": {
+              "slpm": 1.8981818181818182,
+              "td_rate": 0.0,
+              "ctrl_rate": 14.282828282828282,
+              "kd_rate": 1.6363636363636365,
+              "sub_rate": 3.272727272727273,
+              "wins": 9,
+              "losses": 1,
+              "recent_form": "W-L",
+              "height": 175.0,
+              "reach": 200.66
+            },
+            "Julius Walker": {
+              "slpm": 4.893333333333333,
+              "td_rate": 2.5,
+              "ctrl_rate": 49.27777777777778,
+              "kd_rate": 0.3,
+              "sub_rate": 0.0,
+              "wins": 7,
+              "losses": 1,
+              "recent_form": "W-L",
+              "height": 175.0,
+              "reach": 198.12
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Opponent TBA",
+        "fighter_2": "TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "Opponent TBA": "50.0%",
+            "TBA": "50.0%"
+          },
+          "factors": {
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057329",
+    "event_name": "UFC Fight Night: Strickland vs. Hernandez",
+    "date": "Feb 21",
+    "location": "Toyota Center (Houston), Houston, TX",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057329/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Sean Strickland",
+        "fighter_2": "Anthony Hernandez",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3093653/sean-strickland",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4290956/anthony-hernandez",
+        "f1_stats": {
+          "Height": "6' 1\"",
+          "Weight": "185 lbs",
+          "DOB": "2/27/1991",
+          "Reach": "76",
+          "Stance": "Orthodox",
+          "Record": "29-7-0"
+        },
+        "f2_stats": {
+          "Height": "6' 0\"",
+          "Weight": "186 lbs",
+          "DOB": "10/18/1993",
+          "Stance": "Orthodox",
+          "Record": "15-2-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Sean Strickland": 180,
+          "Anthony Hernandez": -218
+        },
+        "prediction": {
+          "winner": "Anthony Hernandez",
+          "confidence": "67.6%",
+          "odds": {
+            "Sean Strickland": "32.4%",
+            "Anthony Hernandez": "67.6%"
+          },
+          "factors": {
+            "Sean Strickland": {
+              "slpm": 6.404223381834457,
+              "td_rate": 0.10184562562881803,
+              "ctrl_rate": 1.7775079087884533,
+              "kd_rate": 0.19731088237379793,
+              "sub_rate": 0.0033971541581436326,
+              "wins": 29,
+              "losses": 7,
+              "recent_form": "L-W-L-W-W",
+              "height": 175.0,
+              "reach": 193.04
+            },
+            "Anthony Hernandez": {
+              "slpm": 4.332056125822605,
+              "td_rate": 6.152747106243677,
+              "ctrl_rate": 55.32975266977275,
+              "kd_rate": 0.0,
+              "sub_rate": 1.37371889552169,
+              "wins": 15,
+              "losses": 2,
+              "recent_form": "W-W-W-W-W",
+              "height": 175.0,
+              "reach": 190.5
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Ode' Osbourne",
+        "fighter_2": "Alibi Idiris",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4424224/ode-osbourne",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5264470/alibi-idiris",
+        "f1_stats": {
+          "Height": "5' 7\"",
+          "Weight": "135 lbs",
+          "DOB": "1/9/1992",
+          "Stance": "Southpaw",
+          "Record": "13-9-0"
+        },
+        "f2_stats": {
+          "Height": "5' 6\"",
+          "Weight": "126 lbs",
+          "DOB": "10/22/1994",
+          "Reach": "68",
+          "Stance": "Orthodox",
+          "Record": "11-1-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Ode' Osbourne",
+          "confidence": "77.3%",
+          "odds": {
+            "Ode' Osbourne": "77.3%",
+            "Alibi Idiris": "22.7%"
+          },
+          "factors": {
+            "Ode' Osbourne": {
+              "slpm": 2.452631518852499,
+              "td_rate": 0.615557403,
+              "ctrl_rate": 5.464293232057077,
+              "kd_rate": 1.2613804535711657,
+              "sub_rate": 0.294,
+              "wins": 13,
+              "losses": 9,
+              "recent_form": "L-W-L-L-L",
+              "height": 175.0,
+              "reach": 185.42000000000002
+            },
+            "Alibi Idiris": {
+              "slpm": 3.4710743801652892,
+              "td_rate": 0.0,
+              "ctrl_rate": 13.223140495867769,
+              "kd_rate": 0.0,
+              "sub_rate": 0.0,
+              "wins": 11,
+              "losses": 1,
+              "recent_form": "L",
+              "height": 175.0,
+              "reach": 172.72
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Opponent TBA",
+        "fighter_2": "TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "Opponent TBA": "50.0%",
+            "TBA": "50.0%"
+          },
+          "factors": {
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057330",
+    "event_name": "UFC Fight Night: Moreno vs. Almabayev",
+    "date": "Feb 28",
+    "location": "Arena CDMX, Mexico City, Mexico",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057330/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Brandon Moreno",
+        "fighter_2": "Asu Almabayev",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3027545/brandon-moreno",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4294926/asu-almabayev",
+        "f1_stats": {
+          "Height": "5' 7\"",
+          "Weight": "125 lbs",
+          "DOB": "12/7/1993",
+          "Stance": "Orthodox",
+          "Record": "23-9-2"
+        },
+        "f2_stats": {
+          "Height": "5' 4\"",
+          "Weight": "125 lbs",
+          "DOB": "1/25/1994",
+          "Stance": "Orthodox",
+          "Record": "23-3-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Brandon Moreno",
+          "confidence": "54.4%",
+          "odds": {
+            "Brandon Moreno": "54.4%",
+            "Asu Almabayev": "45.6%"
+          },
+          "factors": {
+            "Brandon Moreno": {
+              "slpm": 3.399409087408664,
+              "td_rate": 0.7096745580256684,
+              "ctrl_rate": 8.26090013849058,
+              "kd_rate": 0.06175927499935441,
+              "sub_rate": 0.724637114610469,
+              "wins": 23,
+              "losses": 9,
+              "recent_form": "L-W-W-L-L",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Asu Almabayev": {
+              "slpm": 2.597803225996583,
+              "td_rate": 3.758335998906359,
+              "ctrl_rate": 36.7459131443016,
+              "kd_rate": 0.10289999999999999,
+              "sub_rate": 1.5735033976201858,
+              "wins": 23,
+              "losses": 3,
+              "recent_form": "W-W-L-W-W",
+              "height": 175.0,
+              "reach": 165.1
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Opponent TBA",
+        "fighter_2": "TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "Opponent TBA": "50.0%",
+            "TBA": "50.0%"
+          },
+          "factors": {
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057326",
+    "event_name": "UFC 326: Holloway vs. Oliveira 2",
+    "date": "Mar 7",
+    "location": "T-Mobile Arena, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057326/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "Max Holloway",
+        "fighter_2": "Charles Oliveira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/2614933/max-holloway",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/2504169/charles-oliveira",
+        "f1_stats": {
+          "Height": "5' 11\"",
+          "Weight": "155 lbs",
+          "DOB": "12/4/1991",
+          "Stance": "Orthodox",
+          "Record": "27-8-0"
+        },
+        "f2_stats": {
+          "Height": "5' 10\"",
+          "Weight": "156 lbs",
+          "DOB": "10/17/1989",
+          "Stance": "Orthodox",
+          "Record": "36-11-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "market_odds": {
+          "Max Holloway": -205,
+          "Charles Oliveira": 175
+        },
+        "prediction": {
+          "winner": "Max Holloway",
+          "confidence": "67.2%",
+          "odds": {
+            "Max Holloway": "67.2%",
+            "Charles Oliveira": "32.8%"
+          },
+          "factors": {
+            "Max Holloway": {
+              "slpm": 7.423653936943371,
+              "td_rate": 0.07046256089969652,
+              "ctrl_rate": 3.9573362070179243,
+              "kd_rate": 0.5702207275207085,
+              "sub_rate": 0.17666392516191778,
+              "wins": 27,
+              "losses": 8,
+              "recent_form": "W-L-W-W-W",
+              "height": 175.0,
+              "reach": 175.26
+            },
+            "Charles Oliveira": {
+              "slpm": 3.1236470990843417,
+              "td_rate": 1.1522178581522575,
+              "ctrl_rate": 32.40308369108017,
+              "kd_rate": 0.5850076177034431,
+              "sub_rate": 1.6987671849284642,
+              "wins": 36,
+              "losses": 11,
+              "recent_form": "W-L-W-L-W",
+              "height": 175.0,
+              "reach": 187.96
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Caio Borralho",
+        "fighter_2": "Reinier de Ridder",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4835137/caio-borralho",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4423880/reinier-de-ridder",
+        "f1_stats": {
+          "Height": "6' 1\"",
+          "Weight": "185 lbs",
+          "DOB": "1/16/1993",
+          "Stance": "Southpaw",
+          "Record": "17-2-0"
+        },
+        "f2_stats": {
+          "Height": "6' 4\"",
+          "Weight": "186 lbs",
+          "DOB": "9/7/1990",
+          "Stance": "Southpaw",
+          "Record": "21-3-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Caio Borralho",
+          "confidence": "56.4%",
+          "odds": {
+            "Caio Borralho": "56.4%",
+            "Reinier de Ridder": "43.6%"
+          },
+          "factors": {
+            "Caio Borralho": {
+              "slpm": 3.7541168938449063,
+              "td_rate": 0.6949303771977432,
+              "ctrl_rate": 18.19106275576739,
+              "kd_rate": 0.5365744186046512,
+              "sub_rate": 0.36506588059701484,
+              "wins": 17,
+              "losses": 2,
+              "recent_form": "L-W-W-W-W",
+              "height": 175.0,
+              "reach": 190.5
+            },
+            "Reinier de Ridder": {
+              "slpm": 2.296355061468975,
+              "td_rate": 3.3395500188496325,
+              "ctrl_rate": 39.98588753865772,
+              "kd_rate": 0.62728500577812,
+              "sub_rate": 0.9708559753339076,
+              "wins": 21,
+              "losses": 3,
+              "recent_form": "L-W-W-W-W",
+              "height": 175.0,
+              "reach": 198.12
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Renato Moicano",
+        "fighter_2": "Brian Ortega",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3028863/renato-moicano",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/3045737/brian-ortega",
+        "f1_stats": {
+          "Height": "5' 11\"",
+          "Weight": "155 lbs",
+          "DOB": "5/21/1989",
+          "Reach": "72",
+          "Stance": "Orthodox",
+          "Record": "20-7-1"
+        },
+        "f2_stats": {
+          "Height": "5' 8\"",
+          "Weight": "153 lbs",
+          "DOB": "2/21/1991",
+          "Stance": "Switch",
+          "Record": "16-5-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Renato Moicano",
+          "confidence": "70.5%",
+          "odds": {
+            "Renato Moicano": "70.5%",
+            "Brian Ortega": "29.5%"
+          },
+          "factors": {
+            "Renato Moicano": {
+              "slpm": 2.910536505688909,
+              "td_rate": 1.2161934216160422,
+              "ctrl_rate": 25.013362361697496,
+              "kd_rate": 0.3102588363960353,
+              "sub_rate": 0.4985373079566753,
+              "wins": 20,
+              "losses": 7,
+              "recent_form": "L-L-W-W-W",
+              "height": 175.0,
+              "reach": 182.88
+            },
+            "Brian Ortega": {
+              "slpm": 3.493670198458015,
+              "td_rate": 1.2022914827879967,
+              "ctrl_rate": 14.549620345683223,
+              "kd_rate": 0.1621221157823619,
+              "sub_rate": 0.4366909192668897,
+              "wins": 16,
+              "losses": 5,
+              "recent_form": "L-L-W-L-L",
+              "height": 175.0,
+              "reach": 175.26
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Paulo Costa",
+        "fighter_2": "Brunno Ferreira",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4080826/paulo-costa",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/5077131/brunno-ferreira",
+        "f1_stats": {
+          "Height": "6' 1\"",
+          "Weight": "185 lbs",
+          "DOB": "4/21/1991",
+          "Stance": "Orthodox",
+          "Record": "15-4-0"
+        },
+        "f2_stats": {
+          "Height": "5' 10\"",
+          "Weight": "189 lbs",
+          "DOB": "11/4/1992",
+          "Stance": "Orthodox",
+          "Record": "15-2-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Brunno Ferreira",
+          "confidence": "52.0%",
+          "odds": {
+            "Paulo Costa": "48.0%",
+            "Brunno Ferreira": "52.0%"
+          },
+          "factors": {
+            "Paulo Costa": {
+              "slpm": 6.224304589586433,
+              "td_rate": 0.24901799999999993,
+              "ctrl_rate": 4.756133615251154,
+              "kd_rate": 0.7546496429155232,
+              "sub_rate": 0.0,
+              "wins": 15,
+              "losses": 4,
+              "recent_form": "W-L-L-W-L",
+              "height": 175.0,
+              "reach": 182.88
+            },
+            "Brunno Ferreira": {
+              "slpm": 3.6591973659377834,
+              "td_rate": 1.799563213769544,
+              "ctrl_rate": 10.683983177746798,
+              "kd_rate": 0.6695599360116136,
+              "sub_rate": 1.229040380372171,
+              "wins": 15,
+              "losses": 2,
+              "recent_form": "W-W-W-L-W",
+              "height": 175.0,
+              "reach": 182.88
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Cody Garbrandt",
+        "fighter_2": "Xiao Long",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/3163637/cody-garbrandt",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4894864/xiao-long",
+        "f1_stats": {
+          "Height": "5' 8\"",
+          "Weight": "136 lbs",
+          "DOB": "7/7/1991",
+          "Stance": "Orthodox",
+          "Record": "14-7-0"
+        },
+        "f2_stats": {
+          "Height": "5' 8\"",
+          "Weight": "136 lbs",
+          "DOB": "4/13/1998",
+          "Reach": "70",
+          "Stance": "Orthodox",
+          "Record": "27-10-0"
+        },
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Cody Garbrandt",
+          "confidence": "62.4%",
+          "odds": {
+            "Cody Garbrandt": "62.4%",
+            "Xiao Long": "37.6%"
+          },
+          "factors": {
+            "Cody Garbrandt": {
+              "slpm": 2.672260744071384,
+              "td_rate": 0.3125472670353361,
+              "ctrl_rate": 5.775263468876046,
+              "kd_rate": 0.8373825874024107,
+              "sub_rate": 0.0,
+              "wins": 14,
+              "losses": 7,
+              "recent_form": "L-L-W-W-L",
+              "height": 175.0,
+              "reach": 165.1
+            },
+            "Xiao Long": {
+              "slpm": 5.174647286821704,
+              "td_rate": 0.9799999999999999,
+              "ctrl_rate": 22.094715762273896,
+              "kd_rate": 0.2747093023255814,
+              "sub_rate": 0.0,
+              "wins": 27,
+              "losses": 10,
+              "recent_form": "L-W-L",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Opponent TBA",
+        "fighter_2": "TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "Opponent TBA": "50.0%",
+            "TBA": "50.0%"
+          },
+          "factors": {
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057364",
+    "event_name": "UFC Fight Night: 3/14",
+    "date": "Mar 14",
+    "location": "UFC APEX, Las Vegas, NV",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057364/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "TBA",
+        "fighter_2": "Opponent TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Opponent TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "TBA": "50.0%",
+            "Opponent TBA": "50.0%"
+          },
+          "factors": {
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "Amanda Lemos",
+        "fighter_2": "Gillian Robertson",
+        "fighter_1_url": "https://www.espn.com/mma/fighter/_/id/4233196/amanda-lemos",
+        "fighter_2_url": "https://www.espn.com/mma/fighter/_/id/4089026/gillian-robertson",
+        "f1_stats": {
+          "Height": "5' 4\"",
+          "Weight": "115 lbs",
+          "DOB": "5/22/1987",
+          "Reach": "65",
+          "Stance": "Southpaw",
+          "Record": "15-5-1"
+        },
+        "f2_stats": {
+          "Height": "5' 5\"",
+          "Weight": "116 lbs",
+          "DOB": "5/17/1995",
+          "Stance": "Orthodox",
+          "Record": "16-8-0"
+        },
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Amanda Lemos",
+          "confidence": "51.1%",
+          "odds": {
+            "Amanda Lemos": "51.1%",
+            "Gillian Robertson": "48.9%"
+          },
+          "factors": {
+            "Amanda Lemos": {
+              "slpm": 1.695715999801085,
+              "td_rate": 0.9522447079650773,
+              "ctrl_rate": 19.063484872160586,
+              "kd_rate": 0.5070770684892736,
+              "sub_rate": 0.7754371622971892,
+              "wins": 15,
+              "losses": 5,
+              "recent_form": "L-W-L-W-L",
+              "height": 175.0,
+              "reach": 165.1
+            },
+            "Gillian Robertson": {
+              "slpm": 3.246247713204002,
+              "td_rate": 3.596332689599448,
+              "ctrl_rate": 62.53878444456578,
+              "kd_rate": 0.0,
+              "sub_rate": 0.7274913833518305,
+              "wins": 16,
+              "losses": 8,
+              "recent_form": "W-W-W-W-L",
+              "height": 175.0,
+              "reach": 160.02
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "TBA",
+        "fighter_2": "Opponent TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Opponent TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "TBA": "50.0%",
+            "Opponent TBA": "50.0%"
+          },
+          "factors": {
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057365",
+    "event_name": "UFC Fight Night: 3/21",
+    "date": "Mar 21",
+    "location": "O2 Arena (ENG), London, England",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057365/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "TBA",
+        "fighter_2": "Opponent TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Opponent TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "TBA": "50.0%",
+            "Opponent TBA": "50.0%"
+          },
+          "factors": {
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "TBA",
+        "fighter_2": "Opponent TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Opponent TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "TBA": "50.0%",
+            "Opponent TBA": "50.0%"
+          },
+          "factors": {
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "event_id": "600057366",
+    "event_name": "UFC Fight Night: 3/28",
+    "date": "Mar 28",
+    "location": "Climate Pledge Arena, Seattle, WA",
+    "url": "https://www.espn.com/mma/fightcenter/_/id/600057366/league/ufc",
+    "fights": [
+      {
+        "fighter_1": "TBA",
+        "fighter_2": "Opponent TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": true,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Opponent TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "TBA": "50.0%",
+            "Opponent TBA": "50.0%"
+          },
+          "factors": {
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      },
+      {
+        "fighter_1": "TBA",
+        "fighter_2": "Opponent TBA",
+        "fighter_1_url": "",
+        "fighter_2_url": "",
+        "f1_stats": {},
+        "f2_stats": {},
+        "is_main_card": false,
+        "is_title_fight": false,
+        "prediction": {
+          "winner": "Opponent TBA",
+          "confidence": "50.0%",
+          "odds": {
+            "TBA": "50.0%",
+            "Opponent TBA": "50.0%"
+          },
+          "factors": {
+            "TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            },
+            "Opponent TBA": {
+              "slpm": 0,
+              "td_rate": 1.0,
+              "ctrl_rate": 10.0,
+              "kd_rate": 0.2,
+              "sub_rate": 0.2,
+              "wins": 0,
+              "losses": 0,
+              "recent_form": "N/A",
+              "height": 175.0,
+              "reach": 177.8
+            }
+          }
+        }
+      }
+    ]
+  }
+]

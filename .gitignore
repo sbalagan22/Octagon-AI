@@ -27,3 +27,9 @@ env/
 # Temporary files
 test_*.py
 tmp/
+catboost_info/
+
+# Root-level generated files (output goes to dashboard/public/)
+/upcoming_events.json
+/upcoming_predictions.json
+/upcoming_predictions.csv

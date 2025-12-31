@@ -8,16 +8,21 @@ export interface Prediction {
     factors?: {
         [key: string]: {
             slpm: number;
+            sapm: number;
+            str_acc: number;
+            td_acc: number;
             kd_rate: number;
             td_rate: number;
             ctrl_rate: number;
             sub_rate: number;
             wins: number;
             losses: number;
-            win_rate: number;
-            height_cm: number;
-            reach_cm: number;
+            finishes: number;
+            height: number;
+            reach: number;
             recent_form?: string;
+            elo?: number;
+            finish_rate?: number;
         };
     };
     mov?: {

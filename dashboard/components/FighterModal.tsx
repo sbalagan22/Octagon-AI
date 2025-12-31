@@ -50,42 +50,46 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
         if (!f1Stats || !f2Stats) return null;
 
         // Normalize stats to 0-100 scale for radar
-        const maxSlpm = Math.max(f1Stats.slpm, f2Stats.slpm, 5);
-        const maxTd = Math.max(f1Stats.td_rate, f2Stats.td_rate, 3);
-        const maxCtrl = Math.max(f1Stats.ctrl_rate, f2Stats.ctrl_rate, 200);
-        const maxKd = Math.max(f1Stats.kd_rate, f2Stats.kd_rate, 1);
-        const maxSub = Math.max(f1Stats.sub_rate, f2Stats.sub_rate, 2);
+        const maxSlpm = Math.max(f1Stats.slpm || 0, f2Stats.slpm || 0, 5);
+        const maxTd = Math.max(f1Stats.td_rate || 0, f2Stats.td_rate || 0, 3);
+        const maxCtrl = Math.max(f1Stats.ctrl_rate || 0, f2Stats.ctrl_rate || 0, 10);
+        const maxKd = Math.max(f1Stats.kd_rate || 0, f2Stats.kd_rate || 0, 1);
+        const maxSub = Math.max(f1Stats.sub_rate || 0, f2Stats.sub_rate || 0, 2);
+
+        // Calculate win rates
+        const f1WinRate = f1Stats.wins / Math.max(f1Stats.wins + f1Stats.losses, 1) * 100;
+        const f2WinRate = f2Stats.wins / Math.max(f2Stats.wins + f2Stats.losses, 1) * 100;
 
         return [
             {
+                stat: 'Win Rate',
+                [fight.fighter_1]: f1WinRate,
+                [fight.fighter_2]: f2WinRate
+            },
+            {
                 stat: 'Striking',
-                [fight.fighter_1]: (f1Stats.slpm / maxSlpm) * 100,
-                [fight.fighter_2]: (f2Stats.slpm / maxSlpm) * 100
-            },
-            {
-                stat: 'Takedowns',
-                [fight.fighter_1]: (f1Stats.td_rate / maxTd) * 100,
-                [fight.fighter_2]: (f2Stats.td_rate / maxTd) * 100
-            },
-            {
-                stat: 'Control',
-                [fight.fighter_1]: (f1Stats.ctrl_rate / maxCtrl) * 100,
-                [fight.fighter_2]: (f2Stats.ctrl_rate / maxCtrl) * 100
+                [fight.fighter_1]: ((f1Stats.slpm || 0) / maxSlpm) * 100,
+                [fight.fighter_2]: ((f2Stats.slpm || 0) / maxSlpm) * 100
             },
             {
                 stat: 'KO Power',
-                [fight.fighter_1]: (f1Stats.kd_rate / maxKd) * 100,
-                [fight.fighter_2]: (f2Stats.kd_rate / maxKd) * 100
+                [fight.fighter_1]: ((f1Stats.kd_rate || 0) / maxKd) * 100,
+                [fight.fighter_2]: ((f2Stats.kd_rate || 0) / maxKd) * 100
+            },
+            {
+                stat: 'Takedowns',
+                [fight.fighter_1]: ((f1Stats.td_rate || 0) / maxTd) * 100,
+                [fight.fighter_2]: ((f2Stats.td_rate || 0) / maxTd) * 100
+            },
+            {
+                stat: 'Control',
+                [fight.fighter_1]: ((f1Stats.ctrl_rate || 0) / maxCtrl) * 100,
+                [fight.fighter_2]: ((f2Stats.ctrl_rate || 0) / maxCtrl) * 100
             },
             {
                 stat: 'Submissions',
-                [fight.fighter_1]: (f1Stats.sub_rate / maxSub) * 100,
-                [fight.fighter_2]: (f2Stats.sub_rate / maxSub) * 100
-            },
-            {
-                stat: 'Win Rate',
-                [fight.fighter_1]: f1Stats.win_rate,
-                [fight.fighter_2]: f2Stats.win_rate
+                [fight.fighter_1]: ((f1Stats.sub_rate || 0) / maxSub) * 100,
+                [fight.fighter_2]: ((f2Stats.sub_rate || 0) / maxSub) * 100
             }
         ];
     };
@@ -101,6 +105,14 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
             <span className="font-bold text-white text-xs sm:text-sm">{value}</span>
         </div>
     );
+
+    const cmToFtIn = (cm: number) => {
+        if (!cm) return "N/A";
+        const totalInches = cm / 2.54;
+        const feet = Math.floor(totalInches / 12);
+        const inches = Math.round(totalInches % 12);
+        return `${feet}' ${inches}"`;
+    };
 
     return (
         <Dialog>
@@ -140,8 +152,8 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
                             <div className="w-full space-y-0.5 text-sm bg-zinc-900/50 rounded-lg p-3">
                                 <StatRow label="Record" value={`${f1Stats.wins}-${f1Stats.losses}`} icon={Trophy} />
                                 <StatRow label="Recent Form" value={f1Stats.recent_form && f1Stats.recent_form !== 'N/A' ? f1Stats.recent_form : 'Unknown'} icon={Activity} />
-                                <StatRow label="Height" value={`${Math.round(f1Stats.height_cm)} cm`} icon={Ruler} />
-                                <StatRow label="Reach" value={`${Math.round(f1Stats.reach_cm)} cm`} icon={Target} />
+                                <StatRow label="Height" value={cmToFtIn(f1Stats.height || 0)} icon={Ruler} />
+                                <StatRow label="Reach" value={`${Math.round(f1Stats.reach || 0)} cm`} icon={Target} />
                             </div>
                         )}
                     </div>
@@ -193,64 +205,7 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
                             </div>
                         </div>
 
-                        {/* MOV Breakdown (Modal) */}
-                        {fight.prediction?.mov && (
-                            <div className="mt-4 w-full bg-zinc-900/40 rounded-lg p-3 border border-zinc-800/50">
-                                <div className="text-[10px] uppercase tracking-widest font-bold text-zinc-500 text-center mb-3">Path to Victory</div>
-                                <div className="grid grid-cols-2 gap-6">
-                                    {(() => {
-                                        const mov = fight.prediction!.mov;
-                                        const f1Mov = mov[fight.fighter_1];
-                                        const f2Mov = mov[fight.fighter_2];
 
-                                        const values = [
-                                            { val: parseFloat(f1Mov.ko) },
-                                            { val: parseFloat(f1Mov.sub) },
-                                            { val: parseFloat(f1Mov.dec) },
-                                            { val: parseFloat(f2Mov.ko) },
-                                            { val: parseFloat(f2Mov.sub) },
-                                            { val: parseFloat(f2Mov.dec) }
-                                        ];
-
-                                        const maxVal = Math.max(...values.map(v => v.val));
-                                        const isMax = (valStr: string) => parseFloat(valStr) === maxVal && maxVal > 0;
-
-                                        return (
-                                            <>
-                                                <div className="space-y-1.5">
-                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
-                                                        <span className="text-zinc-600">KO/TKO</span>
-                                                        <span className={isMax(f1Mov.ko) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f1Mov.ko)}</span>
-                                                    </div>
-                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
-                                                        <span className="text-zinc-600">SUB</span>
-                                                        <span className={isMax(f1Mov.sub) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f1Mov.sub)}</span>
-                                                    </div>
-                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
-                                                        <span className="text-zinc-600">DEC</span>
-                                                        <span className={isMax(f1Mov.dec) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f1Mov.dec)}</span>
-                                                    </div>
-                                                </div>
-                                                <div className="space-y-1.5 border-l border-zinc-800 pl-4">
-                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
-                                                        <span className={isMax(f2Mov.ko) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f2Mov.ko)}</span>
-                                                        <span className="text-zinc-600">KO/TKO</span>
-                                                    </div>
-                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
-                                                        <span className={isMax(f2Mov.sub) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f2Mov.sub)}</span>
-                                                        <span className="text-zinc-600">SUB</span>
-                                                    </div>
-                                                    <div className="flex items-center justify-between text-[10px] uppercase font-mono">
-                                                        <span className={isMax(f2Mov.dec) ? "text-green-400 font-bold" : "text-zinc-500"}>{formatOdds(f2Mov.dec)}</span>
-                                                        <span className="text-zinc-600">DEC</span>
-                                                    </div>
-                                                </div>
-                                            </>
-                                        );
-                                    })()}
-                                </div>
-                            </div>
-                        )}
                     </div>
 
                     {/* Fighter 2 (Blue) */}
@@ -273,8 +228,8 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
                             <div className="w-full space-y-0.5 text-sm bg-zinc-900/50 rounded-lg p-3">
                                 <StatRow label="Record" value={`${f2Stats.wins}-${f2Stats.losses}`} icon={Trophy} />
                                 <StatRow label="Recent Form" value={f2Stats.recent_form && f2Stats.recent_form !== 'N/A' ? f2Stats.recent_form : 'Unknown'} icon={Activity} />
-                                <StatRow label="Height" value={`${Math.round(f2Stats.height_cm)} cm`} icon={Ruler} />
-                                <StatRow label="Reach" value={`${Math.round(f2Stats.reach_cm)} cm`} icon={Target} />
+                                <StatRow label="Height" value={cmToFtIn(f2Stats.height || 0)} icon={Ruler} />
+                                <StatRow label="Reach" value={`${Math.round(f2Stats.reach || 0)} cm`} icon={Target} />
                             </div>
                         )}
                     </div>

@@ -26,6 +26,85 @@ def get_soup(url):
         print(f"Error fetching {url}: {e}")
         return None
 
+def scrape_fighter_profile(url):
+    """Scrape Reach, Stance, DOB from fighter profile using robust text parsing."""
+    if not url or "espn.com" not in url: return {}
+    
+    print(f"    Scraping fighter profile: {url}...")
+    try:
+        soup = get_soup(url)
+        if not soup: return {}
+        
+        stats = {}
+        
+        # Strategy: Find PlayerHeader div and parse text
+        # Content format example:
+        # Justin | Gaethje | USA | Lightweight | HT/WT | 5' 11", 156 lbs | Birthdate | 11/14/1988 (37) | Team | ... | Stance | Orthodox
+        
+        header_div = soup.find('div', class_=lambda x: x and 'PlayerHeader' in x)
+        if not header_div:
+            # Try finding via text search if class changed
+            return {}
+            
+        text = header_div.get_text(separator='|', strip=True)
+        parts = [p.strip() for p in text.split('|')]
+        
+        # Helper to find value after a key
+        def get_val(key_list):
+            for i, p in enumerate(parts):
+                if p.lower() in [k.lower() for k in key_list]:
+                    if i + 1 < len(parts):
+                        return parts[i+1]
+            return None
+
+        # 1. Height / Weight
+        hw = get_val(['HT/WT', 'Height', 'Ht', 'Wt'])
+        if hw:
+            # 5' 11", 156 lbs
+            subparts = hw.split(',')
+            if len(subparts) > 0: stats['Height'] = subparts[0].strip()
+            if len(subparts) > 1: stats['Weight'] = subparts[1].strip()
+            
+        # 2. DOB
+        dob = get_val(['Birthdate', 'DOB', 'Date of Birth'])
+        if dob:
+            # 11/14/1988 (37) -> 11/14/1988
+            stats['DOB'] = dob.split('(')[0].strip()
+            
+        # 3. Reach
+        reach = get_val(['Reach'])
+        if reach:
+            stats['Reach'] = reach.replace('"', '').strip()
+            
+        # 4. Stance
+        stance = get_val(['Stance'])
+        if stance:
+            stats['Stance'] = stance
+            
+        # 5. Record
+        record = get_val(['Record', 'W-L-D'])
+        if record:
+            # Format: 25-5-0
+            stats['Record'] = record
+            
+        # Fallback for Stance/Reach if not found in header (sometimes in bio list or separate items)
+        if 'Reach' not in stats or 'Stance' not in stats:
+             # Look for specific bio items
+             bio_items = soup.find_all('div', class_='PlayerHeader__Bio_Item')
+             for item in bio_items:
+                 txt = item.get_text(strip=True).lower()
+                 if 'reach' in txt:
+                     val = item.find('div', class_='PlayerHeader__Data')
+                     if val: stats['Reach'] = val.get_text(strip=True).replace('"', '')
+                 if 'stance' in txt:
+                     val = item.find('div', class_='PlayerHeader__Data')
+                     if val: stats['Stance'] = val.get_text(strip=True)
+
+        return stats
+    except Exception as e:
+        print(f"    Error scraping profile {url}: {e}")
+        return {}
+
 def scrape_event_details(event_url, event_id):
     print(f"  Scraping details from {event_url}...")
     soup = get_soup(event_url)
@@ -82,12 +161,18 @@ def scrape_event_details(event_url, event_id):
                                 is_title = False
                                 if note and "Title Fight" in note:
                                     is_title = True
+                                
+                                # Scrape details
+                                s1 = scrape_fighter_profile(u1)
+                                s2 = scrape_fighter_profile(u2)
                                     
                                 fights.append({
                                     "fighter_1": n1,
                                     "fighter_2": n2,
                                     "fighter_1_url": u1,
                                     "fighter_2_url": u2,
+                                    "f1_stats": s1,
+                                    "f2_stats": s2,
                                     "is_main_card": is_main_card_seg,
                                     "is_title_fight": is_title
                                 })
@@ -236,12 +321,18 @@ def scrape_event_details(event_url, event_id):
         
         if node.select('img[alt="Championship Belt"]'):
             is_title = True 
+        
+        # Scrape details
+        s1 = scrape_fighter_profile(u1)
+        s2 = scrape_fighter_profile(u2)
             
         fights.append({
             "fighter_1": n1,
             "fighter_2": n2,
             "fighter_1_url": u1,
             "fighter_2_url": u2,
+            "f1_stats": s1,
+            "f2_stats": s2,
             "is_main_card": is_main_card,
             "is_title_fight": is_title
         })

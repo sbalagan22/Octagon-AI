@@ -7,12 +7,54 @@ API_KEY = "2e165978c393355b8218845cb6798ede"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def normalize_name(name):
-    if not name:
-        return ""
-    # Remove accents/diacritics
+    if not name: return ""
+    import re
+    # Convert to string and handle accents
+    name = str(name)
     nfkd_form = unicodedata.normalize('NFKD', name)
     name = "".join([c for c in nfkd_form if not unicodedata.combining(c)])
-    return name.lower().replace("'", "").replace("-", " ").strip()
+    # Standardize Saint/St and handle dashes
+    name = name.lower().replace("-", " ")
+    name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
+    name = name.replace(" saint ", " st ").replace(" saint", " st").replace("saint ", "st ")
+    return " ".join(name.split())
+
+def is_match(n1, n2):
+    n1_norm = normalize_name(n1)
+    n2_norm = normalize_name(n2)
+    if not n1_norm or not n2_norm: return False
+    
+    # Simple common first name mappings
+    mappings = {
+        "dan": "daniel", "daniel": "dan",
+        "jim": "james", "james": "jim",
+        "mike": "michael", "michael": "mike",
+        "paddy": "patrick", "patrick": "paddy"
+    }
+    
+    # Exact match
+    if n1_norm == n2_norm: return True
+    
+    # Token sets
+    t1 = n1_norm.split()
+    t2 = n2_norm.split()
+    
+    # Name Reversal check (e.g. "Rong Zhu" vs "Zhu Rong")
+    if set(t1) == set(t2) and len(t1) >= 2:
+        return True
+        
+    # Mapping check for first name
+    if len(t1) >= 2 and len(t2) >= 2:
+        # Check if first names are mapped and last names match
+        if mappings.get(t1[0]) == t2[0] and t1[-1] == t2[-1]:
+            return True
+        if mappings.get(t2[0]) == t1[0] and t1[-1] == t2[-1]:
+            return True
+
+    # Substring / Token overlap
+    if n1_norm in n2_norm or n2_norm in n1_norm: return True
+    
+    return False
 
 def fetch_mma_odds():
     print("Fetching odds from The Odds API...")
@@ -29,6 +71,8 @@ def fetch_mma_odds():
         response.raise_for_status()
         data = response.json()
         print(f"Successfully fetched odds for {len(data)} fights.")
+        for fight in data:
+            print(f"DEBUG API FIGHT: {fight.get('home_team')} vs {fight.get('away_team')}")
         return data
     except Exception as e:
         print(f"Error fetching odds: {e}")
@@ -40,7 +84,7 @@ def update_events_with_odds():
         return
 
     # Load currently predicted events
-    file_path = os.path.join(BASE_DIR, '..', 'dashboard', 'public', 'upcoming_events.json')
+    file_path = os.path.join(BASE_DIR, '..', 'upcoming_events.json')
     try:
         with open(file_path, 'r') as f:
             events = json.load(f)
@@ -54,42 +98,53 @@ def update_events_with_odds():
         home = normalize_name(fight.get('home_team'))
         away = normalize_name(fight.get('away_team'))
         
-        # Find outcomes
+        # Prefer specific bookmakers, but take any if not available
+        preferred_keys = ['draftkings', 'fanduel', 'betonlineag', 'williamhill', 'betfair']
+        best_bm = None
+        
+        # First pass: preferred
         for bm in fight.get('bookmakers', []):
-            if bm['key'] in ['draftkings', 'fanduel', 'betonlineag']: # Prefer these
-                for market in bm.get('markets', []):
-                    if market['key'] == 'h2h':
-                        outcomes = {normalize_name(o['name']): o['price'] for o in market['outcomes']}
-                        odds_map[(home, away)] = outcomes
-                        odds_map[(away, home)] = outcomes
-                        break
-                if (home, away) in odds_map: break
+            if bm['key'] in preferred_keys:
+                best_bm = bm
+                break
+        
+        # Second pass: any
+        if not best_bm and fight.get('bookmakers'):
+            best_bm = fight['bookmakers'][0]
+            
+        if best_bm:
+            for market in best_bm.get('markets', []):
+                if market['key'] == 'h2h':
+                    outcomes = {normalize_name(o['name']): o['price'] for o in market['outcomes']}
+                    odds_map[(home, away)] = outcomes
+                    odds_map[(away, home)] = outcomes
+                    break
 
     # Update events
     updated_count = 0
     for event in events:
         for fight in event.get('fights', []):
-            f1 = normalize_name(fight['fighter_1'])
-            f2 = normalize_name(fight['fighter_2'])
+            f1 = fight['fighter_1']
+            f2 = fight['fighter_2']
             
             # Look for exact or fuzzy match
             matched_odds = None
             for (h, a), outcomes in odds_map.items():
-                if (f1 in h or h in f1) and (f2 in a or a in f2):
+                if (is_match(f1, h) and is_match(f2, a)) or (is_match(f1, a) and is_match(f2, h)):
                     matched_odds = outcomes
                     break
             
             if matched_odds:
+                f1_price = "N/A"
+                f2_price = "N/A"
+                for name_raw, price in matched_odds.items():
+                    if is_match(f1, name_raw): f1_price = price
+                    if is_match(f2, name_raw): f2_price = price
+                
                 fight['market_odds'] = {
-                    fight['fighter_1']: matched_odds.get(f1, "N/A"),
-                    fight['fighter_2']: matched_odds.get(f2, "N/A")
+                    f1: f1_price,
+                    f2: f2_price
                 }
-                # Try to get the actual name from outcomes if normalization lost it
-                for name, price in matched_odds.items():
-                    if f1 in name or name in f1:
-                        fight['market_odds'][fight['fighter_1']] = price
-                    if f2 in name or name in f2:
-                        fight['market_odds'][fight['fighter_2']] = price
                 updated_count += 1
 
     print(f"Updated {updated_count} fights with market odds.")
