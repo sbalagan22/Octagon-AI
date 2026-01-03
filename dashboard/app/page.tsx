@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Calendar, MapPin, ChevronRight, Trophy } from "lucide-react";
 import FightCard from "@/components/FightCard";
+import { usePredictionVisibility } from "@/hooks/usePredictionVisibility";
 import { Event } from "@/types";
 
 export default function Home() {
     const [events, setEvents] = useState<Event[]>([]);
     const [featuredEvent, setFeaturedEvent] = useState<Event | null>(null);
     const [oddsFormat, setOddsFormat] = useState<'percent' | 'american'>('percent');
+    const { showPredictions, toggleVisibility, mounted } = usePredictionVisibility();
 
     useEffect(() => {
         fetch("/upcoming_events.json")
@@ -61,20 +63,34 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Odds Toggle */}
-                            <div className="flex items-center p-1 bg-zinc-900/80 rounded-lg border border-zinc-800 self-start sm:self-center">
+                            <div className="flex items-center gap-3 p-1 bg-zinc-900/80 rounded-lg border border-zinc-800 self-start sm:self-center">
+                                {/* Predictions Toggle */}
                                 <button
-                                    onClick={() => setOddsFormat('percent')}
-                                    className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded ${oddsFormat === 'percent' ? 'bg-red-600 text-white shadow-lg' : 'text-zinc-500 hover:text-white'}`}
+                                    onClick={toggleVisibility}
+                                    className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded ${showPredictions ? 'bg-zinc-800 text-white' : 'text-zinc-500 hover:text-white'}`}
                                 >
-                                    Probability
+                                    {showPredictions ? 'Predictions: ON' : 'Predictions: OFF'}
                                 </button>
-                                <button
-                                    onClick={() => setOddsFormat('american')}
-                                    className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded ${oddsFormat === 'american' ? 'bg-red-600 text-white shadow-lg' : 'text-zinc-500 hover:text-white'}`}
-                                >
-                                    American
-                                </button>
+
+                                <div className="w-px h-4 bg-zinc-700"></div>
+
+                                {/* Odds Toggle */}
+                                {mounted && showPredictions && (
+                                    <div className="flex items-center">
+                                        <button
+                                            onClick={() => setOddsFormat('percent')}
+                                            className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded-l ${oddsFormat === 'percent' ? 'bg-red-600 text-white shadow-lg' : 'bg-zinc-900 border border-zinc-800 text-zinc-500 hover:text-white'}`}
+                                        >
+                                            Prob
+                                        </button>
+                                        <button
+                                            onClick={() => setOddsFormat('american')}
+                                            className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded-r ${oddsFormat === 'american' ? 'bg-red-600 text-white shadow-lg' : 'bg-zinc-900 border border-zinc-800 border-l-0 text-zinc-500 hover:text-white'}`}
+                                        >
+                                            Amer
+                                        </button>
+                                    </div>
+                                )}
                             </div>
                         </div>
 
@@ -109,7 +125,7 @@ export default function Home() {
                         </div>
                         <div className="grid gap-3">
                             {featuredEvent.fights.filter(f => f.is_main_card !== false).map((fight, idx) => (
-                                <FightCard key={idx} fight={fight} oddsFormat={oddsFormat} />
+                                <FightCard key={idx} fight={fight} oddsFormat={oddsFormat} showPredictions={mounted ? showPredictions : false} />
                             ))}
                         </div>
                     </div>
@@ -123,7 +139,7 @@ export default function Home() {
                             </div>
                             <div className="grid gap-3">
                                 {featuredEvent.fights.filter(f => f.is_main_card === false).map((fight, idx) => (
-                                    <FightCard key={idx} fight={fight} oddsFormat={oddsFormat} />
+                                    <FightCard key={idx} fight={fight} oddsFormat={oddsFormat} showPredictions={mounted ? showPredictions : false} />
                                 ))}
                             </div>
                         </div>

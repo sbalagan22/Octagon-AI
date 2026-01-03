@@ -11,9 +11,10 @@ interface FighterModalProps {
     fight: Fight;
     children: React.ReactNode;
     oddsFormat: 'percent' | 'american';
+    showPredictions: boolean;
 }
 
-export default function FighterModal({ fight, children, oddsFormat }: FighterModalProps) {
+export default function FighterModal({ fight, children, oddsFormat, showPredictions }: FighterModalProps) {
     const formatOdds = (probStr: string) => {
         if (!probStr || oddsFormat === 'percent') return probStr;
 
@@ -142,7 +143,7 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
 
                         <div className="text-center mb-3">
                             <span className="text-2xl font-black text-red-500">
-                                {formatOdds(fight.prediction?.odds?.[fight.fighter_1] || '50%')}
+                                {showPredictions ? formatOdds(fight.prediction?.odds?.[fight.fighter_1] || '50%') : '---'}
                             </span>
                             <div className="text-xs text-zinc-500 uppercase">Win Probability</div>
                         </div>
@@ -191,19 +192,21 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
                         )}
 
                         {/* Prediction Result */}
-                        <div className="mt-3 text-center border-t border-zinc-900 pt-3 w-full">
-                            <div className="text-xs text-zinc-500 uppercase tracking-widest mb-1">Prediction</div>
-                            <div className="text-lg font-bold">
-                                {fight.prediction?.winner ? (
-                                    <span className={fight.prediction.winner === fight.fighter_1 ? "text-red-500" : "text-blue-500"}>
-                                        {fight.prediction.winner}
-                                    </span>
-                                ) : "Undecided"}
+                        {showPredictions && (
+                            <div className="mt-3 text-center border-t border-zinc-900 pt-3 w-full">
+                                <div className="text-xs text-zinc-500 uppercase tracking-widest mb-1">Prediction</div>
+                                <div className="text-lg font-bold">
+                                    {fight.prediction?.winner ? (
+                                        <span className={fight.prediction.winner === fight.fighter_1 ? "text-red-500" : "text-blue-500"}>
+                                            {fight.prediction.winner}
+                                        </span>
+                                    ) : "Undecided"}
+                                </div>
+                                <div className="text-xl font-black text-green-500">
+                                    {fight.prediction?.confidence}
+                                </div>
                             </div>
-                            <div className="text-xl font-black text-green-500">
-                                {fight.prediction?.confidence}
-                            </div>
-                        </div>
+                        )}
 
 
                     </div>
@@ -218,7 +221,7 @@ export default function FighterModal({ fight, children, oddsFormat }: FighterMod
 
                         <div className="text-center mb-3">
                             <span className="text-2xl font-black text-blue-500">
-                                {formatOdds(fight.prediction?.odds?.[fight.fighter_2] || '50%')}
+                                {showPredictions ? formatOdds(fight.prediction?.odds?.[fight.fighter_2] || '50%') : '---'}
                             </span>
                             <div className="text-xs text-zinc-500 uppercase">Win Probability</div>
                         </div>

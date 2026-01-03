@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Fight } from "@/types";
@@ -9,11 +8,12 @@ import Image from "next/image";
 interface FightCardProps {
     fight: Fight;
     oddsFormat: 'percent' | 'american';
+    showPredictions: boolean;
 }
 
-export default function FightCard({ fight, oddsFormat }: FightCardProps) {
+export default function FightCard({ fight, oddsFormat, showPredictions }: FightCardProps) {
     const winner = fight.prediction?.winner;
-    const isF1Winner = winner === fight.fighter_1;
+    const isF1Winner = showPredictions && winner === fight.fighter_1;
 
     // Odds Conversion Helper
     const formatOdds = (probStr: string) => {
@@ -61,7 +61,7 @@ export default function FightCard({ fight, oddsFormat }: FightCardProps) {
     const winnerTextColor = "text-green-400";
 
     return (
-        <FighterModal fight={fight} oddsFormat={oddsFormat}>
+        <FighterModal fight={fight} oddsFormat={oddsFormat} showPredictions={showPredictions}>
             <div className={`group relative transition-all duration-300 rounded-lg p-4 cursor-pointer overflow-hidden ${containerClasses}`}>
 
                 {/* Hover Effect Border Gradient */}
@@ -73,7 +73,7 @@ export default function FightCard({ fight, oddsFormat }: FightCardProps) {
                     {/* Fighter 1 */}
                     <div className="flex-1 flex items-center gap-2 sm:gap-3 min-w-0">
                         {f1Image && (
-                            <div className={`relative w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-full overflow-hidden border-2 ${isF1Winner ? winnerBorderColor : 'border-zinc-700'}`}>
+                            <div className={`relative w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-full overflow-hidden border-2 ${isF1Winner ? winnerBorderColor : (!showPredictions ? 'border-red-600' : 'border-zinc-700')}`}>
                                 <img
                                     src={f1Image}
                                     alt={fight.fighter_1}
@@ -82,11 +82,14 @@ export default function FightCard({ fight, oddsFormat }: FightCardProps) {
                             </div>
                         )}
                         <div className="flex flex-col items-start min-w-0">
-                            <span className={`text-sm sm:text-lg font-bold truncate w-full ${isF1Winner ? 'text-white' : 'text-zinc-400'} ${isF1Winner ? 'drop-shadow-[0_0_8px_rgba(74,222,128,0.5)]' : ''}`}>
+                            <span className={`text-sm sm:text-lg font-bold truncate w-full ${isF1Winner ? 'text-white' : (showPredictions ? 'text-zinc-400' : 'text-zinc-200')} ${isF1Winner ? 'drop-shadow-[0_0_8px_rgba(74,222,128,0.5)]' : ''}`}>
                                 {fight.fighter_1}
                             </span>
-                            <span className={`text-[10px] sm:text-xs font-mono mt-0.5 ${isF1Winner ? winnerTextColor : 'text-zinc-500'}`}>
-                                {formatOdds(f1Prob)}
+                            <span className={`text-[10px] sm:text-xs font-mono mt-0.5 ${isF1Winner ? winnerTextColor : (showPredictions ? 'text-zinc-500' : 'text-zinc-300')}`}>
+                                {showPredictions
+                                    ? formatOdds(f1Prob)
+                                    : (fight.market_odds?.[fight.fighter_1] ? (Number(fight.market_odds[fight.fighter_1]) > 0 ? `+${fight.market_odds[fight.fighter_1]}` : fight.market_odds[fight.fighter_1]) : '')
+                                }
                             </span>
                         </div>
                     </div>
@@ -99,15 +102,18 @@ export default function FightCard({ fight, oddsFormat }: FightCardProps) {
                     {/* Fighter 2 */}
                     <div className="flex-1 flex items-center justify-end gap-2 sm:gap-3 min-w-0">
                         <div className="flex flex-col items-end text-right min-w-0">
-                            <span className={`text-sm sm:text-lg font-bold truncate w-full ${!isF1Winner && winner ? 'text-white' : 'text-zinc-400'} ${!isF1Winner && winner ? 'drop-shadow-[0_0_8px_rgba(74,222,128,0.5)]' : ''}`}>
+                            <span className={`text-sm sm:text-lg font-bold truncate w-full ${showPredictions && !isF1Winner && winner ? 'text-white' : (showPredictions ? 'text-zinc-400' : 'text-zinc-200')} ${showPredictions && !isF1Winner && winner ? 'drop-shadow-[0_0_8px_rgba(74,222,128,0.5)]' : ''}`}>
                                 {fight.fighter_2}
                             </span>
-                            <span className={`text-[10px] sm:text-xs font-mono mt-0.5 ${!isF1Winner && winner ? winnerTextColor : 'text-zinc-500'}`}>
-                                {formatOdds(f2Prob)}
+                            <span className={`text-[10px] sm:text-xs font-mono mt-0.5 ${showPredictions && !isF1Winner && winner ? winnerTextColor : (showPredictions ? 'text-zinc-500' : 'text-zinc-300')}`}>
+                                {showPredictions
+                                    ? formatOdds(f2Prob)
+                                    : (fight.market_odds?.[fight.fighter_2] ? (Number(fight.market_odds[fight.fighter_2]) > 0 ? `+${fight.market_odds[fight.fighter_2]}` : fight.market_odds[fight.fighter_2]) : '')
+                                }
                             </span>
                         </div>
                         {f2Image && (
-                            <div className={`relative w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-full overflow-hidden border-2 ${!isF1Winner && winner ? winnerBorderColor : 'border-zinc-700'}`}>
+                            <div className={`relative w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-full overflow-hidden border-2 ${showPredictions && !isF1Winner && winner ? winnerBorderColor : (!showPredictions ? 'border-blue-500' : 'border-zinc-700')}`}>
                                 <img
                                     src={f2Image}
                                     alt={fight.fighter_2}
@@ -119,7 +125,7 @@ export default function FightCard({ fight, oddsFormat }: FightCardProps) {
                 </div>
 
                 {/* Prediction Bar */}
-                {winner && (
+                {showPredictions && winner && (
                     <div className="mt-4 w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden flex">
                         <div
                             className="h-full bg-red-600 transition-all duration-500"
@@ -133,44 +139,46 @@ export default function FightCard({ fight, oddsFormat }: FightCardProps) {
                 )}
 
                 {/* Bottom Stats: Market Odds & Winner Badge */}
-                <div className="mt-3 flex items-center justify-between relative z-10">
-                    {/* Market Odds F1 */}
-                    <div className="flex-1">
-                        {fight.market_odds?.[fight.fighter_1] && (
-                            <div className="flex flex-col items-start translate-y-2">
-                                <span className="text-[8px] uppercase tracking-widest font-bold text-zinc-500">Market</span>
-                                <span className="text-xs sm:text-sm font-mono font-bold text-white">
-                                    {Number(fight.market_odds[fight.fighter_1]) > 0 ? `+${fight.market_odds[fight.fighter_1]}` : fight.market_odds[fight.fighter_1]}
-                                </span>
-                            </div>
-                        )}
-                    </div>
-
-                    {/* Prediction Badge */}
-                    {winner && (
-                        <div className="flex justify-center px-2">
-                            <span className="text-xs font-bold uppercase tracking-wider flex items-center gap-1 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-zinc-800">
-                                <Trophy size={12} className={isTitle ? "text-[#BF953F]" : "text-yellow-500"} />
-                                <span className="text-white">{winner}</span>
-                                <span className="text-zinc-500">-</span>
-                                <span className={winnerTextColor}>{formatOdds(fight.prediction?.confidence || "0%")}</span>
-                            </span>
+                {showPredictions && (
+                    <div className="mt-3 flex items-center justify-between relative z-10">
+                        {/* Market Odds F1 */}
+                        <div className="flex-1">
+                            {fight.market_odds?.[fight.fighter_1] && (
+                                <div className="flex flex-col items-start translate-y-2">
+                                    <span className="text-[8px] uppercase tracking-widest font-bold text-zinc-500">Market</span>
+                                    <span className="text-xs sm:text-sm font-mono font-bold text-white">
+                                        {Number(fight.market_odds[fight.fighter_1]) > 0 ? `+${fight.market_odds[fight.fighter_1]}` : fight.market_odds[fight.fighter_1]}
+                                    </span>
+                                </div>
+                            )}
                         </div>
-                    )}
 
-                    {/* Market Odds F2 */}
-                    <div className="flex-1 text-right">
-                        {fight.market_odds?.[fight.fighter_2] && (
-                            <div className="flex flex-col items-end translate-y-2">
-                                <span className="text-[8px] uppercase tracking-widest font-bold text-zinc-500">Market</span>
-                                <span className="text-xs sm:text-sm font-mono font-bold text-white">
-                                    {Number(fight.market_odds[fight.fighter_2]) > 0 ? `+${fight.market_odds[fight.fighter_2]}` : fight.market_odds[fight.fighter_2]}
+                        {/* Prediction Badge */}
+                        {showPredictions && winner && (
+                            <div className="flex justify-center px-2">
+                                <span className="text-xs font-bold uppercase tracking-wider flex items-center gap-1 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-zinc-800">
+                                    <Trophy size={12} className={isTitle ? "text-[#BF953F]" : "text-yellow-500"} />
+                                    <span className="text-white">{winner}</span>
+                                    <span className="text-zinc-500">-</span>
+                                    <span className={winnerTextColor}>{formatOdds(fight.prediction?.confidence || "0%")}</span>
                                 </span>
                             </div>
                         )}
+
+                        {/* Market Odds F2 */}
+                        <div className="flex-1 text-right">
+                            {fight.market_odds?.[fight.fighter_2] && (
+                                <div className="flex flex-col items-end translate-y-2">
+                                    <span className="text-[8px] uppercase tracking-widest font-bold text-zinc-500">Market</span>
+                                    <span className="text-xs sm:text-sm font-mono font-bold text-white">
+                                        {Number(fight.market_odds[fight.fighter_2]) > 0 ? `+${fight.market_odds[fight.fighter_2]}` : fight.market_odds[fight.fighter_2]}
+                                    </span>
+                                </div>
+                            )}
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
-        </FighterModal>
+        </FighterModal >
     );
 }
